@@ -1,0 +1,396 @@
+/* ==========================================================================
+   Dapper Pack — site stylesheet
+   澄彩 · 礼品盒 · 彩盒包装 / Dongguan Longyuanchang Packaging Co., Ltd.
+
+   设计令牌全部取自品牌规范 longyuansheng-logo/README.md §3：
+   隆远红 #8E1B2A · 鎏金黄 #C9A227 · 亮金 #E3C05C · 宣纸白 #F7F4EF
+   规则：本文件之外不得出现裸色值；组件只引用 var(--*)。
+
+   无外部请求：不加载第三方字体/CDN（UK/EU 访客的隐私与首屏速度）。
+   显示字体走本机 serif 栈，正文走本机 sans 栈。
+   ========================================================================== */
+
+:root{
+  /* ── 品牌色（规范 §3） ── */
+  --red:        #8E1B2A;
+  --red-deep:   #6E1420;
+  --gold:       #C9A227;
+  --gold-light: #E3C05C;
+  --paper:      #F7F4EF;
+
+  /* ── 派生中性色（由品牌色推导，保持暖调） ── */
+  --white:      #FFFFFF;
+  --ink:        #2A1E20;
+  --body:       #52464A;
+  --muted:      #857678;
+  --line:       #E8E0D6;
+  --line-soft:  #F1EBE3;
+  --red-tint:   #FBF3F4;
+
+  /* ── 字体 ── */
+  --font-display: 'Iowan Old Style','Palatino Linotype',Palatino,'Book Antiqua',
+                  Georgia,'Times New Roman',serif;
+  --font-ui:      system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',
+                  Arial,'Noto Sans',sans-serif;
+  --font-cjk:     'Source Han Sans SC','Noto Sans SC','Microsoft YaHei',
+                  'PingFang SC','Hiragino Sans GB',sans-serif;
+  --font-mono:    ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace;
+
+  /* ── 尺度 ── */
+  --wrap: 68rem;
+  --gap:  clamp(1.5rem,4vw,3rem);
+  --radius: 3px;
+  --shadow: 0 1px 2px rgba(42,30,32,.04), 0 8px 24px -16px rgba(42,30,32,.18);
+
+  /* ── 动效（reduced-motion 下由全局规则关闭） ── */
+  --ease: cubic-bezier(.22,.61,.36,1);
+}
+
+/* ── reset ───────────────────────────────────────────────────────────── */
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%; scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation-duration:.001ms !important; animation-iteration-count:1 !important;
+                       transition-duration:.001ms !important}
+}
+body{
+  margin:0; background:var(--white); color:var(--body);
+  font-family:var(--font-ui); font-size:1.0625rem; line-height:1.68;
+  -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
+}
+img,svg{max-width:100%; height:auto}
+img{display:block}
+
+/* ── 版式 ────────────────────────────────────────────────────────────── */
+h1,h2,h3,h4{
+  font-family:var(--font-display); color:var(--ink); font-weight:600;
+  line-height:1.18; margin:0 0 .8rem; letter-spacing:-.01em;
+}
+h1{font-size:clamp(2.1rem,5.4vw,3.35rem)}
+h2{font-size:clamp(1.55rem,3.4vw,2.1rem)}
+h3{font-size:1.14rem; line-height:1.35; margin-bottom:.45rem}
+h4{font-size:1rem; margin-bottom:.3rem}
+p{margin:0 0 1.05rem}
+p:last-child{margin-bottom:0}
+strong{color:var(--ink); font-weight:600}
+a{color:var(--red); text-decoration-thickness:1px; text-underline-offset:.18em}
+a:hover{color:var(--red-deep)}
+
+.eyebrow{
+  font-family:var(--font-ui); font-size:.72rem; font-weight:600;
+  letter-spacing:.16em; text-transform:uppercase; color:var(--gold);
+  margin:0 0 .9rem;
+}
+.eyebrow::after{
+  content:""; display:block; width:2.25rem; height:2px;
+  background:var(--gold); margin-top:.65rem;
+}
+.lede{font-size:1.16rem; color:var(--body); max-width:44rem}
+.muted{color:var(--muted)}
+.small{font-size:.9rem; line-height:1.6}
+.center{text-align:center}
+.center .eyebrow::after{margin-left:auto; margin-right:auto}
+
+/* ── 布局 ────────────────────────────────────────────────────────────── */
+.wrap{max-width:var(--wrap); margin:0 auto; padding:0 clamp(1.15rem,4vw,2rem)}
+.section{padding:clamp(3rem,7vw,5rem) 0; border-top:1px solid var(--line)}
+.section--paper{background:var(--paper); border-top-color:var(--line)}
+.section--tight{padding:clamp(2rem,4vw,3rem) 0}
+.section__head{max-width:46rem; margin-bottom:clamp(1.6rem,3vw,2.4rem)}
+.stack > * + *{margin-top:1rem}
+
+.grid{display:grid; gap:clamp(1.2rem,3vw,2rem)}
+.grid--2{grid-template-columns:repeat(auto-fit,minmax(17rem,1fr))}
+.grid--3{grid-template-columns:repeat(auto-fit,minmax(14.5rem,1fr))}
+.grid--4{grid-template-columns:repeat(auto-fit,minmax(11.5rem,1fr))}
+.split{display:grid; gap:clamp(1.8rem,5vw,3.5rem); align-items:center;
+       grid-template-columns:repeat(auto-fit,minmax(19rem,1fr))}
+
+/* ── 页头 ────────────────────────────────────────────────────────────── */
+.skip{position:absolute; left:-9999px}
+.skip:focus{
+  left:1rem; top:1rem; z-index:100; background:var(--white); color:var(--red);
+  padding:.6rem 1rem; border:1px solid var(--red); border-radius:var(--radius);
+}
+.masthead{
+  position:sticky; top:0; z-index:50; background:rgba(255,255,255,.94);
+  /* 前缀版给旧 iOS Safari；不加也只是少一层模糊，底色已近实心，不损可读性 */
+  -webkit-backdrop-filter:saturate(150%) blur(8px);
+  backdrop-filter:saturate(150%) blur(8px); border-bottom:1px solid var(--line);
+}
+.masthead__inner{
+  display:flex; align-items:center; justify-content:space-between; gap:1.25rem;
+  min-height:4.5rem; padding-top:.55rem; padding-bottom:.55rem;
+}
+
+/* 品牌锁定（复刻 cc-horizontal：图形标 + 澄彩 / 金线 / DAPPER PACK） */
+.lockup{display:inline-flex; align-items:center; gap:.7rem; text-decoration:none}
+.lockup__mark{width:2.35rem; height:1.8rem; flex:0 0 auto}
+.lockup__text{display:flex; flex-direction:column; line-height:1}
+.lockup__cn{
+  font-family:var(--font-cjk); font-size:1.32rem; font-weight:700;
+  letter-spacing:.14em; color:var(--red);
+}
+.lockup__rule{height:2px; background:var(--gold); margin:.26rem 0 .3rem; width:100%}
+.lockup__en{
+  font-size:.63rem; font-weight:600; letter-spacing:.22em; color:var(--gold);
+}
+.lockup--reverse .lockup__cn{color:var(--gold-light)}
+.lockup--reverse .lockup__en{color:var(--gold-light)}
+
+/* 导航：默认（无 JS）在窄屏也完整可用；只有 JS 就位才折叠 */
+.nav{display:flex; align-items:center; gap:1.5rem}
+.nav__list{display:flex; align-items:center; gap:1.4rem; list-style:none; margin:0; padding:0}
+.nav__link{
+  font-size:.94rem; color:var(--body); text-decoration:none;
+  padding:.35rem 0; border-bottom:1px solid transparent; transition:color .15s var(--ease);
+}
+.nav__link:hover{color:var(--red); border-bottom-color:var(--gold)}
+.nav__link[aria-current="page"]{color:var(--ink); border-bottom-color:var(--gold)}
+.nav__toggle{
+  display:none; background:none; border:1px solid var(--line); border-radius:var(--radius);
+  padding:.45rem .6rem; cursor:pointer; color:var(--ink);
+}
+.nav__toggle-bars{display:block; width:1.15rem; height:2px; background:currentColor;
+                  box-shadow:0 -5px 0 currentColor, 0 5px 0 currentColor}
+
+@media (max-width:56rem){
+  .js .nav__toggle{display:inline-block}
+  .js .nav{
+    position:absolute; left:0; right:0; top:100%; background:var(--white);
+    border-bottom:1px solid var(--line); box-shadow:var(--shadow);
+    flex-direction:column; align-items:stretch; gap:0; padding:.5rem 0 1rem;
+    display:none;
+  }
+  .js .nav[data-open="true"]{display:flex}
+  .js .nav__list{flex-direction:column; align-items:stretch; gap:0}
+  .js .nav__list a{padding:.7rem clamp(1.15rem,4vw,2rem); border-bottom:none}
+  .js .nav .btn{margin:.6rem clamp(1.15rem,4vw,2rem) 0}
+}
+
+@media (max-width:26rem){
+  /* 窄屏下品牌锁定要收住，否则 "DAPPER PACK" 会被折成两行 */
+  .lockup{gap:.55rem}
+  .lockup__mark{width:1.95rem; height:1.5rem}
+  .lockup__cn{font-size:1.14rem; letter-spacing:.1em}
+  .lockup__en{font-size:.55rem; letter-spacing:.15em; white-space:nowrap}
+}
+
+/* ── 按钮 ────────────────────────────────────────────────────────────── */
+.btn{
+  display:inline-block; font-family:var(--font-ui); font-size:.94rem; font-weight:600;
+  padding:.72rem 1.35rem; border-radius:var(--radius); border:1px solid var(--red);
+  background:var(--red); color:var(--white); text-decoration:none;
+  transition:background .15s var(--ease), border-color .15s var(--ease);
+}
+.btn:hover{background:var(--red-deep); border-color:var(--red-deep); color:var(--white)}
+.btn--ghost{background:transparent; color:var(--red)}
+.btn--ghost:hover{background:var(--red-tint); color:var(--red-deep)}
+.btn--gold{background:var(--gold); border-color:var(--gold); color:var(--ink)}
+.btn--gold:hover{background:var(--gold-light); border-color:var(--gold-light); color:var(--ink)}
+.btn-row{display:flex; flex-wrap:wrap; gap:.75rem; align-items:center}
+
+/* ── Hero ────────────────────────────────────────────────────────────── */
+.hero{padding:clamp(2.5rem,6vw,4.5rem) 0 clamp(2rem,5vw,3.5rem); position:relative; overflow:hidden}
+.hero__inner{display:grid; gap:clamp(2rem,5vw,3.5rem); align-items:center;
+             grid-template-columns:repeat(auto-fit,minmax(20rem,1fr))}
+.hero h1{margin-bottom:1.15rem}
+.hero__figure{margin:0}
+.hero__figure figcaption{font-size:.82rem; color:var(--muted); margin-top:.6rem; text-align:center}
+.rule-gold{height:3px; width:4.5rem; background:var(--gold); border:0; margin:1.5rem 0}
+
+/* ── 页脚 ────────────────────────────────────────────────────────────── */
+.footer{background:var(--ink); color:#CFC5C2; padding:clamp(2.5rem,5vw,3.5rem) 0 1.75rem;
+        font-size:.92rem}
+.footer a{color:var(--gold-light); text-decoration:none}
+.footer a:hover{color:var(--white); text-decoration:underline}
+.footer__grid{display:grid; gap:2rem; grid-template-columns:repeat(auto-fit,minmax(14rem,1fr))}
+.footer h4{color:var(--white); font-family:var(--font-ui); font-size:.78rem; font-weight:600;
+           letter-spacing:.14em; text-transform:uppercase; margin-bottom:.9rem}
+.footer ul{list-style:none; margin:0; padding:0}
+.footer li{margin-bottom:.45rem}
+.footer__legal{
+  border-top:1px solid #4A3B3D; margin-top:2.25rem; padding-top:1.35rem;
+  display:flex; flex-wrap:wrap; gap:.6rem 1.5rem; justify-content:space-between;
+  font-size:.82rem; color:#A99C9A;
+}
+.footer address{font-style:normal; line-height:1.7}
+
+/* ── 卡片 / 事实列表 ─────────────────────────────────────────────────── */
+.card{
+  background:var(--white); border:1px solid var(--line); border-radius:var(--radius);
+  padding:clamp(1.2rem,2.5vw,1.6rem);
+}
+.card--paper{background:var(--paper); border-color:var(--line)}
+.card h3{margin-top:0}
+.card__num{
+  font-family:var(--font-display); font-size:1.05rem; color:var(--gold);
+  display:block; margin-bottom:.5rem;
+}
+
+.facts{list-style:none; margin:0; padding:0; display:grid; gap:.85rem}
+.facts li{position:relative; padding-left:1.5rem}
+.facts li::before{
+  content:""; position:absolute; left:0; top:.62em; width:.5rem; height:.5rem;
+  background:var(--gold); border-radius:50%;
+}
+.pills{display:flex; flex-wrap:wrap; gap:.5rem; list-style:none; margin:0; padding:0}
+.pills li{
+  font-size:.88rem; color:var(--red); background:var(--red-tint);
+  border:1px solid #EFD9DC; border-radius:999px; padding:.3rem .8rem;
+}
+
+/* 定义列表（规格表） */
+.spec{border-top:1px solid var(--line); margin:0}
+.spec div{display:grid; grid-template-columns:minmax(9rem,14rem) 1fr; gap:.4rem 1.5rem;
+          padding:.85rem 0; border-bottom:1px solid var(--line)}
+.spec dt{font-weight:600; color:var(--ink); margin:0}
+.spec dd{margin:0}
+@media (max-width:34rem){
+  .spec div{grid-template-columns:1fr; gap:.15rem}
+}
+
+/* 步骤 */
+.steps{counter-reset:step; list-style:none; margin:0; padding:0; display:grid;
+       gap:clamp(1.1rem,2.5vw,1.6rem)}
+.steps > li{counter-increment:step; position:relative; padding-left:3.1rem}
+.steps > li::before{
+  content:counter(step,decimal-leading-zero); position:absolute; left:0; top:.1rem;
+  font-family:var(--font-display); font-size:1.05rem; color:var(--gold);
+  border:1px solid var(--line); border-radius:50%; width:2.1rem; height:2.1rem;
+  display:grid; place-items:center; background:var(--white);
+}
+
+/* 工艺色卡 */
+.swatches{display:grid; gap:1rem; grid-template-columns:repeat(auto-fit,minmax(9.5rem,1fr));
+          list-style:none; margin:0; padding:0}
+.swatch{border:1px solid var(--line); border-radius:var(--radius); overflow:hidden;
+        background:var(--white)}
+.swatch__chip{height:4.6rem; position:relative}
+.swatch__name{font-size:.86rem; font-weight:600; color:var(--ink); padding:.6rem .7rem .1rem}
+.swatch__note{font-size:.78rem; color:var(--muted); padding:0 .7rem .7rem}
+
+/* 引述 / 提示条 */
+.note{
+  border-left:3px solid var(--gold); background:var(--paper);
+  padding:1rem 1.2rem; border-radius:0 var(--radius) var(--radius) 0; font-size:.95rem;
+}
+.note--warn{border-left-color:var(--red); background:var(--red-tint)}
+
+/* 照片位（实拍待补：占位框明确标注，避免看起来像坏图） */
+.photo-slot{
+  border:1px dashed #D8CCC0; border-radius:var(--radius); background:var(--paper);
+  min-height:11rem; display:grid; place-items:center; text-align:center; padding:1.5rem;
+}
+.photo-slot__label{font-size:.85rem; color:var(--muted); max-width:22rem; margin:0}
+.photo-slot__label strong{display:block; color:var(--body); margin-bottom:.25rem}
+
+/* 表格 */
+.table-wrap{overflow-x:auto; border:1px solid var(--line); border-radius:var(--radius)}
+table{border-collapse:collapse; width:100%; font-size:.92rem; min-width:32rem}
+caption{text-align:left; font-size:.85rem; color:var(--muted); padding:.8rem 1rem 0}
+th,td{text-align:left; padding:.7rem 1rem; border-bottom:1px solid var(--line)}
+thead th{background:var(--paper); color:var(--ink); font-weight:600;
+         font-family:var(--font-ui); font-size:.82rem; letter-spacing:.04em;
+         text-transform:uppercase}
+tbody tr:last-child td{border-bottom:0}
+
+/* 面包屑 */
+.crumbs{font-size:.85rem; color:var(--muted); padding:1rem 0 0}
+.crumbs ol{list-style:none; display:flex; flex-wrap:wrap; gap:.4rem; margin:0; padding:0}
+.crumbs li + li::before{content:"/"; margin-right:.4rem; color:var(--line)}
+.crumbs a{color:var(--muted); text-decoration:none}
+.crumbs a:hover{color:var(--red)}
+
+/* ── 复制按钮（配合 mailto 模板） ────────────────────────────────────── */
+.copybox{position:relative; border:1px solid var(--line); border-radius:var(--radius);
+         background:var(--paper); padding:1.15rem 1.25rem}
+.copybox pre{
+  margin:0; font-family:var(--font-mono); font-size:.83rem; line-height:1.65;
+  white-space:pre-wrap; word-break:break-word; color:var(--body);
+}
+.copybox__btn{
+  position:absolute; top:.6rem; right:.6rem; font:inherit; font-size:.78rem;
+  background:var(--white); border:1px solid var(--line); color:var(--body);
+  border-radius:var(--radius); padding:.28rem .6rem; cursor:pointer;
+}
+.copybox__btn:hover{border-color:var(--gold); color:var(--ink)}
+
+/* ── 品牌图形标（内联 SVG 不写裸色值，由 CSS 提供填充） ──────────────── */
+.mk-body{fill:var(--red)}
+.mk-wing{fill:var(--gold)}
+.footer .mk-body{fill:var(--gold)}
+.footer .mk-wing{fill:var(--gold-light)}
+
+address{font-style:normal; line-height:1.72}
+
+/* 卡片内插画统一居中并限高，避免不同长宽比把卡片撑得参差 */
+.card > img{display:block; margin:0 auto 1.1rem; max-height:15rem; width:auto;
+            max-width:100%; height:auto}
+.steps h3{margin-bottom:.2rem}
+
+/* ── 工艺色卡（用 CSS 渐变示意表面效果，不引入图片） ────────────────── */
+.chip--foil{background:
+  linear-gradient(102deg,
+    #A8851A 0%, #E3C05C 18%, #F6E6AE 30%, #C9A227 44%,
+    #8E6F14 58%, #E3C05C 74%, #F6E6AE 86%, #B9931F 100%)}
+.chip--emboss{background:
+  linear-gradient(158deg,
+    var(--white) 0%, var(--line-soft) 34%, var(--white) 48%,
+    var(--line) 66%, var(--white) 82%, var(--line-soft) 100%)}
+.chip--uv{background:
+  linear-gradient(116deg,
+    #EDE7DF 0%, #EDE7DF 38%, var(--white) 46%, var(--paper) 54%,
+    #EDE7DF 62%, #E4DCD2 100%)}
+.chip--soft{background:
+  radial-gradient(130% 100% at 28% 18%, #F5F1EA 0%, #E6DCD1 62%, #DCD1C5 100%)}
+
+/* ── 打印（供 fact-sheet.html 导出为可转发的一页纸） ─────────────────── */
+@media print{
+  :root{--paper:#FFFFFF}
+  /* 目标：**真的排进 A4 一页**（页面自称 on one page，2 页就是名不副实），
+     同时不要为了塞进一页把字号压到读不动 —— 实测排进一页后仍有约四成余量，
+     所以这里把字号调回到舒适区（10.6pt），再用区块与列表留白控制总量。 */
+  body{font-size:10pt; line-height:1.36}
+  .masthead,.nav,.footer,.btn,.btn-row,.skip,.copybox__btn{display:none !important}
+  .section{padding:.26rem 0; border-top:1px solid var(--line)}
+  .section--paper{background:var(--white)}
+  h1{font-size:15.5pt; margin-bottom:.18rem}
+  h2{font-size:10.8pt; margin-bottom:.15rem}
+  h3{font-size:10pt; margin-bottom:.08rem}
+  p{margin:0 0 .24rem}
+  .lede{font-size:10pt; margin-bottom:.24rem}
+  .hero{padding:0 0 .22rem}
+  .hero__figure{display:none}
+  .eyebrow{font-size:7.5pt; margin-bottom:.15rem}
+  .eyebrow::after{display:none}
+  .rule-gold{display:none}
+  .grid{gap:.5rem; grid-template-columns:1fr 1fr}
+  .grid--3{grid-template-columns:1fr 1fr 1fr}
+  .card{padding:.4rem .55rem; break-inside:avoid}
+  .facts{gap:.15rem}
+  .facts li{padding-left:.95rem}
+  .facts li::before{width:.38rem; height:.38rem; top:.56em}
+  .steps{gap:.25rem}
+  .steps > li{padding-left:1.55rem}
+  .steps > li::before{width:1.25rem; height:1.25rem; font-size:8.5pt}
+  .spec div{padding:.2rem 0; grid-template-columns:9.5rem 1fr}
+  .note{padding:.4rem .6rem; font-size:9.6pt}
+  a{color:var(--ink); text-decoration:none}
+  /* 不给 mailto 补 "(mailto:…)"：本页链接文字本身就是邮箱地址，补了是重复 */
+  .print-only{display:block !important}
+}
+.print-only{display:none}
+
+/* ── 工具类 ──────────────────────────────────────────────────────────── */
+.visually-hidden{
+  position:absolute!important; width:1px; height:1px; padding:0; margin:-1px;
+  overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; border:0;
+}
+.lede--center{margin-left:auto; margin-right:auto}
+.btn-row--center{justify-content:center}
+.mt-0{margin-top:0}
+.mt-1{margin-top:1rem}
+.mt-2{margin-top:2rem}
+.mb-2{margin-bottom:2rem}
