@@ -1,0 +1,52 @@
+name: Deploy site to Pages
+
+# 目的（2026-09-18）：把发布链从 legacy（分支 + Jekyll 构建）切到 **GitHub Actions 产物发布**。
+#
+# 为什么要切：实测 legacy 链下 `/.well-known/acme-challenge/<token>` 恒定 404
+#   （而 `.well-known/<f>` 与 `acme-challenge/<f>` 单独都 200），
+#   这正好是 ACME HTTP-01 校验必须取到的路径 → 与"自定义域证书长期卡在 state=new"高度相关。
+#   Actions 产物发布是另一条管线（直接上传静态产物，不经 Jekyll），可能不受该路径规则影响。
+#
+# 安全性设计：
+#   - **不改变站点内容**：直接发布仓库里 `gh-pages` 分支的既有文件（已验证 27 个文件哈希一致）；
+#   - 有 `workflow_dispatch` 可手动触发；
+#   - `build_type` 切到 workflow 后，legacy 构建会停 —— 所以本文件先在位，再切换。
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout the published branch (gh-pages = the verified site content)
+        uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+          path: site
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
