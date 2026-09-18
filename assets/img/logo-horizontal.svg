@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1520 480" width="1520" height="480">
+  <!-- 澄彩 · 横版：回旋镖掠水（S 水波）+ 两字名 + 金线（与字宽对齐）+ DAPPER PACK -->
+  <g transform="translate(172,240)">
+    <path d="M -72 34 L 8 -66 L 76 22 C 36 38 -28 10 -72 34 Z" fill="#8E1B2A"/>
+    <path d="M 8 -66 L 76 22 L 22 10 Z" fill="#C9A227"/>
+  </g>
+  <text x="310" y="205" font-family="'Source Han Sans SC','Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="124" font-weight="700" letter-spacing="24" fill="#8E1B2A">澄彩</text>
+  <rect x="312" y="240" width="296" height="4" fill="#C9A227"/>
+  <text x="312" y="300" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="600" letter-spacing="8" fill="#C9A227">DAPPER PACK</text>
+</svg>
