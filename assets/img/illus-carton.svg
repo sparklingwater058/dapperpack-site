@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 422" width="520" height="422" role="img" aria-labelledby="ttl dsc">
+  <title id="ttl">Tuck-end folding carton</title>
+  <desc id="dsc">Isometric drawing of a printed tuck-end folding carton with a gold band and a die-cut window on the front panel.</desc>
+  <g transform="translate(216.7,396.0)">
+  <polygon points="0.0,0.0 216.5,-125.0 216.5,-295.0 0.0,-170.0" fill="#FFFFFF" stroke="#8E1B2A" stroke-width="2.2" stroke-linejoin="round"/>
+  <polygon points="0.0,0.0 -129.9,-75.0 -129.9,-245.0 0.0,-170.0" fill="#F1EBE3" stroke="#8E1B2A" stroke-width="2.2" stroke-linejoin="round"/>
+  <polygon points="0.0,-170.0 216.5,-295.0 86.6,-370.0 -129.9,-245.0" fill="#F7F4EF" stroke="#8E1B2A" stroke-width="2.2" stroke-linejoin="round"/>
+  <polygon points="0.0,-51.0 216.5,-176.0 216.5,-193.0 0.0,-68.0" fill="#C9A227" stroke="none" stroke-width="0" stroke-linejoin="round" opacity="0.92"/>
+  <line x1="-29.4" y1="-187.0" x2="187.1" y2="-312.0" stroke="#8E1B2A" stroke-width="1.4" stroke-linecap="round" stroke-dasharray="7 5" opacity="0.8"/>
+  <polygon points="0.0,-170.0 216.5,-295.0 187.1,-312.0 -29.4,-187.0" fill="#FBF8F4" stroke="#8E1B2A" stroke-width="1.4" stroke-linejoin="round"/>
+  <polygon points="69.3,-125.0 147.2,-170.0 147.2,-221.0 69.3,-176.0" fill="#FFFFFF" stroke="#C9A227" stroke-width="1.6" stroke-linejoin="round"/>
+  <line x1="0.0" y1="0.0" x2="216.5" y2="-125.0" stroke="#8E1B2A" stroke-width="2.2" stroke-linecap="round"/>
+  </g>
+</svg>
