@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 430" width="580" height="430" role="img" aria-labelledby="ttl dsc">
+  <title id="ttl">Tray and sleeve carton</title>
+  <desc id="dsc">Isometric drawing of a two-piece carton: an open tray with a printed sleeve slid over its right-hand end, leaving the open end of the tray visible.</desc>
+  <g transform="translate(241.9,364.8)">
+  <polygon points="0.0,0.0 216.5,-125.0 216.5,-203.0 0.0,-78.0" fill="#FFFFFF" stroke="#8E1B2A" stroke-width="2.2" stroke-linejoin="round"/>
+  <polygon points="0.0,0.0 -138.6,-80.0 -138.6,-158.0 0.0,-78.0" fill="#F1EBE3" stroke="#8E1B2A" stroke-width="2.2" stroke-linejoin="round"/>
+  <polygon points="0.0,-78.0 216.5,-203.0 77.9,-283.0 -138.6,-158.0" fill="#F1EBE3" stroke="#8E1B2A" stroke-width="2.2" stroke-linejoin="round"/>
+  <polygon points="0.0,-74.0 195.7,-187.0 77.9,-255.0 -117.8,-142.0" fill="#F7F4EF" stroke="#8E1B2A" stroke-width="1.6" stroke-linejoin="round"/>
+  <line x1="0.0" y1="-90.0" x2="0.0" y2="-74.0" stroke="#8E1B2A" stroke-width="1.4" stroke-linecap="round"/>
+  <line x1="195.7" y1="-203.0" x2="195.7" y2="-187.0" stroke="#8E1B2A" stroke-width="1.4" stroke-linecap="round"/>
+  <line x1="77.9" y1="-271.0" x2="77.9" y2="-255.0" stroke="#8E1B2A" stroke-width="1.4" stroke-linecap="round"/>
+  <line x1="-117.8" y1="-158.0" x2="-117.8" y2="-142.0" stroke="#8E1B2A" stroke-width="1.4" stroke-linecap="round"/>
+  <g transform="translate(104.8,-48.5)">
+  <polygon points="0.0,0.0 129.9,-75.0 129.9,-165.0 0.0,-90.0" fill="#FFFFFF" stroke="#8E1B2A" stroke-width="2.2" stroke-linejoin="round"/>
+  <polygon points="0.0,0.0 -149.0,-86.0 -149.0,-176.0 0.0,-90.0" fill="#F1EBE3" stroke="#8E1B2A" stroke-width="2.2" stroke-linejoin="round"/>
+  <polygon points="0.0,-90.0 129.9,-165.0 -19.1,-251.0 -149.0,-176.0" fill="#F7F4EF" stroke="#8E1B2A" stroke-width="2.2" stroke-linejoin="round"/>
+  <polygon points="0.0,-50.4 129.9,-125.4 129.9,-139.8 0.0,-64.8" fill="#C9A227" stroke="none" stroke-width="0" stroke-linejoin="round" opacity="0.92"/>
+  </g>
+  <line x1="104.8" y1="-138.5" x2="-44.2" y2="-224.5" stroke="#C9A227" stroke-width="2.2" stroke-linecap="round"/>
+  <line x1="104.8" y1="-48.5" x2="104.8" y2="-138.5" stroke="#C9A227" stroke-width="2.2" stroke-linecap="round"/>
+  <line x1="104.8" y1="-48.5" x2="-44.2" y2="-134.5" stroke="#C9A227" stroke-width="2.2" stroke-linecap="round"/>
+  <line x1="-44.2" y1="-134.5" x2="-44.2" y2="-224.5" stroke="#C9A227" stroke-width="2.2" stroke-linecap="round"/>
+  </g>
+</svg>
