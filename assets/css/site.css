@@ -346,7 +346,192 @@ address{font-style:normal; line-height:1.72}
 .chip--soft{background:
   radial-gradient(130% 100% at 28% 18%, #F5F1EA 0%, #E6DCD1 62%, #DCD1C5 100%)}
 
-/* ── 打印（供 fact-sheet.html 导出为可转发的一页纸） ─────────────────── */
+/* ==========================================================================
+   设计升级层 v2（2026-09-18）
+   设计语言：「克制的精密」—— 视觉重量由**纸白留白 + 发丝线 + 字号级差 + 编号**承担，
+   不用色块/渐变/阴影/图片堆装饰。
+
+   为什么改成这样：本站的定性是「规格书 + 回信生成器」（docs/SITE_ELEMENTS_20260918.md §一），
+   访客是来**核查**的，不是来逛的。所以美学要表达"我们对尺寸与承诺是精确的"，
+   而不是"我们很豪华"——后者要客户 logos 与认证背书，那正是我们**没有**的东西。
+   规则不变：本文件之外不得出现裸色值；组件只引用 var(--*)。
+   ========================================================================== */
+
+:root{
+  /* 发丝线体系：本设计的主力"图形"（区块分隔、表格、规线感） */
+  --rule:        #E3DAD0;
+  --rule-strong: #C9BCAC;
+  --rule-ink:    rgba(42,30,32,.12);
+  /* 编号与量度的着色刻意比品牌金更沉一点，避免小字发飘 */
+  --num:         #A8851A;
+  --ink-soft:    #3B2C2F;
+}
+
+/* ── 1. 导航「规格」下拉：原生 <details>，无 JS 也能展开 ───────────────── */
+.nav__group{position:relative}
+.specmenu{position:relative}
+.specmenu__summary{
+  cursor:pointer; list-style:none; display:inline-flex; align-items:center; gap:.35rem;
+  user-select:none;
+}
+.specmenu__summary::-webkit-details-marker{display:none}
+.specmenu__summary::marker{content:""}
+.specmenu__caret{
+  width:.34rem; height:.34rem; border-right:1.5px solid currentColor;
+  border-bottom:1.5px solid currentColor; transform:rotate(45deg) translateY(-.1rem);
+  transition:transform .16s var(--ease);
+}
+.specmenu[open] > .specmenu__summary .specmenu__caret{transform:rotate(225deg) translateY(-.05rem)}
+.specmenu__list{
+  list-style:none; margin:0; padding:.4rem 0; min-width:14.5rem;
+  background:var(--white); border:1px solid var(--rule); border-radius:var(--radius);
+  box-shadow:var(--shadow);
+}
+.specmenu__link{
+  display:block; padding:.5rem .95rem; font-size:.9rem; color:var(--body);
+  text-decoration:none; border-left:2px solid transparent;
+}
+.specmenu__link:hover{color:var(--ink); background:var(--paper); border-left-color:var(--gold)}
+.specmenu__link[aria-current="page"]{color:var(--ink); border-left-color:var(--gold)}
+@media (min-width:56.01rem){
+  .specmenu__list{position:absolute; top:calc(100% + .55rem); left:-.9rem; z-index:60}
+  .specmenu:not([open]) > .specmenu__list{display:none}
+}
+@media (max-width:56rem){
+  /* 折叠态：融进移动导航列表，展开即内联铺开（不遮挡、不需要 JS） */
+  .specmenu__summary{padding:.7rem clamp(1.15rem,4vw,2rem); width:100%}
+  .specmenu__list{position:static; box-shadow:none; border:0; border-radius:0;
+                  padding:0 0 .3rem; background:transparent}
+  .specmenu__link{padding:.55rem clamp(1.15rem,4vw,2rem) .55rem calc(clamp(1.15rem,4vw,2rem) + 1rem);
+                  border-left:0; border-bottom:0}
+  .specmenu__link:hover{background:var(--paper)}
+  .specmenu__link[aria-current="page"]{background:var(--paper)}
+}
+
+/* ── 2. 编号系统（借 v0.6 的编辑感编号；可搬的设计语汇，不含迷信成分） ── */
+.numbered{counter-reset:sec}
+.numbered > .section__head{counter-increment:sec}
+.numbered > .section__head::before{
+  content:counter(sec,decimal-leading-zero);
+  display:block; font-family:var(--font-display); font-size:.95rem; font-weight:600;
+  letter-spacing:.08em; color:var(--num); margin-bottom:.55rem;
+}
+.numbered > .section__head{border-top:1px solid var(--rule); padding-top:1.1rem}
+
+/* 区块头的发丝线（不编号时也可单独用） */
+.rule-top{border-top:1px solid var(--rule); padding-top:1.1rem}
+
+/* ── 3. 断言行：首屏那句"我们到底做什么"（本设计的定位句） ─────────────── */
+.assertion{
+  font-family:var(--font-display); font-size:clamp(1.05rem,2.1vw,1.32rem);
+  line-height:1.5; color:var(--ink); border-top:2px solid var(--red);
+  border-bottom:1px solid var(--rule); padding:1.05rem 0; margin:1.6rem 0 0;
+  max-width:46rem;
+}
+.assertion strong{color:var(--red)}
+
+/* ── 4. 三样东西（首页紧凑版 / 联系页完整版） ──────────────────────────── */
+.three{list-style:none; margin:0; padding:0; display:grid; gap:1px;
+       background:var(--rule); border:1px solid var(--rule); border-radius:var(--radius);
+       overflow:hidden; grid-template-columns:repeat(auto-fit,minmax(13rem,1fr))}
+.three > li{background:var(--white); padding:1.15rem 1.25rem}
+.three__num{font-family:var(--font-mono); font-size:.78rem; letter-spacing:.1em;
+            color:var(--num); display:block; margin-bottom:.4rem}
+.three__title{font-weight:600; color:var(--ink); display:block; margin-bottom:.3rem}
+.three__note{font-size:.9rem; color:var(--muted); margin:0}
+
+/* ── 5. 回信条：把"想写信"变成"信已经写好了"（要素定案 A4） ───────────── */
+.replybar{
+  border:1px solid var(--rule); border-left:3px solid var(--gold);
+  background:var(--paper); border-radius:0 var(--radius) var(--radius) 0;
+  padding:1.05rem 1.25rem; display:flex; flex-wrap:wrap; gap:.5rem 1.4rem;
+  align-items:baseline; justify-content:space-between;
+}
+.replybar p{margin:0; font-size:.98rem}
+.replybar .btn{flex:0 0 auto}
+
+/* ── 6. 证据行：任何数字/主张旁边挂"依据在哪"（本设计的信任机制） ───────── */
+.evidence{
+  font-size:.85rem; color:var(--muted); border-top:1px solid var(--rule);
+  padding-top:.5rem; margin-top:.6rem; display:flex; gap:.5rem; align-items:baseline;
+}
+.evidence::before{
+  content:"Evidence"; flex:0 0 auto; font-family:var(--font-mono); font-size:.7rem;
+  letter-spacing:.09em; text-transform:uppercase; color:var(--num);
+  border:1px solid var(--rule-strong); border-radius:2px; padding:.06rem .35rem;
+  transform:translateY(-.08rem);
+}
+
+/* ── 7. 核对清单（verify.html 的主要承载） ─────────────────────────────── */
+.checklist{list-style:none; margin:0; padding:0; border-top:1px solid var(--rule)}
+.checklist > li{
+  display:grid; grid-template-columns:1.6rem 1fr; gap:.9rem;
+  padding:1.05rem 0; border-bottom:1px solid var(--rule);
+}
+.checklist__box{
+  width:1.35rem; height:1.35rem; border:1px solid var(--rule-strong);
+  border-radius:2px; margin-top:.18rem;
+}
+.checklist__title{font-weight:600; color:var(--ink); display:block; margin-bottom:.2rem}
+.checklist__body{font-size:.95rem}
+.checklist__body p{margin:0 0 .45rem}
+.checklist__body p:last-child{margin-bottom:0}
+.checklist__pending{color:var(--muted); font-size:.88rem}
+
+/* ── 8. 行家词汇表（采购三秒判断你上没上过机） ────────────────────────── */
+.terms{margin:0; border-top:1px solid var(--rule)}
+.terms > div{
+  display:grid; grid-template-columns:minmax(9rem,15rem) 1fr; gap:.35rem 1.5rem;
+  padding:.8rem 0; border-bottom:1px solid var(--rule);
+}
+.terms dt{font-weight:600; color:var(--ink); margin:0}
+.terms dd{margin:0; font-size:.95rem}
+@media (max-width:34rem){ .terms > div{grid-template-columns:1fr; gap:.1rem} }
+
+/* ── 9. 含 / 不含 表（把不确定性干掉，而不是把价格藏起来） ─────────────── */
+.incl{display:grid; gap:1rem; grid-template-columns:repeat(auto-fit,minmax(17rem,1fr))}
+.incl__col{border:1px solid var(--rule); border-radius:var(--radius); overflow:hidden;
+           background:var(--white)}
+.incl__head{
+  font-family:var(--font-ui); font-size:.78rem; font-weight:600; letter-spacing:.13em;
+  text-transform:uppercase; padding:.6rem 1rem; border-bottom:1px solid var(--rule);
+}
+.incl__head--yes{color:var(--ink); background:var(--paper)}
+.incl__head--no{color:var(--red); background:var(--red-tint)}
+.incl ul{list-style:none; margin:0; padding:.35rem 0}
+.incl li{padding:.5rem 1rem; font-size:.93rem; border-bottom:1px solid var(--line-soft)}
+.incl li:last-child{border-bottom:0}
+
+/* ── 10. 结构条目（reference.html：每张图配刀模/行话标注） ────────────── */
+.struct{border:1px solid var(--rule); border-radius:var(--radius); background:var(--white);
+        display:grid; grid-template-columns:repeat(auto-fit,minmax(16rem,1fr)); overflow:hidden}
+.struct__figure{margin:0; padding:1.2rem; background:var(--paper);
+                display:grid; place-items:center; border-right:1px solid var(--rule)}
+.struct__figure img{max-height:15rem; width:auto}
+.struct__figure figcaption{font-size:.8rem; color:var(--muted); margin-top:.7rem; text-align:center}
+.struct__body{padding:1.2rem 1.35rem}
+.struct__body h3{margin-bottom:.35rem}
+.struct__tags{list-style:none; margin:.7rem 0 0; padding:0; display:flex; flex-wrap:wrap; gap:.4rem}
+.struct__tags li{font-size:.78rem; font-family:var(--font-mono); color:var(--body);
+                 background:var(--paper); border:1px solid var(--rule); border-radius:2px;
+                 padding:.16rem .5rem}
+
+/* ── 11. 量度数字：等宽数字避免跳动，衬线体给"规格书"的观感 ───────────── */
+.metric{font-family:var(--font-display); font-variant-numeric:tabular-nums lining-nums;
+        color:var(--ink); font-weight:600}
+.metric--lg{font-size:clamp(1.6rem,3.4vw,2.15rem); display:block; line-height:1.1}
+.small-caps{font-size:.76rem; font-weight:600; letter-spacing:.14em; text-transform:uppercase;
+            color:var(--muted)}
+
+/* ── 12. 小号按钮（导航里的 "Get a quote"，在细导航行里不抢视觉） ───────── */
+.btn--sm{
+  font-size:.88rem; padding:.5rem 1rem; white-space:nowrap;
+}
+@media (max-width:56rem){
+  .js .nav .btn--sm{margin:.6rem clamp(1.15rem,4vw,2rem) 0; align-self:flex-start}
+}
+
+/* ── 13. 打印（供 fact-sheet.html 导出为可转发的一页纸） ─────────────────── */
 @media print{
   :root{--paper:#FFFFFF}
   /* 目标：**真的排进 A4 一页**（页面自称 on one page，2 页就是名不副实），
@@ -378,6 +563,24 @@ address{font-style:normal; line-height:1.72}
   .spec div{padding:.2rem 0; grid-template-columns:9.5rem 1fr}
   .note{padding:.4rem .6rem; font-size:9.6pt}
   a{color:var(--ink); text-decoration:none}
+  /* 改版新增组件（2026-09-18）：打印时同样要收住，否则任何一页都可能溢出 A4 */
+  .section__head{border-top:0; padding-top:0}
+  .numbered > .section__head::before{font-size:8.5pt; margin-bottom:.1rem}
+  .assertion{font-size:10pt; padding:.35rem 0; margin:.5rem 0 0; max-width:none}
+  .three{border:0; background:transparent; grid-template-columns:1fr 1fr 1fr; gap:.5rem}
+  .three > li{padding:0; background:transparent}
+  .three__num{display:none}
+  .replybar{padding:.45rem .6rem; font-size:9.6pt}
+  .evidence{font-size:8.6pt; padding-top:.25rem; margin-top:.3rem}
+  .checklist > li{padding:.4rem 0; gap:.5rem; grid-template-columns:1rem 1fr}
+  .checklist__box{width:.7rem; height:.7rem; margin-top:.22rem}
+  .terms > div{padding:.25rem 0; grid-template-columns:8.5rem 1fr}
+  .incl{gap:.5rem}
+  .incl li{padding:.25rem .6rem}
+  .struct{grid-template-columns:11rem 1fr}
+  .struct__figure{padding:.5rem}
+  .struct__tags{margin-top:.35rem}
+  .small-caps{font-size:8pt}
   /* 不给 mailto 补 "(mailto:…)"：本页链接文字本身就是邮箱地址，补了是重复 */
   .print-only{display:block !important}
 }

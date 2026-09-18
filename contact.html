@@ -64,14 +64,24 @@
       <span class="visually-hidden">Menu</span>
     </button>
 
-    <nav class="nav" id="site-nav" data-open="false" aria-label="Main">
+    <nav class="nav" id="site-nav" aria-label="Site">
       <ul class="nav__list">
         <li><a class="nav__link" href="products.html">Products</a></li>
         <li><a class="nav__link" href="capabilities.html">How we work</a></li>
-        <li><a class="nav__link" href="dieline-guide.html">Dieline guide</a></li>
+        <li class="nav__group">
+          <details class="specmenu">
+            <summary class="nav__link specmenu__summary">Specs<span class="specmenu__caret" aria-hidden="true"></span></summary>
+            <ul class="specmenu__list">
+              <li><a class="specmenu__link" href="reference.html">Structures &amp; dielines</a></li>
+              <li><a class="specmenu__link" href="verify.html">How to verify us</a></li>
+              <li><a class="specmenu__link" href="dieline-guide.html">What to send</a></li>
+              <li><a class="specmenu__link" href="fact-sheet.html">One-page sheet</a></li>
+            </ul>
+          </details>
+        </li>
         <li><a class="nav__link" href="contact.html" aria-current="page">Contact</a></li>
       </ul>
-      <a class="btn" href="contact.html">Request a quote</a>
+      <a class="btn btn--gold btn--sm" href="contact.html">Get a quote</a>
     </nav>
   </div>
 </header>
@@ -251,6 +261,8 @@ Market:       (where it will be sold)</pre>
         <ul>
           <li><a href="products.html">Products</a></li>
           <li><a href="capabilities.html">How we work</a></li>
+          <li><a href="reference.html">Structures &amp; dielines</a></li>
+          <li><a href="verify.html">How to verify us</a></li>
           <li><a href="dieline-guide.html">Dieline guide</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
