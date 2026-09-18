@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 230" width="480" height="460">
+  <!-- 澄彩 · 方形徽标版：深红底 + 金色图形 -->
+  <rect x="0" y="0" width="240" height="230" rx="28" fill="#8E1B2A"/>
+  <g transform="translate(120,115) scale(0.92)">
+    <path d="M -72 34 L 8 -66 L 76 22 C 36 38 -28 10 -72 34 Z" fill="#C9A227"/>
+    <path d="M 8 -66 L 76 22 L 22 10 Z" fill="#E3C05C"/>
+  </g>
+</svg>
