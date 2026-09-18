@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-96 -90 192 148" width="480" height="370">
+  <!-- 澄彩 · 单色烫金版：金色图形 + 镂空分界线（mask 负空间，背景透出） -->
+  <defs>
+    <mask id="ccMono">
+      <rect x="-96" y="-90" width="192" height="148" fill="white"/>
+      <path d="M 8 -66 L 76 22 L 22 10 Z" fill="none" stroke="black" stroke-width="10"/>
+    </mask>
+  </defs>
+  <g mask="url(#ccMono)">
+    <path d="M -72 34 L 8 -66 L 76 22 C 36 38 -28 10 -72 34 Z" fill="#C9A227"/>
+  </g>
+</svg>
