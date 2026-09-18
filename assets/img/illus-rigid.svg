@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 430" width="520" height="430" role="img" aria-labelledby="ttl dsc">
+  <title id="ttl">Rigid box with lid and base</title>
+  <desc id="dsc">Isometric drawing of a rigid set-up box: a wrapped base with a separate lid lifted slightly and offset, showing a gold band.</desc>
+  <g transform="translate(207.6,393.8)">
+  <polygon points="0.0,0.0 199.2,-115.0 199.2,-207.0 0.0,-92.0" fill="#FBF8F4" stroke="#8E1B2A" stroke-width="2.2" stroke-linejoin="round"/>
+  <polygon points="0.0,0.0 -142.9,-82.5 -142.9,-174.5 0.0,-92.0" fill="#F1EBE3" stroke="#8E1B2A" stroke-width="2.2" stroke-linejoin="round"/>
+  <polygon points="0.0,-92.0 199.2,-207.0 56.3,-289.5 -142.9,-174.5" fill="#FFFFFF" stroke="#8E1B2A" stroke-width="2.2" stroke-linejoin="round"/>
+  <g transform="translate(48.5,-94.0)">
+  <polygon points="0.0,0.0 199.2,-115.0 199.2,-181.0 0.0,-66.0" fill="#FFFFFF" stroke="#8E1B2A" stroke-width="2.2" stroke-linejoin="round"/>
+  <polygon points="0.0,0.0 -142.9,-82.5 -142.9,-148.5 0.0,-66.0" fill="#F1EBE3" stroke="#8E1B2A" stroke-width="2.2" stroke-linejoin="round"/>
+  <polygon points="0.0,-66.0 199.2,-181.0 56.3,-263.5 -142.9,-148.5" fill="#F7F4EF" stroke="#8E1B2A" stroke-width="2.2" stroke-linejoin="round"/>
+  <polygon points="0.0,-36.3 199.2,-151.3 199.2,-161.2 0.0,-46.2" fill="#C9A227" stroke="none" stroke-width="0" stroke-linejoin="round" opacity="0.92"/>
+  </g>
+  </g>
+</svg>
