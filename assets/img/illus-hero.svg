@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 560" width="620" height="560" role="img" aria-labelledby="ttl dsc">
+  <title id="ttl">Dapper Pack - folding cartons and rigid gift boxes</title>
+  <desc id="dsc">Isometric drawing of a tall folding carton beside a rigid gift box whose lid is lifted slightly; the lid carries the Dapper Pack boomerang mark.</desc>
+  <g transform="translate(334.2,453.5)">
+  <g transform="translate(-204.4,-0.0)">
+  <polygon points="0.0,0.0 138.6,-80.0 138.6,-292.0 0.0,-212.0" fill="#FBF8F4" stroke="#8E1B2A" stroke-width="2.2" stroke-linejoin="round"/>
+  <polygon points="0.0,0.0 -90.1,-52.0 -90.1,-264.0 0.0,-212.0" fill="#F1EBE3" stroke="#8E1B2A" stroke-width="2.2" stroke-linejoin="round"/>
+  <polygon points="0.0,-212.0 138.6,-292.0 48.5,-344.0 -90.1,-264.0" fill="#F7F4EF" stroke="#8E1B2A" stroke-width="2.2" stroke-linejoin="round"/>
+  <polygon points="0.0,-123.0 138.6,-203.0 138.6,-221.0 0.0,-141.0" fill="#C9A227" stroke="none" stroke-width="0" stroke-linejoin="round" opacity="0.92"/>
+  </g>
+  <polygon points="0.0,0.0 204.4,-118.0 204.4,-206.0 0.0,-88.0" fill="#FBF8F4" stroke="#8E1B2A" stroke-width="2.2" stroke-linejoin="round"/>
+  <polygon points="0.0,0.0 -136.8,-79.0 -136.8,-167.0 0.0,-88.0" fill="#F1EBE3" stroke="#8E1B2A" stroke-width="2.2" stroke-linejoin="round"/>
+  <polygon points="0.0,-88.0 204.4,-206.0 67.5,-285.0 -136.8,-167.0" fill="#FFFFFF" stroke="#8E1B2A" stroke-width="2.2" stroke-linejoin="round"/>
+  <g transform="translate(41.6,-90.0)">
+  <polygon points="0.0,0.0 204.4,-118.0 204.4,-178.0 0.0,-60.0" fill="#FFFFFF" stroke="#8E1B2A" stroke-width="2.2" stroke-linejoin="round"/>
+  <polygon points="0.0,0.0 -136.8,-79.0 -136.8,-139.0 0.0,-60.0" fill="#F1EBE3" stroke="#8E1B2A" stroke-width="2.2" stroke-linejoin="round"/>
+  <polygon points="0.0,-60.0 204.4,-178.0 67.5,-257.0 -136.8,-139.0" fill="#F7F4EF" stroke="#8E1B2A" stroke-width="2.2" stroke-linejoin="round"/>
+  <polygon points="0.0,-31.2 204.4,-149.2 204.4,-157.6 0.0,-39.6" fill="#C9A227" stroke="none" stroke-width="0" stroke-linejoin="round" opacity="0.92"/>
+  </g>
+  <g transform="translate(75.34,-249.00) matrix(0.866,-0.5,-0.866,-0.5,0,0) scale(0.520)"><path d="M -72 34 L 8 -66 L 76 22 C 36 38 -28 10 -72 34 Z" fill="#8E1B2A"/><path d="M 8 -66 L 76 22 L 22 10 Z" fill="#C9A227"/></g>
+  </g>
+</svg>
