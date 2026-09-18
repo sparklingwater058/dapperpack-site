@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 700" width="1120" height="1400">
+  <!-- 澄彩 · 竖版：图形在上，字标在下（四层去重：名/业务线/英文名） -->
+  <g transform="translate(280,220) scale(1.9)">
+    <path d="M -72 34 L 8 -66 L 76 22 C 36 38 -28 10 -72 34 Z" fill="#8E1B2A"/>
+    <path d="M 8 -66 L 76 22 L 22 10 Z" fill="#C9A227"/>
+  </g>
+
+  <text x="280" y="480" text-anchor="middle" font-family="'Source Han Sans SC','Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="96" font-weight="700" letter-spacing="20" fill="#8E1B2A">澄彩</text>
+  <text x="280" y="538" text-anchor="middle" font-family="'Source Han Sans SC','Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="27" font-weight="500" letter-spacing="10" fill="#8E1B2A">礼品盒 · 彩盒包装</text>
+
+  <g font-family="Arial, Helvetica, sans-serif" text-anchor="middle">
+    <text x="280" y="592" font-size="21" font-weight="600" letter-spacing="6" fill="#C9A227">DAPPER PACK</text>
+  </g>
+</svg>
