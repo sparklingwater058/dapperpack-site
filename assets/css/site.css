@@ -572,7 +572,9 @@ address{font-style:normal; line-height:1.72}
      所以这里把字号调回到舒适区（10.6pt），再用区块与列表留白控制总量。 */
   body{font-size:10pt; line-height:1.36}
   .masthead,.nav,.footer,.btn,.btn-row,.skip,.copybox__btn{display:none !important}
-  .section{padding:.22rem 0; border-top:1px solid var(--line)}
+  /* 2026-09-19：一页纸余量一度只剩 5px（接近翻页边界），把区块上下留白从 .22rem
+     收到 .12rem —— 6 个区块合计省约 14px，且不影响观感（打印时行距本就压紧）。 */
+  .section{padding:.12rem 0; border-top:1px solid var(--line)}
   .section--paper{background:var(--white)}
   h1{font-size:15.5pt; margin-bottom:.18rem}
   h2{font-size:10.8pt; margin-bottom:.15rem}
