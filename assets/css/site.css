@@ -189,6 +189,12 @@ a:hover{color:var(--red-deep)}
   .js .nav__list{flex-direction:column; align-items:stretch; gap:0}
   .js .nav__list a{padding:.7rem clamp(1.15rem,4vw,2rem); border-bottom:none}
   .js .nav .btn{margin:.6rem clamp(1.15rem,4vw,2rem) 0}
+  /* ⚠️ 无 JS 时导航**不折叠**，所以这里必须能换行 ——
+     2026-09-19 实测：≤416px 时单行 flex 放不下 4 个导航项 + CTA，
+     把页面撑宽 95~165px、导航被推出屏幕；开 JS 时因移动导航整块 display:none 而看不见。
+     无 JS 可用是本站对外承诺，按"无 JS 是坏的"修。 */
+  .nav{flex-wrap:wrap; row-gap:.2rem}
+  .nav__list{flex-wrap:wrap; row-gap:.15rem}
 }
 
 @media (max-width:26rem){
@@ -197,6 +203,15 @@ a:hover{color:var(--red-deep)}
   .lockup__mark{width:1.95rem; height:1.5rem}
   .lockup__cn{font-size:1.14rem; letter-spacing:.1em}
   .lockup__en{font-size:.55rem; letter-spacing:.15em; white-space:nowrap}
+  /* ⚠️ 无 JS 时导航不折叠，≤416px 会绕着品牌"打转"（浏览器自动换行顺序很难看）。
+     2026-09-19 改成**明确的两行页头**：品牌一行、导航一行 —— 不靠 flex-wrap 的偶然结果。
+     实测几何：品牌 124px + 导航项 200px + CTA 117px > 360px，故 CTA 让位
+     （首屏本来就有 "Request a quote"，顶部重复没必要）。 */
+  .masthead__inner{flex-wrap:wrap; align-items:center; row-gap:.15rem}
+  .lockup{flex:0 0 auto}
+  .nav{flex:1 1 100%; flex-wrap:wrap; row-gap:0}
+  .nav__list{flex-wrap:wrap; column-gap:1rem; row-gap:0}
+  .nav .btn--sm{display:none}
 }
 
 /* ── 按钮 ────────────────────────────────────────────────────────────── */
@@ -421,8 +436,13 @@ address{font-style:normal; line-height:1.72}
 .specmenu__link[aria-current="page"]{color:var(--ink); border-left-color:var(--gold)}
 @media (min-width:56.01rem){
   .specmenu__list{position:absolute; top:calc(100% + .55rem); left:-.9rem; z-index:60}
-  .specmenu:not([open]) > .specmenu__list{display:none}
 }
+/* ⚠️ 「关闭时隐藏子项」必须在**所有**宽度成立 ——
+   2026-09-19 实测：这条原写在 `min-width:56.01rem` 里，于是窄屏（≤896px）下
+   关闭状态的 `<ul>` 仍是 block，把页面撑宽 95~165px、导航被推出屏幕；
+   而且**只在禁用 JS 时暴露**（开 JS 时移动导航整体 display:none 把它遮住了）。
+   无 JS 可用是本站的对外承诺 → 按"无 JS 是坏的"来修。 */
+.specmenu:not([open]) > .specmenu__list{display:none}
 @media (max-width:56rem){
   /* 折叠态：融进移动导航列表，展开即内联铺开（不遮挡、不需要 JS） */
   .specmenu__summary{padding:.7rem clamp(1.15rem,4vw,2rem); width:100%}
