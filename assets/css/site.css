@@ -566,7 +566,20 @@ address{font-style:normal; line-height:1.72}
   .eng img{width:36rem; max-width:none}
 }
 
-/* ── 14. 打印（供 fact-sheet.html 导出为可转发的一页纸） ─────────────────── */
+/* ── 14. 一页纸的三栏图（fact-sheet 专用） ─────────────────────────────────
+   用真实结构图替代纯文字卡片：同样高度下多一层证据。打印时图要收住，
+   否则会把「一页纸」顶到第二页（该页内容底边已到 A4 可用高度的 97%）。 */
+.three-up{
+  list-style:none; margin:0; padding:0; display:grid; gap:1.4rem;
+  grid-template-columns:repeat(auto-fit,minmax(13rem,1fr));
+}
+.three-up > li{display:flex; flex-direction:column}
+.three-up img{
+  display:block; width:100%; max-width:14rem; height:auto; margin:0 auto .6rem;
+}
+.three-up h3{margin-bottom:.3rem}
+
+/* ── 15. 打印（供 fact-sheet.html 导出为可转发的一页纸） ─────────────────── */
 @media print{
   :root{--paper:#FFFFFF}
   /* 目标：**真的排进 A4 一页**（页面自称 on one page，2 页就是名不副实），
@@ -616,6 +629,14 @@ address{font-style:normal; line-height:1.72}
   .struct__figure{padding:.5rem}
   .struct__tags{margin-top:.35rem}
   .small-caps{font-size:8pt}
+  /* 三栏结构图（fact-sheet）：必须放在通用 `.grid` 规则**之后**才能生效 —— 
+     CSS 同级同权重下后者胜，早写会被 `.grid{gap:.5rem; grid-template-columns:1fr 1fr}`
+     覆盖成两列（首版就踩了：图片撑高 40px，把一页纸顶到第二页）。
+     这里强制三列 + 图高收到 1.7cm 内，配合下面的区块留白微调换回单页。 */
+  .three-up{grid-template-columns:1fr 1fr 1fr; gap:.5rem}
+  .three-up img{max-width:4.6rem; margin-bottom:.15rem}
+  .three-up h3{font-size:9.4pt; margin-bottom:.05rem}
+  .three-up p{font-size:8.6pt; line-height:1.28}
   /* 不给 mailto 补 "(mailto:…)"：本页链接文字本身就是邮箱地址，补了是重复 */
   .print-only{display:block !important}
 }
