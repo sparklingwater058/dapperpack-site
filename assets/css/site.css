@@ -531,7 +531,21 @@ address{font-style:normal; line-height:1.72}
   .js .nav .btn--sm{margin:.6rem clamp(1.15rem,4vw,2rem) 0; align-self:flex-start}
 }
 
-/* ── 13. 打印（供 fact-sheet.html 导出为可转发的一页纸） ─────────────────── */
+/* ── 13. 工程图（剖面 / 刀模图）：与插画分开处理 ────────────────────────────
+   插画是"看形状"，要小而居中；工程图是"核结构"，带尺寸线，必须**读得清**，
+   所以给它满栏宽度 + 窄屏可横向滚动兜底（不把标注缩成蚂蚁）。 */
+.eng{margin:0}
+.eng img{
+  display:block; width:100%; height:auto; background:var(--white);
+  border:1px solid var(--rule); border-radius:var(--radius);
+}
+.eng figcaption{font-size:.84rem; color:var(--muted); margin-top:.7rem; max-width:52rem}
+@media (max-width:44rem){
+  .eng{overflow-x:auto}
+  .eng img{width:36rem; max-width:none}
+}
+
+/* ── 14. 打印（供 fact-sheet.html 导出为可转发的一页纸） ─────────────────── */
 @media print{
   :root{--paper:#FFFFFF}
   /* 目标：**真的排进 A4 一页**（页面自称 on one page，2 页就是名不副实），
