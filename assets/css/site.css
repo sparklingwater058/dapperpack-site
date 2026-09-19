@@ -523,7 +523,9 @@ address{font-style:normal; line-height:1.72}
 /* ── 9. 含 / 不含 表（把不确定性干掉，而不是把价格藏起来） ─────────────── */
 .incl{display:grid; gap:1rem; grid-template-columns:repeat(auto-fit,minmax(17rem,1fr))}
 .incl__col{border:1px solid var(--rule); border-radius:var(--radius); overflow:hidden;
-           background:var(--white)}
+           background:var(--white); break-inside:avoid}
+/* 与 `.card{break-inside:avoid}` 同口径：一页纸上的"含/另计"两栏不该被分页切开
+   （2026-09-19 补：原来只有 .card 有这条，改版后承载该内容的是 .incl__col）。 */
 .incl__head{
   font-family:var(--font-ui); font-size:.78rem; font-weight:600; letter-spacing:.13em;
   text-transform:uppercase; padding:.6rem 1rem; border-bottom:1px solid var(--rule);
