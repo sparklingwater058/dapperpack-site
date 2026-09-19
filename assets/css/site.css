@@ -8,7 +8,27 @@
 
    无外部请求：不加载第三方字体/CDN（UK/EU 访客的隐私与首屏速度）。
    显示字体走本机 serif 栈，正文走本机 sans 栈。
+
+   2026-09-19 更新：改为**自托管**开源字体（仍是零第三方请求 —— 同源）。
+   为什么换：系统栈是回落链 `Iowan Old Style → Palatino → Georgia`，
+   实测 Windows 落到 Georgia、macOS 落到 Iowan —— **同一站在不同机器不是同一副面孔**，
+   而标题的观感正是"这家做包装精不精"的第一眼依据。
+   字体：Source Serif 4 (600, 标题) + Inter 变量 (100–900, 正文/UI)，均 SIL OFL 1.1，
+   子集化到本站实际用字（127 字符），两个文件合计 53.9KB。
+   许可文本随字体放在 assets/fonts/OFL-*.txt。生成脚本：scripts/fetch_site_fonts.py
+   （取回）与 scripts/subset_site_fonts.py（子集化）。
    ========================================================================== */
+
+@font-face{
+  font-family:"Source Serif 4";
+  src:url("../fonts/source-serif-4-600-latin.woff2") format("woff2");
+  font-weight:600; font-style:normal; font-display:swap;
+}
+@font-face{
+  font-family:"Inter";
+  src:url("../fonts/inter-var-100-900-latin.woff2") format("woff2-variations");
+  font-weight:100 900; font-style:normal; font-display:swap;
+}
 
 :root{
   /* ── 品牌色（规范 §3） ── */
@@ -28,9 +48,10 @@
   --red-tint:   #FBF3F4;
 
   /* ── 字体 ── */
-  --font-display: 'Iowan Old Style','Palatino Linotype',Palatino,'Book Antiqua',
-                  Georgia,'Times New Roman',serif;
-  --font-ui:      system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',
+  /* 自托管优先，系统栈兜底：字体没加载出来时版面不塌（font-display:swap 同理） */
+  --font-display: 'Source Serif 4','Iowan Old Style','Palatino Linotype',Palatino,
+                  'Book Antiqua',Georgia,'Times New Roman',serif;
+  --font-ui:      'Inter',system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',
                   Arial,'Noto Sans',sans-serif;
   --font-cjk:     'Source Han Sans SC','Noto Sans SC','Microsoft YaHei',
                   'PingFang SC','Hiragino Sans GB',sans-serif;

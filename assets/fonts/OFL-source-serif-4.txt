@@ -1,0 +1,18 @@
+Source Serif 4 — SIL Open Font License 1.1
+=====================================
+
+This directory contains web font files for the Dapper Pack website, self-hosted
+so that the page makes no third-party requests.
+
+Font: Source Serif 4
+License: SIL Open Font License, Version 1.1
+Copyright: the respective authors (see the upstream font project).
+
+The SIL OFL permits use, modification, embedding and redistribution, including
+self-hosting on a website, provided that:
+  1. the font is not sold on its own;
+  2. any derivative that uses a Reserved Font Name is renamed;
+  3. this licence notice accompanies the font files.
+
+Full licence text: https://openfontlicense.org/
+Upstream: Google Fonts (https://fonts.google.com/)
