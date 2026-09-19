@@ -34,15 +34,16 @@
   /* ── 品牌色（规范 §3） ── */
   --red:        #8E1B2A;
   --red-deep:   #6E1420;
-  --gold:       #C9A227;
-  --gold-light: #E3C05C;
+  --gold:       #C9A227;   /* ⚠️ 对纸底仅 2.21:1 —— 只做装饰（发丝线/圆点/边框），禁止当文字色 */
+  --gold-text:  #876D1A;   /* 金色系的**可读**版本：对纸底 4.52:1 / 对白底 4.96:1 */
+  --gold-light: #E3C05C;   /* 深底上的强调（对 --ink 足够） */
   --paper:      #F7F4EF;
 
   /* ── 派生中性色（由品牌色推导，保持暖调） ── */
   --white:      #FFFFFF;
   --ink:        #2A1E20;
   --body:       #52464A;
-  --muted:      #857678;
+  --muted:      #6E6660;   /* 对纸底 4.70:1 / 对白底 5.16:1（原 #857678 只有 3.94/4.32，不达标） */
   --line:       #E8E0D6;
   --line-soft:  #F1EBE3;
   --red-tint:   #FBF3F4;
@@ -100,7 +101,7 @@ a:hover{color:var(--red-deep)}
 
 .eyebrow{
   font-family:var(--font-ui); font-size:.72rem; font-weight:600;
-  letter-spacing:.16em; text-transform:uppercase; color:var(--gold);
+  letter-spacing:.16em; text-transform:uppercase; color:var(--gold-text);
   margin:0 0 .9rem;
 }
 .eyebrow::after{
@@ -155,7 +156,7 @@ a:hover{color:var(--red-deep)}
 }
 .lockup__rule{height:2px; background:var(--gold); margin:.26rem 0 .3rem; width:100%}
 .lockup__en{
-  font-size:.63rem; font-weight:600; letter-spacing:.22em; color:var(--gold);
+  font-size:.63rem; font-weight:600; letter-spacing:.22em; color:var(--gold-text);
 }
 .lockup--reverse .lockup__cn{color:var(--gold-light)}
 .lockup--reverse .lockup__en{color:var(--gold-light)}
@@ -245,7 +246,7 @@ a:hover{color:var(--red-deep)}
 }
 .card h3{margin-top:0}
 .card__num{
-  font-family:var(--font-display); font-size:1.05rem; color:var(--gold);
+  font-family:var(--font-display); font-size:1.05rem; color:var(--gold-text);
   display:block; margin-bottom:.5rem;
 }
 
@@ -277,7 +278,7 @@ a:hover{color:var(--red-deep)}
 .steps > li{counter-increment:step; position:relative; padding-left:3.1rem}
 .steps > li::before{
   content:counter(step,decimal-leading-zero); position:absolute; left:0; top:.1rem;
-  font-family:var(--font-display); font-size:1.05rem; color:var(--gold);
+  font-family:var(--font-display); font-size:1.05rem; color:var(--gold-text);
   border:1px solid var(--line); border-radius:50%; width:2.1rem; height:2.1rem;
   display:grid; place-items:center; background:var(--white);
 }
@@ -458,9 +459,9 @@ address{font-style:normal; line-height:1.72}
        overflow:hidden; grid-template-columns:repeat(auto-fit,minmax(13rem,1fr))}
 .three > li{background:var(--white); padding:1.15rem 1.25rem}
 .three__num{font-family:var(--font-mono); font-size:.78rem; letter-spacing:.1em;
-            color:var(--num); display:block; margin-bottom:.4rem}
+            color:var(--gold-text); display:block; margin-bottom:.4rem}
 .three__title{font-weight:600; color:var(--ink); display:block; margin-bottom:.3rem}
-.three__note{font-size:.9rem; color:var(--muted); margin:0}
+.three__note{font-size:.95rem; color:var(--muted); margin:0}
 
 /* ── 5. 回信条：把"想写信"变成"信已经写好了"（要素定案 A4） ───────────── */
 .replybar{
@@ -469,7 +470,7 @@ address{font-style:normal; line-height:1.72}
   padding:1.05rem 1.25rem; display:flex; flex-wrap:wrap; gap:.5rem 1.4rem;
   align-items:baseline; justify-content:space-between;
 }
-.replybar p{margin:0; font-size:.98rem}
+.replybar p{margin:0; font-size:1.0625rem}
 .replybar .btn{flex:0 0 auto}
 
 /* ── 7. 核对清单（verify.html 的主要承载） ─────────────────────────────── */
@@ -483,7 +484,7 @@ address{font-style:normal; line-height:1.72}
   border-radius:2px; margin-top:.18rem;
 }
 .checklist__title{font-weight:600; color:var(--ink); display:block; margin-bottom:.2rem}
-.checklist__body{font-size:.95rem}
+.checklist__body{font-size:1.0625rem}   /* 17px：这页的正文就是核对清单本身，不该当次级文字 */
 .checklist__body p{margin:0 0 .45rem}
 .checklist__body p:last-child{margin-bottom:0}
 /* 注：曾有一条 `.checklist__pending`（给"待补数据"类占位句用的样式）。
