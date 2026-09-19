@@ -243,7 +243,6 @@ a:hover{color:var(--red-deep)}
   background:var(--white); border:1px solid var(--line); border-radius:var(--radius);
   padding:clamp(1.2rem,2.5vw,1.6rem);
 }
-.card--paper{background:var(--paper); border-color:var(--line)}
 .card h3{margin-top:0}
 .card__num{
   font-family:var(--font-display); font-size:1.05rem; color:var(--gold);
@@ -299,13 +298,9 @@ a:hover{color:var(--red-deep)}
 }
 .note--warn{border-left-color:var(--red); background:var(--red-tint)}
 
-/* 照片位（实拍待补：占位框明确标注，避免看起来像坏图） */
-.photo-slot{
-  border:1px dashed #D8CCC0; border-radius:var(--radius); background:var(--paper);
-  min-height:11rem; display:grid; place-items:center; text-align:center; padding:1.5rem;
-}
-.photo-slot__label{font-size:.85rem; color:var(--muted); max-width:22rem; margin:0}
-.photo-slot__label strong{display:block; color:var(--body); margin-bottom:.25rem}
+/* 注：曾有一套 `.photo-slot` / `.photo-slot__label`（给"实拍照片待补"的虚线占位框）。
+   2026-09-19 审计发现**整站无任何页面使用**，且其中一条规则带裸色值 `#D8CCC0`，
+   已删。将来要补实拍位时按 docs/SITE_SETUP.md §八 的 6 个文件名直接换 `<img>`。 */
 
 /* 表格 */
 .table-wrap{overflow-x:auto; border:1px solid var(--line); border-radius:var(--radius)}
@@ -345,6 +340,15 @@ tbody tr:last-child td{border-bottom:0}
 .footer .mk-wing{fill:var(--gold-light)}
 
 address{font-style:normal; line-height:1.72}
+
+/* 联系页的主行动：这个邮箱地址是整站唯一真正要访客做的事，
+   不能和正文同权重（原先 `.contact-mail` 无任何样式，实测等于普通段落）。 */
+.contact-mail{
+  font-family:var(--font-display); font-size:clamp(1.15rem,2.6vw,1.5rem);
+  font-weight:600; margin:.2rem 0 .8rem;
+}
+.contact-mail a{text-decoration-thickness:2px; text-underline-offset:.22em}
+.contact-mail a:hover{color:var(--red-deep)}
 
 /* 卡片内插画统一居中并限高，避免不同长宽比把卡片撑得参差 */
 .card > img{display:block; margin:0 auto 1.1rem; max-height:15rem; width:auto;
@@ -439,9 +443,6 @@ address{font-style:normal; line-height:1.72}
 }
 .numbered > .section__head{border-top:1px solid var(--rule); padding-top:1.1rem}
 
-/* 区块头的发丝线（不编号时也可单独用） */
-.rule-top{border-top:1px solid var(--rule); padding-top:1.1rem}
-
 /* ── 3. 断言行：首屏那句"我们到底做什么"（本设计的定位句） ─────────────── */
 .assertion{
   font-family:var(--font-display); font-size:clamp(1.05rem,2.1vw,1.32rem);
@@ -471,18 +472,6 @@ address{font-style:normal; line-height:1.72}
 .replybar p{margin:0; font-size:.98rem}
 .replybar .btn{flex:0 0 auto}
 
-/* ── 6. 证据行：任何数字/主张旁边挂"依据在哪"（本设计的信任机制） ───────── */
-.evidence{
-  font-size:.85rem; color:var(--muted); border-top:1px solid var(--rule);
-  padding-top:.5rem; margin-top:.6rem; display:flex; gap:.5rem; align-items:baseline;
-}
-.evidence::before{
-  content:"Evidence"; flex:0 0 auto; font-family:var(--font-mono); font-size:.7rem;
-  letter-spacing:.09em; text-transform:uppercase; color:var(--num);
-  border:1px solid var(--rule-strong); border-radius:2px; padding:.06rem .35rem;
-  transform:translateY(-.08rem);
-}
-
 /* ── 7. 核对清单（verify.html 的主要承载） ─────────────────────────────── */
 .checklist{list-style:none; margin:0; padding:0; border-top:1px solid var(--rule)}
 .checklist > li{
@@ -497,7 +486,8 @@ address{font-style:normal; line-height:1.72}
 .checklist__body{font-size:.95rem}
 .checklist__body p{margin:0 0 .45rem}
 .checklist__body p:last-child{margin-bottom:0}
-.checklist__pending{color:var(--muted); font-size:.88rem}
+/* 注：曾有一条 `.checklist__pending`（给"待补数据"类占位句用的样式）。
+   verify.html 的信用代码占位句已删（Q2 未定前不留空头承诺），该样式随之移除。 */
 
 /* ── 8. 行家词汇表（采购三秒判断你上没上过机） ────────────────────────── */
 .terms{margin:0; border-top:1px solid var(--rule)}
@@ -523,15 +513,12 @@ address{font-style:normal; line-height:1.72}
 .incl li{padding:.5rem 1rem; font-size:.93rem; border-bottom:1px solid var(--line-soft)}
 .incl li:last-child{border-bottom:0}
 
-/* ── 10. 结构条目（reference.html：每张图配刀模/行话标注） ────────────── */
-.struct{border:1px solid var(--rule); border-radius:var(--radius); background:var(--white);
-        display:grid; grid-template-columns:repeat(auto-fit,minmax(16rem,1fr)); overflow:hidden}
-.struct__figure{margin:0; padding:1.2rem; background:var(--paper);
-                display:grid; place-items:center; border-right:1px solid var(--rule)}
-.struct__figure img{max-height:15rem; width:auto}
+/* ── 10. 结构图位（reference.html：三张结构卡里的图） ──────────────────────
+   只保留**卡片内**这一种用法：`.struct`/`.struct__body` 那套"左图右文容器"从未被
+   任何页面采用（实测死代码），已删 —— 留着会让后来的人照不存在的约定写页面。 */
+.struct__figure{margin:0 0 1.1rem; padding:0; display:block}
+.struct__figure img{max-height:15rem; width:auto; margin:0 auto}
 .struct__figure figcaption{font-size:.8rem; color:var(--muted); margin-top:.7rem; text-align:center}
-.struct__body{padding:1.2rem 1.35rem}
-.struct__body h3{margin-bottom:.35rem}
 .struct__tags{list-style:none; margin:.7rem 0 0; padding:0; display:flex; flex-wrap:wrap; gap:.4rem}
 .struct__tags li{font-size:.78rem; font-family:var(--font-mono); color:var(--body);
                  background:var(--paper); border:1px solid var(--rule); border-radius:2px;
@@ -540,9 +527,6 @@ address{font-style:normal; line-height:1.72}
 /* ── 11. 量度数字：等宽数字避免跳动，衬线体给"规格书"的观感 ───────────── */
 .metric{font-family:var(--font-display); font-variant-numeric:tabular-nums lining-nums;
         color:var(--ink); font-weight:600}
-.metric--lg{font-size:clamp(1.6rem,3.4vw,2.15rem); display:block; line-height:1.1}
-.small-caps{font-size:.76rem; font-weight:600; letter-spacing:.14em; text-transform:uppercase;
-            color:var(--muted)}
 
 /* ── 12. 小号按钮（导航里的 "Get a quote"，在细导航行里不抢视觉） ───────── */
 .btn--sm{
@@ -619,20 +603,18 @@ address{font-style:normal; line-height:1.72}
   .three > li{padding:0; background:transparent}
   .three__num{display:none}
   .replybar{padding:.45rem .6rem; font-size:9.6pt}
-  .evidence{font-size:8.6pt; padding-top:.25rem; margin-top:.3rem}
   .checklist > li{padding:.4rem 0; gap:.5rem; grid-template-columns:1rem 1fr}
   .checklist__box{width:.7rem; height:.7rem; margin-top:.22rem}
   .terms > div{padding:.25rem 0; grid-template-columns:8.5rem 1fr}
   .incl{gap:.5rem}
   .incl li{padding:.25rem .6rem}
-  .struct{grid-template-columns:11rem 1fr}
   .struct__figure{padding:.5rem}
   .struct__tags{margin-top:.35rem}
-  .small-caps{font-size:8pt}
+  .contact-mail{font-size:11pt; margin:.1rem 0 .4rem}
   /* 三栏结构图（fact-sheet）：必须放在通用 `.grid` 规则**之后**才能生效 —— 
      CSS 同级同权重下后者胜，早写会被 `.grid{gap:.5rem; grid-template-columns:1fr 1fr}`
      覆盖成两列（首版就踩了：图片撑高 40px，把一页纸顶到第二页）。
-     这里强制三列 + 图高收到 1.7cm 内，配合下面的区块留白微调换回单页。 */
+     这里强制三列 + 图高收到 4.6rem 内，配合下面的区块留白微调换回单页。 */
   .three-up{grid-template-columns:1fr 1fr 1fr; gap:.5rem}
   .three-up img{max-width:4.6rem; margin-bottom:.15rem}
   .three-up h3{font-size:9.4pt; margin-bottom:.05rem}
