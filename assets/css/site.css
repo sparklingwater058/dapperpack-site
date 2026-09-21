@@ -352,8 +352,16 @@ tbody tr:last-child td{border-bottom:0}
 /* ── 品牌图形标（内联 SVG 不写裸色值，由 CSS 提供填充） ──────────────── */
 .mk-body{fill:var(--red)}
 .mk-wing{fill:var(--gold)}
-.footer .mk-body{fill:var(--gold)}
-.footer .mk-wing{fill:var(--gold-light)}
+/* 页脚：图形标恢复品牌两色（2026-09-21 用户拍板方案③）。
+   ⚠️ 与页头同一套品牌色——原实现把页脚图形标整体改成金（body 金 + wing 亮金），
+   渲染出来接近一块单色金，"两片折面"的观感消失，用户比对品牌原图时发现不符。
+   ⚠️ 已知取舍（用户已知情选择）: 品牌红在深底（--ink #221A18）上对比度仅
+   1.90:1，比原来的金（7.06:1）暗得多——图形标在此**偏暗**是预期结果，不是 bug。
+   之所以可以这样取: 图形标是 aria-hidden 的装饰件，品牌名由旁边的**
+   文字锁定**承载（「澄彩 / DAPPER PACK」），文字对比度不受本行影响。
+   注意不要"顺手"把红色改成亮色——那会重新偏离品牌色，属另一个决策。 */
+.footer .mk-body{fill:var(--red)}
+.footer .mk-wing{fill:var(--gold)}
 
 address{font-style:normal; line-height:1.72}
 
