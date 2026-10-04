@@ -689,20 +689,36 @@ address{font-style:normal; line-height:1.72}
 
 .motion-on .m-fade{
   opacity:0;
-  transition:opacity .6s cubic-bezier(.22,.61,.36,1);
+  transition:opacity .78s cubic-bezier(.16,.84,.28,1);
   transition-delay:var(--m-delay,0s);
   will-change:opacity;
 }
 .motion-on .m-fade.is-in{opacity:1}
 
-/* 工程图与表格：clip-path 擦除。只裁剪绘制、不改变布局盒 → 不产生位移。
-   语义最贴的一处：这一站卖的就是"把结构画出来"，所以让图纸像被"画"出来。 */
+/* 列表 / 步骤 / 规格行：错峰更密，逐行"亮起来"的推进感更明显 */
+.motion-on .facts > .m-fade,
+.motion-on .steps > .m-fade,
+.motion-on ol.steps > .m-fade,
+.motion-on .checklist > .m-fade,
+.motion-on dl.spec > .m-fade{transition-duration:.6s}
+
+/* 工程图与表格：clip-path 擦除。
+   只裁剪绘制、不改变布局盒 —— 这是本站在 CLS 约束下**唯一能"动"起来**的手法，
+   也恰好语义最贴：这一站卖的就是"把结构画出来"，所以让图纸像被"画"出来。 */
 .motion-on .m-wipe{
   clip-path:inset(0 100% 0 0);
-  transition:clip-path .85s cubic-bezier(.65,0,.35,1);
+  transition:clip-path 1.05s cubic-bezier(.65,0,.35,1);
   transition-delay:var(--m-delay,0s);
+  will-change:clip-path;
 }
 .motion-on .m-wipe.is-in{clip-path:inset(0 0 0 0)}
+
+/* 产品插图：从左下角起斜向擦除，幅度更大，读起来像"图纸被抽出来" */
+.motion-on .split > .hero__figure.m-wipe{
+  clip-path:inset(0 100% 100% 0);
+  transition-duration:1.15s;
+}
+.motion-on .split > .hero__figure.m-wipe.is-in{clip-path:inset(0 0 0 0)}
 
 /* ── 鼠标响应层（2026-10-04） ──────────────────────────────────────────
    只在 `(pointer: fine)` 且 `(hover: hover)` 下由 JS 添加，
