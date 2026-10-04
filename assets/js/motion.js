@@ -129,4 +129,44 @@
     }, { rootMargin: "0px 0px -8% 0px", threshold: 0 });
     Array.prototype.forEach.call(counters, function (el) { cio.observe(el); });
   }
+
+  /* ---------- 鼠标响应层（仅指针设备） ----------
+     门控：`(pointer: fine)` **且** `(hover: hover)`。触屏设备整段不执行 ——
+     否则辉光会跟着手指乱飘、聚光会永远停在最后一处触点。
+
+     为什么不用 GSAP 的 `quickTo`：这里只需要"平滑跟随"，用 CSS 的
+     `transition` + 每帧写 `transform` 就能做到同样观感，且**零依赖**。
+     两个效果都只用 transform / background-position，不产生布局位移。 */
+  var fine = window.matchMedia("(pointer: fine)").matches
+             && window.matchMedia("(hover: hover)").matches;
+  if (fine) {
+    /* ① 光标辉光 */
+    var glow = document.createElement("div");
+    glow.className = "cursor-glow";
+    glow.setAttribute("aria-hidden", "true");
+    document.body.appendChild(glow);
+    var gx = 0, gy = 0, queued = false;
+    var paintGlow = function () {
+      queued = false;
+      glow.style.transform = "translate3d(" + gx + "px," + gy + "px,0)";
+    };
+    window.addEventListener("mousemove", function (e) {
+      gx = e.clientX; gy = e.clientY;
+      glow.classList.add("is-active");
+      if (!queued) { queued = true; requestAnimationFrame(paintGlow); }
+    }, { passive: true });
+    // 指针离开窗口时收起，避免残留一个停在边缘的光斑
+    document.addEventListener("mouseleave", function () {
+      glow.classList.remove("is-active");
+    });
+
+    /* ② 卡片聚光：把指针位置写成 CSS 变量，由 `radial-gradient` 用掉 */
+    Array.prototype.forEach.call(document.querySelectorAll(".card"), function (card) {
+      card.addEventListener("mousemove", function (e) {
+        var r = card.getBoundingClientRect();
+        card.style.setProperty("--sx", ((e.clientX - r.left) / r.width * 100).toFixed(1) + "%");
+        card.style.setProperty("--sy", ((e.clientY - r.top) / r.height * 100).toFixed(1) + "%");
+      }, { passive: true });
+    });
+  }
 })();

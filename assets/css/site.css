@@ -704,6 +704,36 @@ address{font-style:normal; line-height:1.72}
 }
 .motion-on .m-wipe.is-in{clip-path:inset(0 0 0 0)}
 
+/* ── 鼠标响应层（2026-10-04） ──────────────────────────────────────────
+   只在 `(pointer: fine)` 且 `(hover: hover)` 下由 JS 添加，
+   触屏设备**完全不参与**（否则辉光会跟着手指乱飘、聚光永远停在最后一处触点）。
+   两者都只用 opacity / transform / background-position —— **不产生任何布局位移**，
+   因此不会碰到 CLS 那条红线（位移类动效实测把 CLS 顶到 0.896，见文件头）。
+
+   ① 光标辉光：跟随指针的柔和光斑。`position:fixed` + `will-change:transform`，
+      只在合成层绘制；文案与控件完全不受影响（`pointer-events:none`）。
+   ② 卡片聚光：指针在卡片上时，光斑落在指针位置（`--sx/--sy` 由 JS 写入）。 */
+.motion-on .cursor-glow{
+  position:fixed; top:0; left:0; width:22rem; height:22rem; margin:-11rem 0 0 -11rem;
+  border-radius:50%; pointer-events:none; z-index:0; opacity:0;
+  transition:opacity .45s ease;
+  background:radial-gradient(circle closest-side,
+    color-mix(in srgb, var(--gold) 15%, transparent) 0%,
+    color-mix(in srgb, var(--gold) 6%, transparent) 45%,
+    transparent 100%);
+  will-change:transform, opacity;
+}
+.motion-on .cursor-glow.is-active{opacity:1}
+
+.motion-on .card{position:relative; overflow:hidden}
+.motion-on .card::after{
+  content:""; position:absolute; inset:0; pointer-events:none; opacity:0;
+  transition:opacity .35s ease;
+  background:radial-gradient(16rem circle at var(--sx, 50%) var(--sy, 50%),
+    color-mix(in srgb, var(--gold) 13%, transparent) 0%, transparent 70%);
+}
+.motion-on .card:hover::after{opacity:1}
+
 /* 动画结束后由 JS 移除内联的 --m-delay；这里兜住"transition 未触发"的情况
    （例如元素初始就在视口内且被浏览器合并了状态变化）。 */
 @media (prefers-reduced-motion: reduce){
