@@ -598,8 +598,10 @@ address{font-style:normal; line-height:1.72}
 @media print{
   :root{--paper:#FFFFFF}
   /* 目标：**真的排进 A4 一页**（页面自称 on one page，2 页就是名不副实），
-     同时不要为了塞进一页把字号压到读不动 —— 实测排进一页后仍有约四成余量，
-     所以这里把字号调回到舒适区（10.6pt），再用区块与列表留白控制总量。 */
+     同时不要为了塞进一页把字号压到读不动。
+     2026-10-04 复核：fact-sheet 加了「Monthly capacity」行与打样费口径后，10.6pt 下
+     排不进（溢出 44px）。定在 10pt —— 与本节其余尺寸（h1 15.5 / h2 10.8 / p 10）一致，
+     且在 704×1033 的 A4 排版宽度下稳定排进一页。 */
   body{font-size:10pt; line-height:1.36}
   .masthead,.nav,.footer,.btn,.btn-row,.skip,.copybox__btn{display:none !important}
   /* 2026-09-19：一页纸余量一度只剩 5px（接近翻页边界），把区块上下留白从 .22rem
@@ -625,7 +627,12 @@ address{font-style:normal; line-height:1.72}
   .steps{gap:.25rem}
   .steps > li{padding-left:1.55rem}
   .steps > li::before{width:1.25rem; height:1.25rem; font-size:8.5pt}
-  .spec div{padding:.2rem 0; grid-template-columns:9.5rem 1fr}
+  /* 2026-10-04：fact-sheet 新增「Monthly capacity」行 + 打样费口径后一度溢出 44px
+     （内容底边 1077 vs 可用 1033）。实测各档位（见 `_tune_print_padding.py`）：
+     单靠 `.spec` 内边距最多省 23px，不够；再把 "Who we are" 里重复的车间说明并进
+     邮箱段、`dapperpack.com` 并入同段，省下 27px；余下 17px 由这里补。
+     10 行 `.spec` 各减 0.08rem×2 = 省约 18px。**打印态专用，屏幕态不受影响。** */
+  .spec div{padding:.12rem 0; grid-template-columns:9.5rem 1fr}
   .note{padding:.4rem .6rem; font-size:9.6pt}
   a{color:var(--ink); text-decoration:none}
   /* 改版新增组件（2026-09-18）：打印时同样要收住，否则任何一页都可能溢出 A4 */
@@ -657,12 +664,48 @@ address{font-style:normal; line-height:1.72}
 }
 .print-only{display:none}
 
+/* ── 窄屏表格堆叠（2026-10-04） ──────────────────────────────────────────
+   问题：`table` 写死 `min-width:32rem`(512px)，390px 视口下容器仅 351px —— 需横滑
+   161px 且**表头末列完全不可见**（用户看不到第三列，却没有任何提示）。
+   闸门一直没报，因为它查的是 `documentElement` 级溢出，而 `.table-wrap` 的
+   `overflow-x:auto` 把溢出收进了容器 —— "闸门全绿但仍难用"。
+
+   做法：窄屏下**堆叠**。每个 `<td>` 携带 `data-label`（列名），用 `::before` 把它
+   显示在值前面；`<th scope="row">` 成为该行块的标题。这样**竖着读**，不需要滑。
+
+   作用域：`:has(td[data-label])` —— 只影响**已标注**的表格。不依赖我逐个加 `data-stack`
+   类（少加一处就会半途失效）；未标注的表格保持原样，不会因为半途标注而排版崩掉
+   （自测覆盖了这一点）。 */
+@media (max-width:40rem){
+  .table-wrap:has(td[data-label]){border:0; border-radius:0; overflow-x:visible}
+  table:has(td[data-label]){min-width:0; font-size:.92rem}
+  table:has(td[data-label]) caption{
+    text-align:left; font-weight:600; margin:0 0 .8rem; padding:0;
+  }
+  /* 列头改成行内标签后，表头行本身是多余的 */
+  table:has(td[data-label]) thead{
+    position:absolute; width:1px; height:1px; padding:0; margin:-1px;
+    overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; border:0;
+  }
+  table:has(td[data-label]) tr{
+    display:block; padding:.85rem 0; border-top:1px solid var(--line);
+  }
+  table:has(td[data-label]) tr:last-child{border-bottom:1px solid var(--line)}
+  table:has(td[data-label]) th[scope="row"]{
+    display:block; padding:0 0 .35rem; border:0; font-size:1.02em; color:var(--ink);
+  }
+  table:has(td[data-label]) td{display:block; border:0; padding:.2rem 0; font-size:.95rem}
+  table:has(td[data-label]) td[data-label]::before{
+    content:attr(data-label) ": ";
+    color:var(--muted); font-weight:600;
+  }
+}
+
 /* ── 工具类 ──────────────────────────────────────────────────────────── */
 .visually-hidden{
   position:absolute!important; width:1px; height:1px; padding:0; margin:-1px;
   overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; border:0;
-}
-.lede--center{margin-left:auto; margin-right:auto}
+}.lede--center{margin-left:auto; margin-right:auto}
 .btn-row--center{justify-content:center}
 .mt-0{margin-top:0}
 .mt-1{margin-top:1rem}

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 430" width="580" height="430" role="img" aria-labelledby="ttl dsc">
+  <title id="ttl">Book-style rigid box</title>
+  <desc id="dsc">Front view of a book-style rigid box: a wrapped base with a hinged lid lifted clear of it, and the spine edge finished in gold foil.</desc>
+  <rect x="142" y="138" width="296" height="46" fill="#F1EBE3" stroke="#8E1B2A" stroke-width="2.2" stroke-linejoin="round"/>
+  <rect x="142" y="138" width="22" height="46" fill="#C9A227" stroke="none"/>
+  <rect x="150" y="200" width="280" height="170" fill="#F7F4EF" stroke="#8E1B2A" stroke-width="2.2" stroke-linejoin="round"/>
+  <rect x="156" y="206" width="22" height="158" fill="#C9A227" stroke="none"/>
+  <line x1="156" y1="206" x2="156" y2="364" stroke="#8E1B2A" stroke-width="1.6" stroke-linecap="round"/>
+  <line x1="178" y1="206" x2="178" y2="364" stroke="#8E1B2A" stroke-width="1.6" stroke-linecap="round"/>
+  <line x1="290.0" y1="184" x2="290.0" y2="200" stroke="#C9A227" stroke-width="1.8" stroke-linecap="round"/>
+</svg>
