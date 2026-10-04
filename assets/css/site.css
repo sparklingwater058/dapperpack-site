@@ -597,6 +597,15 @@ address{font-style:normal; line-height:1.72}
 /* ── 15. 打印（供 fact-sheet.html 导出为可转发的一页纸） ─────────────────── */
 @media print{
   :root{--paper:#FFFFFF}
+  /* 动效兜底（2026-10-04 加）。**必须挂在 `.motion-on` 下**：
+     隐藏/裁剪的初始态只写在 `.motion-on` 里，所以归位规则也必须在同一作用域，
+     否则选择器匹配不到那些元素（第一版挂在 `.motion-ready` 下 —— 实测打印态
+     仍有 38 个元素带着 opacity/clip-path 残留）。
+     用途：用户可能在动画中途 Ctrl+P，这条把残留强制归位。 */
+  .motion-on, .motion-on * {
+    opacity:1 !important; transform:none !important;
+    clip-path:none !important; visibility:visible !important;
+  }
   /* 目标：**真的排进 A4 一页**（页面自称 on one page，2 页就是名不副实），
      同时不要为了塞进一页把字号压到读不动。
      2026-10-04 复核：fact-sheet 加了「Monthly capacity」行与打样费口径后，10.6pt 下
@@ -663,6 +672,45 @@ address{font-style:normal; line-height:1.72}
   .print-only{display:block !important}
 }
 .print-only{display:none}
+
+/* ── 动效层（2026-10-04） ──────────────────────────────────────────────
+   `assets/js/motion.js` 在初始化时给 `<html>` 加 `.motion-ready` 与 `.motion-on`。
+   为什么是两层类：
+     · `.motion-ready` = 状态钩子（打印兜底规则与测试用它判断"动效是否接管"）
+     · `.motion-on`    = **初始态的开关**。`opacity:0` 只写在这个条件里，
+       所以**没有 JS 时不会隐藏任何内容**。
+   原型站的 `motion.js` 是相反做法（`.w-mask .w{opacity:0}` 无条件生效、靠 JS 恢复），
+   因此有过"19 个标题在 JS 跑起来前完全不可见"的回归 —— 这里不重复。
+
+   只用**不改变几何**的属性（opacity / clip-path）。位移类动效实测会把
+   index.html 的 CLS 从 0.054 顶到 0.896（位移改变页面滚动总高度 → 下方重排），
+   详见 motion.js 文件头。 */
+.motion-ready{}
+
+.motion-on .m-fade{
+  opacity:0;
+  transition:opacity .6s cubic-bezier(.22,.61,.36,1);
+  transition-delay:var(--m-delay,0s);
+  will-change:opacity;
+}
+.motion-on .m-fade.is-in{opacity:1}
+
+/* 工程图与表格：clip-path 擦除。只裁剪绘制、不改变布局盒 → 不产生位移。
+   语义最贴的一处：这一站卖的就是"把结构画出来"，所以让图纸像被"画"出来。 */
+.motion-on .m-wipe{
+  clip-path:inset(0 100% 0 0);
+  transition:clip-path .85s cubic-bezier(.65,0,.35,1);
+  transition-delay:var(--m-delay,0s);
+}
+.motion-on .m-wipe.is-in{clip-path:inset(0 0 0 0)}
+
+/* 动画结束后由 JS 移除内联的 --m-delay；这里兜住"transition 未触发"的情况
+   （例如元素初始就在视口内且被浏览器合并了状态变化）。 */
+@media (prefers-reduced-motion: reduce){
+  .motion-on .m-fade, .motion-on .m-wipe{
+    opacity:1 !important; clip-path:none !important; transition:none !important;
+  }
+}
 
 /* ── 窄屏表格堆叠（2026-10-04） ──────────────────────────────────────────
    问题：`table` 写死 `min-width:32rem`(512px)，390px 视口下容器仅 351px —— 需横滑
