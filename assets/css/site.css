@@ -126,6 +126,16 @@ a:hover{color:var(--red-deep)}
 .grid--2{grid-template-columns:repeat(auto-fit,minmax(17rem,1fr))}
 .grid--3{grid-template-columns:repeat(auto-fit,minmax(14.5rem,1fr))}
 .grid--4{grid-template-columns:repeat(auto-fit,minmax(11.5rem,1fr))}
+/* 五品类一行（首页"What we make"、products 五类）。
+   为什么单独一个类：`auto-fit` + `minmax` 在 5 个卡片时会在宽屏排成 4+1
+   （用户实测截图确认过），因为 14.5rem 的下限让第 5 张挤不进去。
+   这里把下限降到 9.5rem，并显式声明"最多 5 列"：
+     · ≥ 74rem  → 5 列一行
+     · 52–74rem → 3 列
+     · < 52rem  → 2 列
+   下限 9.5rem 保证窄屏也不会把卡片压成细条。 */
+.grid--5{grid-template-columns:repeat(auto-fit,minmax(9.5rem,1fr))}
+@media (min-width:74rem){ .grid--5{grid-template-columns:repeat(5,1fr)} }
 .split{display:grid; gap:clamp(1.8rem,5vw,3.5rem); align-items:center;
        grid-template-columns:repeat(auto-fit,minmax(19rem,1fr))}
 
