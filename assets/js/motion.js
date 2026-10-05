@@ -58,7 +58,13 @@
     ["dl.spec > div",                      0.05, 0.4, null],
     [".section__head > *",                 0.08, 0.3, null],
     [".hero__figure",                      0.00, 0.0, "wipe"],   // 图纸"被画出来"
-    [".table-wrap",                        0.00, 0.0, "wipe"]
+    [".table-wrap",                        0.00, 0.0, "wipe"],
+    /* 内联刀线图的逐层"画出来"（dieline-guide 页）。
+       各组自带 --dl-delay 错峰（见 site.css），所以这里的 step/cap 传 0，
+       不再叠加第二层延迟 —— 否则两套延迟相乘，最后一组要等好几秒才出现。
+       选择器限定在 .dieline-svg 内，避免误伤普通 .dl-* 元素。 */
+    [".dieline-svg .dl-step",              0.00, 0.0, null],
+    [".dieline-svg .dl-plain",             0.00, 0.0, null]
   ];
 
   function applyDelay(el, i, step, cap) {

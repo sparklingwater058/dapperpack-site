@@ -1,18 +1,19 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 430" width="580" height="430" role="img" aria-labelledby="ttl dsc">
   <title id="ttl">Corrugated shipping carton</title>
-  <desc id="dsc">Front view of a corrugated carton: two outward-folded top flaps, the fluting shown below the top edge, and a printed band across the front.</desc>
-  <polygon points="150,150 284.0,150 268.0,108 164,108" fill="#F1EBE3" stroke="#8E1B2A" stroke-width="2.2" stroke-linejoin="round"/>
-  <polygon points="296.0,150 430,150 416,108 312.0,108" fill="#F1EBE3" stroke="#8E1B2A" stroke-width="2.2" stroke-linejoin="round"/>
-  <rect x="150" y="150" width="280" height="200" fill="#F7F4EF" stroke="#8E1B2A" stroke-width="2.2" stroke-linejoin="round"/>
-  <line x1="172" y1="150" x2="172" y2="180" stroke="#D8CBBE" stroke-width="1.6" stroke-linecap="round"/>
-  <line x1="198" y1="150" x2="198" y2="180" stroke="#D8CBBE" stroke-width="1.6" stroke-linecap="round"/>
-  <line x1="224" y1="150" x2="224" y2="180" stroke="#D8CBBE" stroke-width="1.6" stroke-linecap="round"/>
-  <line x1="250" y1="150" x2="250" y2="180" stroke="#D8CBBE" stroke-width="1.6" stroke-linecap="round"/>
-  <line x1="276" y1="150" x2="276" y2="180" stroke="#D8CBBE" stroke-width="1.6" stroke-linecap="round"/>
-  <line x1="302" y1="150" x2="302" y2="180" stroke="#D8CBBE" stroke-width="1.6" stroke-linecap="round"/>
-  <line x1="328" y1="150" x2="328" y2="180" stroke="#D8CBBE" stroke-width="1.6" stroke-linecap="round"/>
-  <line x1="354" y1="150" x2="354" y2="180" stroke="#D8CBBE" stroke-width="1.6" stroke-linecap="round"/>
-  <line x1="380" y1="150" x2="380" y2="180" stroke="#D8CBBE" stroke-width="1.6" stroke-linecap="round"/>
-  <rect x="156" y="234" width="268" height="30" fill="#C9A227" stroke="none"/>
-  <line x1="150" y1="324" x2="430" y2="324" stroke="#D8CBBE" stroke-width="1.6" stroke-linecap="round"/>
+  <desc id="dsc">Isometric drawing of an RSC corrugated carton with the four top flaps folded in and the flute direction shown as dashed lines across the top.</desc>
+  <g>
+  <polygon points="268.0,366.0 125.1,283.5 125.1,226.5 268.0,309.0" fill="#F7F4EF" stroke="#8E1B2A" stroke-width="2.2" stroke-linejoin="round"/>
+  <polygon points="268.0,366.0 503.1,230.3 503.1,173.3 268.0,309.0" fill="#F1EBE3" stroke="#8E1B2A" stroke-width="2.2" stroke-linejoin="round"/>
+  <polygon points="268.0,309.0 503.1,173.3 442.6,181.8 282.7,274.0" fill="#FFFFFF" stroke="#8E1B2A" stroke-width="2.2" stroke-linejoin="round"/>
+  <polygon points="125.1,226.5 185.6,217.9 345.4,125.7 360.2,90.8" fill="#FFFFFF" stroke="#8E1B2A" stroke-width="2.2" stroke-linejoin="round"/>
+  <polygon points="268.0,309.0 125.1,226.5 185.6,217.9 282.7,274.0" fill="#FFFFFF" stroke="#8E1B2A" stroke-width="2.2" stroke-linejoin="round"/>
+  <polygon points="503.1,173.3 442.6,181.8 345.4,125.7 360.2,90.8" fill="#FFFFFF" stroke="#8E1B2A" stroke-width="2.2" stroke-linejoin="round"/>
+  <line x1="338.9" y1="263.1" x2="204.6" y2="185.5" stroke="#C9B9A6" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="5 5"/>
+  <line x1="381.2" y1="238.6" x2="246.9" y2="161.1" stroke="#C9B9A6" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="5 5"/>
+  <line x1="423.6" y1="214.2" x2="289.2" y2="136.7" stroke="#C9B9A6" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="5 5"/>
+  <line x1="463.0" y1="150.2" x2="463.0" y2="171.8" stroke="#C9B9A6" stroke-width="1.1" stroke-linecap="round"/>
+  <line x1="431.6" y1="132.0" x2="431.6" y2="153.7" stroke="#C9B9A6" stroke-width="1.1" stroke-linecap="round"/>
+  <line x1="400.2" y1="113.9" x2="400.2" y2="135.5" stroke="#C9B9A6" stroke-width="1.1" stroke-linecap="round"/>
+  <polygon points="248.6,296.3 436.7,187.7 416.7,176.2 228.6,284.8" fill="#C9A227"/>
+  </g>
 </svg>

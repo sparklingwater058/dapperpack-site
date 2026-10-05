@@ -581,6 +581,44 @@ address{font-style:normal; line-height:1.72}
   .eng img{width:36rem; max-width:none}
 }
 
+/* ── 刀线图的"逐层画出来"动画（2026-10-05） ─────────────────────────────
+   图是**内联 SVG**（不是 <img>）——因为 <img> 引入的 SVG 无法用外部 CSS 动画。
+   语义：这一页讲的就是"从图纸到盒子"，所以让刀线图按**真实作业顺序**出现：
+   出血 → 主面板 → 折线 → 防尘翼 → 插舌 → 粘口 → 标注/尺寸/图例。
+
+   ⚠️ 只用 opacity 与 clip-path：本站实测**位移会破坏 CLS**
+      （含位移 0.607 / 无位移 0.038，交替各测 4 次）。详见 site.css 动效层注释。
+
+   初始隐藏态写在 `.motion-on` 下 —— 与全站动效层同一原则：
+   **没有 JS 就不会有 motion-on，内容天然可见**（原型站曾因相反做法出现 19 个标题不可见）。 */
+.dieline-svg{display:block; width:100%; height:auto; background:var(--white);
+             border:1px solid var(--rule); border-radius:var(--radius)}
+@media (max-width:44rem){ .dieline-svg{width:36rem; max-width:none} }
+
+.motion-on .dieline-svg g{opacity:1}
+.motion-on .dieline-svg .dl-step{
+  opacity:0;
+  clip-path:inset(0 100% 0 0);      /* 从左往右"描"出来 */
+  transition:opacity .5s ease-out, clip-path .85s cubic-bezier(.65,0,.35,1);
+  transition-delay:var(--dl-delay, 0s);
+}
+.motion-on .dieline-svg .dl-step.is-in{opacity:1; clip-path:inset(0 0 0 0)}
+/* 标注/尺寸/图例是文字，用淡入即可（clip-path 会让文字逐个"擦"出来，反而乱） */
+.motion-on .dieline-svg .dl-plain{
+  opacity:0; transition:opacity .6s ease-out; transition-delay:var(--dl-delay, 0s);
+}
+.motion-on .dieline-svg .dl-plain.is-in{opacity:1}
+
+@media (prefers-reduced-motion: reduce){
+  .motion-on .dieline-svg .dl-step,
+  .motion-on .dieline-svg .dl-plain{opacity:1; clip-path:none; transition:none}
+}
+/* 打印：全部显示（打印闸门要求一页纸可打印、且不残留动画中间态） */
+@media print{
+  .motion-on .dieline-svg .dl-step,
+  .motion-on .dieline-svg .dl-plain{opacity:1 !important; clip-path:none !important}
+}
+
 /* ── 14. 一页纸的三栏图（fact-sheet 专用） ─────────────────────────────────
    用真实结构图替代纯文字卡片：同样高度下多一层证据。打印时图要收住，
    否则会把「一页纸」顶到第二页（该页内容底边已到 A4 可用高度的 97%）。 */

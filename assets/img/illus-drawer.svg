@@ -1,11 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 430" width="580" height="430" role="img" aria-labelledby="ttl dsc">
-  <title id="ttl">Drawer box</title>
-  <desc id="dsc">Front view of a drawer box: an inner tray drawn out of its wrapped outer shell to the left, with a pull tab at the front of the tray and the shell behind it.</desc>
-  <rect x="218" y="185" width="330" height="160" fill="#F1EBE3" stroke="#8E1B2A" stroke-width="2.2" stroke-linejoin="round"/>
-  <rect x="228" y="195" width="310" height="140" fill="#D8CBBE" stroke="#8E1B2A" stroke-width="2.2" stroke-linejoin="round"/>
-  <line x1="218" y1="185" x2="218" y2="345" stroke="#8E1B2A" stroke-width="2.4" stroke-linecap="round"/>
-  <rect x="124" y="209" width="296" height="112" fill="#F7F4EF" stroke="#8E1B2A" stroke-width="2.2" stroke-linejoin="round"/>
-  <line x1="202" y1="209" x2="202" y2="321" stroke="#8E1B2A" stroke-width="1.6" stroke-linecap="round"/>
-  <rect x="154" y="256.0" width="18" height="18" fill="#C9A227" stroke="none"/>
-  <rect x="94" y="260.0" width="60" height="10" fill="#C9A227" stroke="none"/>
+  <title id="ttl">Drawer rigid box</title>
+  <desc id="dsc">Isometric drawing of a drawer rigid box: a wrapped outer sleeve with a rigid inner tray drawn part of the way out, showing the ribbon-pull slot and a gold band.</desc>
+  <g>
+  <polygon points="300.0,372.0 177.1,301.1 177.1,249.5 300.0,320.5" fill="#F7F4EF" stroke="#8E1B2A" stroke-width="2.2" stroke-linejoin="round"/>
+  <polygon points="300.0,372.0 491.2,261.6 491.2,210.1 300.0,320.5" fill="#F1EBE3" stroke="#8E1B2A" stroke-width="2.2" stroke-linejoin="round"/>
+  <polygon points="300.0,320.5 491.2,210.1 368.3,139.1 177.1,249.5" fill="#FFFFFF" stroke="#8E1B2A" stroke-width="2.2" stroke-linejoin="round"/>
+  <line x1="282.8" y1="310.5" x2="474.0" y2="200.1" stroke="#8E1B2A" stroke-width="1.4" stroke-linecap="round"/>
+  <polygon points="182.0,440.0 59.1,369.1 59.1,317.5 182.0,388.5" fill="#FBF9F6" stroke="#8E1B2A" stroke-width="2.2" stroke-linejoin="round"/>
+  <polygon points="182.0,440.0 373.2,329.6 373.2,278.1 182.0,388.5" fill="#F7F4EF" stroke="#8E1B2A" stroke-width="2.2" stroke-linejoin="round"/>
+  <polygon points="182.0,388.5 373.2,278.1 250.3,207.1 59.1,317.5" fill="#FFFFFF" stroke="#8E1B2A" stroke-width="2.2" stroke-linejoin="round"/>
+  <polygon points="182.0,388.5 59.1,317.5 59.1,321.7 182.0,392.6" fill="#F1EBE3" stroke="#8E1B2A" stroke-width="1.4" stroke-linejoin="round"/>
+  <polygon points="256.0,362.5 286.6,344.8 286.6,356.1 256.0,373.8" fill="#C9A227"/>
+  <polygon points="78.2,342.6 231.2,254.2 231.2,248.1 78.2,336.4" fill="#C9A227"/>
+  </g>
 </svg>
