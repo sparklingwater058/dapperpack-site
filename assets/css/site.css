@@ -126,16 +126,35 @@ a:hover{color:var(--red-deep)}
 .grid--2{grid-template-columns:repeat(auto-fit,minmax(17rem,1fr))}
 .grid--3{grid-template-columns:repeat(auto-fit,minmax(14.5rem,1fr))}
 .grid--4{grid-template-columns:repeat(auto-fit,minmax(11.5rem,1fr))}
-/* 五品类一行（首页"What we make"、products 五类）。
-   为什么单独一个类：`auto-fit` + `minmax` 在 5 个卡片时会在宽屏排成 4+1
-   （用户实测截图确认过），因为 14.5rem 的下限让第 5 张挤不进去。
-   这里把下限降到 9.5rem，并显式声明"最多 5 列"：
-     · ≥ 74rem  → 5 列一行
-     · 52–74rem → 3 列
-     · < 52rem  → 2 列
-   下限 9.5rem 保证窄屏也不会把卡片压成细条。 */
-.grid--5{grid-template-columns:repeat(auto-fit,minmax(9.5rem,1fr))}
-@media (min-width:74rem){ .grid--5{grid-template-columns:repeat(5,1fr)} }
+/* 五品类版式：**4 张一行 + 第 5 张横跨整行的扁长卡**（2026-10-05 用户定稿）。
+   走过的弯路，记下来免得再犯：
+     ① 原来 `grid--3` + 5 张卡 → 宽屏排成 3+2，最后一行只有 1 张，看着不整齐
+     ② 改成 5 列一行 → 用户实测截图反馈"太难看了"：卡宽只剩 175px，正文被切成
+        每行 2–3 个词，完全不像专业 B2B 网站的品类概览
+   ⇒ 最终版：**4 列**，前 4 张各占 1 列，第 5 张 `.card--wide` 跨满 4 列并改为
+      **图左文右**的横向卡。卡片宽度回到 ~250px（与其它页面一致），且不留孤行。 */
+.grid--5{grid-template-columns:repeat(auto-fit,minmax(13rem,1fr))}
+@media (min-width:60rem){
+  .grid--5{grid-template-columns:repeat(4,1fr)}
+  /* 第 5 张跨满 4 列，内部「图 | 文」两栏。
+     ⚠️ 文字必须**包在一个 .card__body 里**再作为第二个网格项 —— 否则 h3 / p / p
+        各自成为独立网格项，会被摆成 2×2 的错位版式（实测截图确认过）：
+        标题单独跑到中间、图片占满整列高。 */
+  .grid--5 > .card--wide{
+    grid-column:1 / -1;
+    display:grid; grid-template-columns:minmax(10rem,13rem) 1fr;
+    gap:clamp(1.2rem,3vw,2.4rem); align-items:center;
+  }
+  .grid--5 > .card--wide > img{margin:0; justify-self:center}
+  .grid--5 > .card--wide > .card__body > h3{margin-top:0}
+  /* 正文限宽：扁长卡里一行太长会难以阅读（约 60–70 字符/行） */
+  .grid--5 > .card--wide > .card__body > p{max-width:46rem}
+}
+@media (max-width:60rem){
+  /* 窄屏退回纵向卡，图片恢复常规居中间距 */
+  .grid--5 > .card--wide > img{margin:0 auto 1.1rem}
+  .grid--5 > .card--wide > .card__body > h3{margin-top:0}
+}
 .split{display:grid; gap:clamp(1.8rem,5vw,3.5rem); align-items:center;
        grid-template-columns:repeat(auto-fit,minmax(19rem,1fr))}
 
