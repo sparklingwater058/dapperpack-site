@@ -1,11 +1,23 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 430" width="580" height="430" role="img" aria-labelledby="ttl dsc">
-  <title id="ttl">Book-style rigid box</title>
-  <desc id="dsc">Front view of a book-style rigid box: a wrapped base with a hinged lid lifted clear of it, and the spine edge finished in gold foil.</desc>
-  <rect x="142" y="138" width="296" height="46" fill="#F1EBE3" stroke="#8E1B2A" stroke-width="2.2" stroke-linejoin="round"/>
-  <rect x="142" y="138" width="22" height="46" fill="#C9A227" stroke="none"/>
-  <rect x="150" y="200" width="280" height="170" fill="#F7F4EF" stroke="#8E1B2A" stroke-width="2.2" stroke-linejoin="round"/>
-  <rect x="156" y="206" width="22" height="158" fill="#C9A227" stroke="none"/>
-  <line x1="156" y1="206" x2="156" y2="364" stroke="#8E1B2A" stroke-width="1.6" stroke-linecap="round"/>
-  <line x1="178" y1="206" x2="178" y2="364" stroke="#8E1B2A" stroke-width="1.6" stroke-linecap="round"/>
-  <line x1="290.0" y1="184" x2="290.0" y2="200" stroke="#C9A227" stroke-width="1.8" stroke-linecap="round"/>
+  <title id="ttl">Book-style box</title>
+  <desc id="dsc">Isometric drawing of a book-style rigid box: a wrapped base with a lid hinged along one long edge, shown lifted open so the hinge, the lid and the interior are all visible; a gold band runs across the lid.</desc>
+  <g>
+  <polygon points="300.0,410.4 130.7,312.6 130.7,238.6 300.0,336.4" fill="#FFFFFF" stroke="#8E1B2A" stroke-width="2.2" stroke-linejoin="round"/>
+  <polygon points="300.0,410.4 468.0,313.4 468.0,239.4 300.0,336.4" fill="#F7F4EF" stroke="#8E1B2A" stroke-width="2.2" stroke-linejoin="round"/>
+  <polygon points="300.0,336.4 130.7,238.6 151.3,236.6 303.4,324.5" fill="#FFFFFF" stroke="#8E1B2A" stroke-width="2.2" stroke-linejoin="round"/>
+  <polygon points="130.7,238.6 298.7,141.6 295.3,153.5 151.3,236.6" fill="#FFFFFF" stroke="#8E1B2A" stroke-width="2.2" stroke-linejoin="round"/>
+  <polygon points="298.7,141.6 468.0,239.4 447.4,241.3 295.3,153.5" fill="#FFFFFF" stroke="#8E1B2A" stroke-width="2.2" stroke-linejoin="round"/>
+  <polygon points="468.0,239.4 300.0,336.4 303.4,324.5 447.4,241.3" fill="#FFFFFF" stroke="#8E1B2A" stroke-width="2.2" stroke-linejoin="round"/>
+  <polygon points="303.4,324.5 151.3,236.6 151.3,298.6 303.4,386.5" fill="#E4D9CB" stroke="#8E1B2A" stroke-width="2.2" stroke-linejoin="round"/>
+  <polygon points="151.3,236.6 295.3,153.5 295.3,215.5 151.3,298.6" fill="#E4D9CB" stroke="#8E1B2A" stroke-width="2.2" stroke-linejoin="round"/>
+  <polygon points="295.3,153.5 447.4,241.3 447.4,303.3 295.3,215.5" fill="#E4D9CB" stroke="#8E1B2A" stroke-width="2.2" stroke-linejoin="round"/>
+  <polygon points="447.4,241.3 303.4,324.5 303.4,386.5 447.4,303.3" fill="#E4D9CB" stroke="#8E1B2A" stroke-width="2.2" stroke-linejoin="round"/>
+  <polygon points="303.4,386.5 151.3,298.6 295.3,215.5 447.4,303.3" fill="#EFE7DC" stroke="#8E1B2A" stroke-width="2.2" stroke-linejoin="round"/>
+  <polygon points="282.0,268.4 112.7,170.6 280.7,73.6 450.0,171.4" fill="#FFFFFF" stroke="#8E1B2A" stroke-width="2.4" stroke-linejoin="round"/>
+  <polygon points="282.0,280.4 112.7,182.6 112.7,170.6 282.0,268.4" fill="#F1EBE3" stroke="#8E1B2A" stroke-width="1.6" stroke-linejoin="round"/>
+  <polygon points="112.7,182.6 280.7,85.6 280.7,73.6 112.7,170.6" fill="#F7F4EF" stroke="#8E1B2A" stroke-width="1.6" stroke-linejoin="round"/>
+  <polygon points="282.0,280.4 450.0,183.4 450.0,171.4 282.0,268.4" fill="#F7F4EF" stroke="#8E1B2A" stroke-width="1.6" stroke-linejoin="round"/>
+  <polygon points="339.1,235.4 169.8,137.6 186.6,127.9 355.9,225.7" fill="#C9A227" stroke="#8E1B2A" stroke-width="0" stroke-linejoin="round"/>
+  <line x1="468.0" y1="239.4" x2="298.7" y2="141.6" stroke="#8E1B2A" stroke-width="3.6" stroke-linecap="round"/>
+  </g>
 </svg>
