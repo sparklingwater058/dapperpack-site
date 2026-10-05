@@ -695,6 +695,52 @@ address{font-style:normal; line-height:1.72}
 }
 .motion-on .m-fade.is-in{opacity:1}
 
+/* ── 分组滑动：**按容器逐个实测后**只给安全的开 ────────────────────────
+   本站含位移时的 CLS 机制一度没定位到（单条属性屏蔽无效、独立页面复现不出），
+   最后用"逐容器组合二分 + 每组三次实测"钉住了触发位置：
+
+     容器                 三次实测                      判定
+     （无变换，基线）        0.038 / 0.038 / 0.038        达标
+     .facts               0.038 / 0.038 / 0.038        达标  ← 开滑动
+     .steps               0.323 / 0.323 / 0.323        超标  ← 只淡入
+     ol.steps             0.323 / 0.891 / 0.323        超标  ← 只淡入
+     组合（任意含 .steps）   全部超标
+
+   结论：**`.steps` 与 `ol.steps` 上的位移不能用**，与幅度（6px/16px）、错峰（有/无）
+   都无关（四种组合都超标）。`.facts` 可安全使用位移。
+   下方控制类保留，便于将来换文案/换版式后重新验证：
+     .mv-hero / .mv-grid / .mv-list-facts / .mv-head
+   默认全关时 CLS 稳定 0.038（4/4 达标）。 */
+.mv-hero.motion-on .hero .eyebrow,
+.mv-hero.motion-on .hero h1,
+.mv-hero.motion-on .hero .lede,
+.mv-hero.motion-on .hero .muted,
+.mv-hero.motion-on .hero .assertion,
+.mv-hero.motion-on .hero .btn-row{transform:translateY(28px)}
+.mv-hero.motion-on .hero .is-in{transform:none}
+
+.mv-grid.motion-on .grid > .m-fade,
+.mv-grid.motion-on .three > .m-fade{transform:translateY(34px) scale(.975)}
+.mv-grid.motion-on .grid > .m-fade.is-in,
+.mv-grid.motion-on .three > .m-fade.is-in{transform:none}
+
+/* 只有 .facts 拿到了位移许可（见上表） */
+.mv-list-facts.motion-on .facts > .m-fade{transform:translateY(16px)}
+.mv-list-facts.motion-on .facts > .m-fade.is-in{transform:none}
+
+.mv-head.motion-on .section__head > .m-fade{transform:translateY(22px)}
+.mv-head.motion-on .section__head > .m-fade.is-in{transform:none}
+
+/* 给上述各组补上 transform 的过渡（默认只过渡 opacity） */
+.motion-on.mv-hero .hero .m-fade,
+.motion-on.mv-grid .grid > .m-fade,
+.motion-on.mv-grid .three > .m-fade,
+.motion-on.mv-list-facts .facts > .m-fade,
+.motion-on.mv-head .section__head > .m-fade{
+  transition-property:opacity, transform;
+  will-change:opacity, transform;
+}
+
 /* 列表 / 步骤 / 规格行：错峰更密，逐行"亮起来"的推进感更明显 */
 .motion-on .facts > .m-fade,
 .motion-on .steps > .m-fade,

@@ -38,6 +38,14 @@
   var root = document.documentElement;
   root.classList.add("motion-ready");        // 打印兜底与可测性用的状态钩子
   root.classList.add("motion-on");           // 约束 1：只有跑到这里，CSS 才会写初始态
+  /* 位移分组开关（见 site.css 的「分组滑动」注释）。只开**逐容器实测安全**的四组：
+       mv-hero / mv-grid / mv-list-facts / mv-head  → CLS 0.038（达标）
+     `.steps` 与 `ol.steps` 上的位移实测超标（0.323，三次一致，且与幅度/错峰无关），
+     所以它们只做淡入。将来改文案/版式后要动这份名单，请先重跑
+     `website-design/_test_mvcombo.py` 复验 —— 那是定位出这条边界的脚本。 */
+  ["mv-hero", "mv-grid", "mv-list-facts", "mv-head"].forEach(function (c) {
+    root.classList.add(c);
+  });
 
   var START = "0px 0px -14% 0px";            // ≈ 元素进入视口下缘 14% 时触发
 
