@@ -53,7 +53,12 @@
     // 选择器,                          交错步长(s), 每组上限(s), 擦除方向
     [".hero .eyebrow, .hero h1, .hero .lede, .hero .muted, .hero .assertion, " +
      ".hero .btn-row, .hero .hero__figure", 0.09, 0.5, null],
-    [".grid > *, .three > *",              0.08, 0.4, null],
+    /* ⚠️ `.grid--5 > .card--wide > *` 不能省：首页第 5 张卡的结构是
+       `<article class="card card--wide"><img><div class="card__body">…</div></article>`，
+       它的 `img` 与 `card__body` 是 `.grid` 的**孙元素**，不匹配 `.grid > *`。
+       漏掉时它们拿不到 `.is-in`，在 `.motion-on .m-fade` 下会**一直 opacity:0（不可见）**
+       —— 与原型站当年 19 个标题不可见属同一类问题。 */
+    [".grid > *, .three > *, .grid--5 > .card--wide > *", 0.08, 0.4, null],
     [".facts > li, .steps > li, ol.steps > li, .checklist > li", 0.07, 0.5, null],
     ["dl.spec > div",                      0.05, 0.4, null],
     [".section__head > *",                 0.08, 0.3, null],

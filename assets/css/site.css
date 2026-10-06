@@ -119,8 +119,36 @@ a:hover{color:var(--red-deep)}
 .section{padding:clamp(3rem,7vw,5rem) 0; border-top:1px solid var(--line)}
 .section--paper{background:var(--paper); border-top-color:var(--line)}
 .section--tight{padding:clamp(2rem,4vw,3rem) 0}
-.section__head{max-width:46rem; margin-bottom:clamp(1.6rem,3vw,2.4rem)}
-.stack > * + *{margin-top:1rem}
+
+/* ── 区块过渡：用**留白**而不是分隔线（2026-10-05 用户定稿） ──────────────
+   背景：`--body`(#FBF9F6) 与 `--paper`(#F7F4EF) 的对比只有 **1.044**，
+   所以两个 `section--paper` 相邻时视觉上会糊成一片。
+
+   我先加过一条金色发丝线，用户否掉了：「没有必要加分隔线，只需要两个色块之间
+   再加入一些白底，留出一定距离就行了」—— 这个判断是对的：**留白比线更克制**，
+   也不会与页面里已有的金色短横线（eyebrow / 标题下）争夺注意力。
+
+   做法：纸色区块相邻时，**上一条收缩下内边距并露出底色**，
+   两条纸色之间因此出现一道底色空隙。
+
+   ⚠️ 两类"同色相邻"都要覆盖（实测漏过第二类）：
+      · `.section--paper + .section--paper` —— 两个纸色区块相邻
+      · `.section:not(.section--paper) + .section:not(.section--paper)` —— 两个
+        **普通区块**相邻（capabilities.html 有 3 处）。它们之间原本只有
+        `1px` 的中性分隔线，在 1.044 的底色差下等于没有边界。 */
+.section--paper + .section--paper{
+  padding-bottom:clamp(1.1rem,2.2vw,1.7rem);
+  border-top-color:transparent;
+}
+.section--paper + .section--paper > .wrap{padding-top:clamp(1.9rem,4vw,2.9rem)}
+
+.section:not(.section--paper) + .section:not(.section--paper){
+  padding-bottom:clamp(1.1rem,2.2vw,1.7rem);
+  border-top-color:transparent;
+}
+.section:not(.section--paper) + .section:not(.section--paper) > .wrap{
+  padding-top:clamp(1.9rem,4vw,2.9rem);
+}
 
 .grid{display:grid; gap:clamp(1.2rem,3vw,2rem)}
 .grid--2{grid-template-columns:repeat(auto-fit,minmax(17rem,1fr))}
@@ -526,6 +554,12 @@ address{font-style:normal; line-height:1.72}
   background:var(--paper); border-radius:0 var(--radius) var(--radius) 0;
   padding:1.05rem 1.25rem; display:flex; flex-wrap:wrap; gap:.5rem 1.4rem;
   align-items:baseline; justify-content:space-between;
+  /* ⚠️ 下边距不能省（2026-10-05 用户反馈"两个一样颜色的色块连到一起了"）：
+     回信条本身就是纸色，而它**不是独立 section**，位于首屏区块内部的末尾。
+     没有下边距时它的底边正好压住区块边界，紧接着的就是下一个纸色区块
+     （`.section--paper`），两块纸色于是直接相接、看不出过渡。
+     这里留出一段底色空隙 —— 与站上其它区块过渡的处理方式一致（用留白而非线）。 */
+  margin-bottom:clamp(1.6rem,3.5vw,2.6rem);
 }
 .replybar p{margin:0; font-size:1.0625rem}
 .replybar .btn{flex:0 0 auto}
