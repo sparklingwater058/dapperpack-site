@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-169.0 -222.0 888.0 441.0" width="888" height="441" role="img" aria-labelledby="trigid drigid">
+  <title id="trigid">Branded blank - rigid lid and base</title>
+  <desc id="drigid">Flat dieline. Black solid lines are cut lines, red dashed lines are fold lines, green dashed is the 3 mm bleed. Panels are labelled in their final orientation.</desc>
+  <g>
+  <rect class="blank" x="-98.00" y="-173.00" width="318.00" height="173.00" fill="#F7F4EF"/><rect x="0.0" y="-75.0" width="220.0" height="150.0" fill="#FFFFFF"/><rect x="402.0" y="-75.0" width="236.0" height="166.0" fill="#FFFFFF"/><g class="brand__mark" transform="translate(520.00 35.91) scale(0.5625)"><path d="M -72 34 L 8 -66 L 76 22 C 36 38 -28 10 -72 34 Z" fill="#2A1E20"/><path d="M 8 -66 L 76 22 L 22 10 Z" fill="#8E1B2A"/></g><g class="wordmark"><text x="520.00" y="-44.49" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="26.2" font-weight="600" fill="#2A1E20" text-anchor="middle" dominant-baseline="middle">澄彩</text><line x1="503.74" y1="-29.80" x2="536.26" y2="-29.80" stroke="#C9A227" stroke-width="1.44"/><text x="520.00" y="-16.17" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="13.6" font-weight="600" fill="#2A1E20" letter-spacing="2.62" text-anchor="middle" dominant-baseline="middle">DAPPER PACK</text></g>
+  <line x1="0.00" y1="-75.00" x2="220.00" y2="-75.00" stroke="#FF0000" stroke-width="1.25" stroke-dasharray="7 4"/>
+  <line x1="0.00" y1="75.00" x2="220.00" y2="75.00" stroke="#FF0000" stroke-width="1.25" stroke-dasharray="7 4"/>
+  <line x1="0.00" y1="-75.00" x2="0.00" y2="75.00" stroke="#FF0000" stroke-width="1.25" stroke-dasharray="7 4"/>
+  <line x1="220.00" y1="-75.00" x2="220.00" y2="75.00" stroke="#FF0000" stroke-width="1.25" stroke-dasharray="7 4"/>
+  <path d="M0.00,-75.00 L220.00,-75.00 L220.00,75.00 L0.00,75.00 Z" fill="none" stroke="#000000" stroke-width="1.7" stroke-linejoin="miter"/>
+  <path d="M0.00,-75.00 L-92.00,-75.00 L-92.00,75.00 L0.00,75.00 Z" fill="none" stroke="#000000" stroke-width="1.7" stroke-linejoin="miter"/>
+  <path d="M220.00,-75.00 L312.00,-75.00 L312.00,75.00 L220.00,75.00 Z" fill="none" stroke="#000000" stroke-width="1.7" stroke-linejoin="miter"/>
+  <path d="M0.00,-75.00 L0.00,-167.00 L220.00,-167.00 L220.00,-75.00 Z" fill="none" stroke="#000000" stroke-width="1.7" stroke-linejoin="miter"/>
+  <path d="M0.00,75.00 L0.00,167.00 L220.00,167.00 L220.00,75.00 Z" fill="none" stroke="#000000" stroke-width="1.7" stroke-linejoin="miter"/>
+  <line x1="402.00" y1="-75.00" x2="638.00" y2="-75.00" stroke="#FF0000" stroke-width="1.25" stroke-dasharray="7 4"/>
+  <line x1="402.00" y1="91.00" x2="638.00" y2="91.00" stroke="#FF0000" stroke-width="1.25" stroke-dasharray="7 4"/>
+  <line x1="402.00" y1="-75.00" x2="402.00" y2="91.00" stroke="#FF0000" stroke-width="1.25" stroke-dasharray="7 4"/>
+  <line x1="638.00" y1="-75.00" x2="638.00" y2="91.00" stroke="#FF0000" stroke-width="1.25" stroke-dasharray="7 4"/>
+  <path d="M402.00,-75.00 L638.00,-75.00 L638.00,91.00 L402.00,91.00 Z" fill="none" stroke="#000000" stroke-width="1.7" stroke-linejoin="miter"/>
+  <path d="M402.00,-75.00 L350.00,-75.00 L350.00,91.00 L402.00,91.00 Z" fill="none" stroke="#000000" stroke-width="1.7" stroke-linejoin="miter"/>
+  <path d="M638.00,-75.00 L690.00,-75.00 L690.00,91.00 L638.00,91.00 Z" fill="none" stroke="#000000" stroke-width="1.7" stroke-linejoin="miter"/>
+  <path d="M402.00,-75.00 L402.00,-127.00 L638.00,-127.00 L638.00,-75.00 Z" fill="none" stroke="#000000" stroke-width="1.7" stroke-linejoin="miter"/>
+  <path d="M402.00,91.00 L402.00,143.00 L638.00,143.00 L638.00,91.00 Z" fill="none" stroke="#000000" stroke-width="1.7" stroke-linejoin="miter"/>
+  <path d="M-95.00,-170.00 L693.00,-170.00 L693.00,170.00 L-95.00,170.00 L-95.00,-170.00" fill="none" stroke="#69BD44" stroke-width="1.1" stroke-dasharray="12 5"/>
+  <text x="520.00" y="193.00" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="15" font-weight="600" fill="#1A1A1A" text-anchor="middle" dominant-baseline="middle">Lid</text>
+  <text x="110.00" y="193.00" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="15" font-weight="600" fill="#1A1A1A" text-anchor="middle" dominant-baseline="middle">Base</text>
+  </g>
+</svg>
