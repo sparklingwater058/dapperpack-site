@@ -639,6 +639,20 @@ address{font-style:normal; line-height:1.72}
      400×438 的图显示成 452×240，比例从 0.91 变成 1.88）。 */
   max-height:none;
 }
+/* ── 白样图与结构图并排（2026-10-06）──────────────────────────────────────
+   行业做法是把「结构图 + 白样」并排（BM Pack 的指南 + 产品页组合）。
+   两张图各自按自身比例缩放，等宽两列；窄屏堆叠。 */
+/* 上下堆叠，不并排两列 —— 并排会把每张图再对半分。
+   实测：.struct 左半 452px，若 .struct__figs 再分两列，每张只剩 **204px**，
+   刀线图的面板标签就完全读不出来了（标签正是刀线图的价值）。
+   改为堆叠后各占满 452px。 */
+.struct__figs{display:grid; grid-template-columns:1fr; gap:.8rem}
+.struct__figs figcaption{font-size:.75rem; color:var(--muted); margin-top:.55rem;
+  text-align:center}
+.struct__figure--blank{background:#FDFCFA; border:1px solid var(--rule);
+  border-radius:var(--radius); padding:.9rem; margin:0}
+.struct__figure--blank img{width:100%; height:auto; display:block; max-height:none}
+@media (max-width:52rem){ .struct__figs{grid-template-columns:1fr} }
 .struct__body h3{margin:0 0 .5rem}
 .struct__body p{margin:0 0 .7rem}
 @media (max-width:52rem){
