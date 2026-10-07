@@ -996,4 +996,105 @@ address{font-style:normal; line-height:1.72}
 .mt-0{margin-top:0}
 .mt-1{margin-top:1rem}
 .mt-2{margin-top:2rem}
+.mt-3{margin-top:3rem}
 .mb-2{margin-bottom:2rem}
+
+/* ── 三式对比表（2026-10-06）─────────────────────────────────────────────
+   行业做法（7packaging）：用**对比表**讲结构差异，而不是再画一张图 ——
+   买家正是按"插舌方向 / 组装速度 / 强度 / 适用"这些维度选型。
+   横向可滚动，避免窄屏挤压列宽。 */
+.table-scroll{overflow-x:auto; -webkit-overflow-scrolling:touch; margin-top:1rem}
+table.cmp{border-collapse:collapse; width:100%; min-width:44rem; font-size:.95rem}
+table.cmp th, table.cmp td{
+  border-bottom:1px solid var(--line); padding:.6rem .8rem; text-align:left;
+  vertical-align:top;
+}
+table.cmp thead th{
+  border-bottom:2px solid var(--rule); font-weight:600; color:var(--ink);
+  white-space:nowrap;
+}
+table.cmp tbody th{font-weight:600; color:var(--ink); white-space:nowrap}
+table.cmp td{color:var(--body)}
+@media print{
+  .table-scroll{overflow:visible}
+  table.cmp{min-width:0; font-size:8.2pt}
+  table.cmp th, table.cmp td{padding:.25rem .35rem}
+}
+
+/* ── 纯 CSS 折叠动画（2026-10-06）─────────────────────────────────────────
+   行业调研：**没有任何被探测的包装网站**在产品页放结构折叠动画 → 这是差异化。
+   技术：只用 CSS 3D 变换，无 JS、无 WebGL，因此与站上"无第三方请求"的闸门兼容。
+   载体用原生 `<details>`：无 JS 可用、键盘可操作、读屏可读。
+
+   ⚠️ 与站上动效约束的关系：站上规定"动效只能用 opacity 与 clip-path"，
+   因为**位移会破坏 CLS**。这里不冲突 —— 动画只在 `details[open]` 后发生，
+   初始态不占位、不影响任何布局度量。 */
+.folds{display:grid; gap:.9rem; margin-top:1.2rem}
+.fold{
+  border:1px solid var(--rule); border-radius:var(--radius);
+  background:var(--card); padding:0;
+}
+.fold > summary{
+  cursor:pointer; padding:.85rem 1rem; font-weight:600; color:var(--ink);
+  list-style:none; display:flex; align-items:center; gap:.6rem;
+}
+.fold > summary::-webkit-details-marker{display:none}
+.fold > summary::before{
+  content:""; width:.5rem; height:.5rem; flex:0 0 auto;
+  border-right:2px solid var(--gold); border-bottom:2px solid var(--gold);
+  transform:rotate(-45deg); transition:transform .18s ease;
+}
+.fold[open] > summary::before{transform:rotate(45deg)}
+.fold__stage{
+  padding:1.4rem 1rem 1rem; display:flex; justify-content:center;
+  perspective:640px; background:#FDFCFA; border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line);
+}
+/* ⚠️ 不要在这里缩小字号：站上有可访问性下限 17px，
+   .95rem（约 15.2px）会直接判不合格。用默认段落字号即可。 */
+.fold__note{margin:.8rem 1rem 1rem; color:var(--body)}
+
+/* 书型盒：盖沿书脊翻开（绕左边线旋转） */
+.fold__box--book{position:relative; width:15rem; height:9.5rem}
+.fold__box--book .fold__body{
+  position:absolute; inset:0; border:2px solid var(--red); border-radius:0 3px 3px 0;
+  background:#FFFFFF; transform-origin:left center;
+  animation:fold-book 1.5s cubic-bezier(.55,.06,.25,1) both;
+}
+.fold__box--book .fold__lid{
+  position:absolute; inset:0; border:2px solid var(--red); border-radius:0 3px 3px 0;
+  background:#F7F4EF; box-shadow:0 2px 0 rgba(142,27,42,.14);
+  transform-origin:left center; transform:rotateY(-96deg);
+  animation:fold-lid 1.5s cubic-bezier(.55,.06,.25,1) both;
+}
+@keyframes fold-book{ from{ transform:rotateY(-96deg); } to{ transform:rotateY(0deg); } }
+@keyframes fold-lid{ from{ transform:rotateY(0deg); } to{ transform:rotateY(-96deg); } }
+
+/* 抽屉盒：托盘从封套里抽出 */
+.fold__box--drawer{position:relative; width:15rem; height:9.5rem}
+.fold__box--drawer .fold__sleeve{
+  position:absolute; inset:1.6rem 0; border:2px solid var(--red); background:#F7F4EF;
+  border-radius:3px;
+}
+.fold__box--drawer .fold__tray{
+  position:absolute; top:2.6rem; bottom:2.6rem; left:.6rem; width:11rem;
+  border:2px solid var(--red); background:#FFFFFF; border-radius:2px;
+  animation:fold-tray 1.5s cubic-bezier(.55,.06,.25,1) both;
+}
+@keyframes fold-tray{
+  from{ transform:translateX(0); } to{ transform:translateX(5.4rem); }
+}
+
+@media (prefers-reduced-motion: reduce){
+  .fold__box--book .fold__body,
+  .fold__box--book .fold__lid,
+  .fold__box--drawer .fold__tray{animation:none}
+  .fold__box--book .fold__lid{transform:rotateY(-96deg)}
+  .fold__box--drawer .fold__tray{transform:translateX(5.4rem)}
+}
+
+/* 打印态：强制展开、取消一切动画与 3D 变换 ——
+   站上有"一页纸可打印"闸门，动画尺寸不能影响它。 */
+@media print{
+  .folds{display:none}
+}
