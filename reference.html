@@ -8,7 +8,7 @@
 <link rel="canonical" href="https://dapperpack.com/reference.html">
 <meta name="theme-color" content="#8E1B2A">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link rel="preload" href="assets/fonts/source-serif-4-600-latin.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="assets/css/site.css?v=450cb8d9be">
+<link rel="preload" href="assets/fonts/source-serif-4-600-latin.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="assets/css/site.css?v=a3fc2889c2">
 <script src="assets/js/motion.js?v=35ffd58e37" defer></script>
 <script src="assets/js/site.js?v=31a021dd7b" defer></script>
 
@@ -119,8 +119,8 @@
           </p>
         </div>
         <figure class="hero__figure">
-          <img src="assets/img/illus-dieline.svg" width="620" height="520"
-               alt="Line drawing of a flat carton blank showing the die-cut outline, fold creases, glue flap and a die-cut window.">
+          <img src="assets/img/dieline-flat-folding-carton.svg" width="400" height="334"
+               alt="Flat dieline of a straight tuck end carton: black solid cut lines, red dashed fold lines, green dashed 3 mm bleed, with every panel labelled.">
           <figcaption>A blank is read as a drawing, not as a picture.</figcaption>
         </figure>
       </div>
@@ -138,27 +138,41 @@
         </p>
       </div>
 
-      <dl class="terms">
+            <dl class="terms">
         <div>
-          <dt>Cut line</dt>
-          <dd>The outline the die cuts. Solid on every drawing; anything outside it is waste.</dd>
+          <dt>Cut line &mdash; black, solid</dt>
+          <dd>The blade cuts here; it becomes the outer edge of the box. Artwork must bleed
+          <strong>3&nbsp;mm</strong> past it, which is why every drawing below carries a green
+          dashed bleed line outside the outline.</dd>
         </div>
         <div>
-          <dt>Crease line</dt>
-          <dd>Where the board folds. Shown dashed. Its position fixes the internal dimensions —
-          move a crease by a millimetre and the box either grips the product or rattles.</dd>
-        </div>
-        <div>
-          <dt>Grain direction</dt>
-          <dd>The direction the board fibres run, marked on the sheet. Creases should run with the
-          grain; a box folded across it cracks at the fold and bows on the panel.</dd>
+          <dt>Fold line &mdash; red, dashed</dt>
+          <dd>A crease, not a cut. <strong>Never run text or a logo across it</strong> &mdash; the
+          panel folds and the artwork breaks in two.</dd>
         </div>
         <div>
           <dt>Glue flap</dt>
-          <dd>The narrow panel that becomes the seam. Its width depends on board thickness, and it
-          is the first thing to fail if it is drawn too thin.</dd>
+          <dd>Glued under another panel and never seen. Leave it unprinted, or a flat colour.
+          Its width depends on board thickness, and it is the first thing to fail if drawn too
+          thin.</dd>
+        </div>
+        <div>
+          <dt>Tuck-in</dt>
+          <dd>Folds <em>inside</em> the box. Only put artwork here if you want it seen when the
+          box is opened.</dd>
+        </div>
+        <div>
+          <dt>Panel labels</dt>
+          <dd>Our drawings name every panel &mdash; front, side, back, glue flap, tuck-in &mdash;
+          and the labels are set the way the panel will finally face. On a folded box some of
+          them read upside down. <strong>Follow the label, not the upright.</strong></dd>
         </div>
       </dl>
+
+      <p class="mt-2">
+        <strong>If a structure is still unclear after reading,</strong> print the drawing small,
+        cut it out and fold it. For a complex box that five-minute step saves a reprint.
+      </p>
 
       <p class="mt-2">
         <a href="dieline-guide.html">How to read a dieline we send you &rarr;</a>
@@ -172,70 +186,90 @@
         <p class="eyebrow">Structures</p>
         <h2>What we draw, and what each one is for</h2>
         <p>
-          Three families cover most briefs. The drawing below each one is ours — an illustration
-          of the structure, not a photograph of a delivered job.
+          Five structures cover most briefs. Each one is drawn <strong>flat</strong>, because that is where the differences live — a tuck end and a crash-lock base look identical from the outside, and nothing alike on the sheet.
         </p>
       </div>
 
-      <div class="grid grid--3">
-        <article class="card">
-          <span class="card__num">01</span>
-          <figure class="struct__figure">
-            <img src="assets/img/illus-carton.svg" width="520" height="420" loading="lazy"
-                 alt="Line drawing of a tuck-end folding carton with a gold band and a die-cut window.">
+            <div class="struct-list">
+        <article class="struct">
+          <figure class="struct__figure struct__figure--dieline">
+            <img src="assets/img/dieline-flat-folding-carton.svg" width="400" height="334" loading="lazy"
+                 alt="Flat dieline drawing of a straight tuck end. Black solid lines are cut lines, red dashed lines are fold lines, green dashed is the 3 mm bleed; every panel is labelled.">
           </figure>
-          <h3 class="mt-1">Folding cartons</h3>
-          <p>
-            One piece of printed paperboard, supplied flat and glued at the seam, erected by hand
-            or on a packing line. The workhorse for retail shelf and e-commerce.
-          </p>
-          <ul class="struct__tags">
-            <li>straight tuck</li>
-            <li>reverse tuck</li>
-            <li>crash-lock</li>
-            <li>auto-lock bottom</li>
-            <li>die-cut window</li>
-          </ul>
+          <div class="struct__body">
+            <span class="card__num">01</span>
+            <h3 class="mt-1">Straight tuck end</h3>
+            <p>The everyday retail carton. Top and bottom tuck the same way, so one pass closes both ends.</p>
+            <ul class="struct__tags">
+              <li>one piece</li>
+              <li>glued seam</li>
+              <li>dust flaps</li>
+            </ul>
+          </div>
         </article>
-
-        <article class="card">
-          <span class="card__num">02</span>
-          <figure class="struct__figure">
-            <img src="assets/img/illus-rigid.svg" width="520" height="430" loading="lazy"
-                 alt="Line drawing of a rigid set-up box with a separate lid, lifted slightly and offset.">
+        <article class="struct">
+          <figure class="struct__figure struct__figure--dieline">
+            <img src="assets/img/dieline-flat-reverse-tuck.svg" width="400" height="334" loading="lazy"
+                 alt="Flat dieline drawing of a reverse tuck end. Black solid lines are cut lines, red dashed lines are fold lines, green dashed is the 3 mm bleed; every panel is labelled.">
           </figure>
-          <h3 class="mt-1">Rigid &amp; gift boxes</h3>
-          <p>
-            A greyboard body wrapped in printed paper, made up rather than folded from one sheet.
-            Stiffer, heavier, and the structure that carries a gift set.
-          </p>
-          <ul class="struct__tags">
-            <li>lid and base</li>
-            <li>neck &amp; shoulder</li>
-            <li>book-style</li>
-            <li>drawer / slipcase</li>
-            <li>magnet closure</li>
-          </ul>
+          <div class="struct__body">
+            <span class="card__num">02</span>
+            <h3 class="mt-1">Reverse tuck end</h3>
+            <p>Same strip, opposite bottom tuck. Pick it when the packed product has to slide in from one side only.</p>
+            <ul class="struct__tags">
+              <li>one piece</li>
+              <li>opens either end</li>
+              <li>glued seam</li>
+            </ul>
+          </div>
         </article>
-
-        <article class="card">
-          <span class="card__num">03</span>
-          <figure class="struct__figure">
-            <img src="assets/img/illus-sleeve.svg" width="520" height="420" loading="lazy"
-                 alt="Line drawing of a two-piece carton with a printed sleeve sliding over a plain tray.">
+        <article class="struct">
+          <figure class="struct__figure struct__figure--dieline">
+            <img src="assets/img/dieline-flat-crash-lock.svg" width="400" height="313" loading="lazy"
+                 alt="Flat dieline drawing of a crash-lock bottom. Black solid lines are cut lines, red dashed lines are fold lines, green dashed is the 3 mm bleed; every panel is labelled.">
           </figure>
-          <h3 class="mt-1">Trays, sleeves &amp; inserts</h3>
-          <p>
-            The parts that hold the product still: a die-cut tray, a sleeve that carries the print,
-            or a fitment cut to the shape of what goes inside.
-          </p>
-          <ul class="struct__tags">
-            <li>tray &amp; sleeve</li>
-            <li>fitment</li>
-            <li>E-flute insert</li>
-            <li>card platform</li>
-            <li>two-piece carton</li>
-          </ul>
+          <div class="struct__body">
+            <span class="card__num">03</span>
+            <h3 class="mt-1">Crash-lock bottom</h3>
+            <p>The bottom locks itself as the box is erected. Stronger than a tuck end and faster to pack on a line.</p>
+            <ul class="struct__tags">
+              <li>interlocking base</li>
+              <li>one movement</li>
+              <li>e-commerce</li>
+            </ul>
+          </div>
+        </article>
+        <article class="struct">
+          <figure class="struct__figure struct__figure--dieline">
+            <img src="assets/img/dieline-flat-bookstyle.svg" width="574" height="322" loading="lazy"
+                 alt="Flat dieline drawing of a book-style box. Black solid lines are cut lines, red dashed lines are fold lines, green dashed is the 3 mm bleed; every panel is labelled.">
+          </figure>
+          <div class="struct__body">
+            <span class="card__num">04</span>
+            <h3 class="mt-1">Book-style box</h3>
+            <p>Cover, spine and back cover in one piece; the lid hinges along the spine and closes on magnets.</p>
+            <ul class="struct__tags">
+              <li>magnet closure</li>
+              <li>rigid</li>
+              <li>gift set</li>
+            </ul>
+          </div>
+        </article>
+        <article class="struct">
+          <figure class="struct__figure struct__figure--dieline">
+            <img src="assets/img/dieline-flat-drawer.svg" width="916" height="299" loading="lazy"
+                 alt="Flat dieline drawing of a drawer box. Black solid lines are cut lines, red dashed lines are fold lines, green dashed is the 3 mm bleed; every panel is labelled.">
+          </figure>
+          <div class="struct__body">
+            <span class="card__num">05</span>
+            <h3 class="mt-1">Drawer box</h3>
+            <p>Two pieces: a printed sleeve and a tray that slides inside it. The fit between them is set at the drawing stage.</p>
+            <ul class="struct__tags">
+              <li>sleeve + tray</li>
+              <li>ribbon pull</li>
+              <li>rigid</li>
+            </ul>
+          </div>
         </article>
       </div>
     </div>

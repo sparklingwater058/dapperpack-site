@@ -613,6 +613,37 @@ address{font-style:normal; line-height:1.72}
 .struct__figure{margin:0 0 1.1rem; padding:0; display:block}
 .struct__figure img{max-height:15rem; width:auto; margin:0 auto}
 .struct__figure figcaption{font-size:.8rem; color:var(--muted); margin-top:.7rem; text-align:center}
+
+/* ── 刀线图卡片（2026-10-06）─────────────────────────────────────────────
+   刀线图是**技术图**，展示口径与产品示意图不同：
+     · 近白底 + 细边框框住，像一张图纸，而不是浮在白底上的插画
+     · **必须给足宽度** —— 实测放在三列网格里时图只有 153px 宽，
+       面板标签完全读不出来，而标签正是刀线图的价值所在。
+       所以每个结构**独占一行**：图在左（占一半），文字在右。
+   五张图的宽高比差别很大（0.91 / 0.96 / 1.35 / 2.40），用
+   `width:100%` + `height:auto` 按自身比例缩放；**不要**固定宽高。 */
+.struct-list{display:grid; gap:clamp(1.2rem,3vw,2rem); margin-top:1.6rem}
+.struct{
+  display:grid; grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);
+  gap:clamp(1rem,3vw,2rem); align-items:start;
+  padding:clamp(1rem,2.4vw,1.5rem);
+  background:var(--card); border:1px solid var(--rule); border-radius:var(--radius);
+}
+.struct__figure--dieline{
+  background:#FDFCFA; border:1px solid var(--rule); border-radius:var(--radius);
+  padding:.9rem; margin:0;
+}
+.struct__figure--dieline img{width:100%; height:auto; display:block;
+  /* ⚠️ 必须覆盖通用的 `.struct__figure img{max-height:15rem}`。
+     不覆盖时高度被压到 240px，而宽度仍是 100% → **图被压扁**（实测
+     400×438 的图显示成 452×240，比例从 0.91 变成 1.88）。 */
+  max-height:none;
+}
+.struct__body h3{margin:0 0 .5rem}
+.struct__body p{margin:0 0 .7rem}
+@media (max-width:52rem){
+  .struct{grid-template-columns:1fr}
+}
 .struct__tags{list-style:none; margin:.7rem 0 0; padding:0; display:flex; flex-wrap:wrap; gap:.4rem}
 .struct__tags li{font-size:.78rem; font-family:var(--font-mono); color:var(--body);
                  background:var(--paper); border:1px solid var(--rule); border-radius:2px;

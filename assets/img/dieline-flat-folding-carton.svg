@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-91.0 -55.0 400.0 333.6" width="400" height="334" role="img" aria-labelledby="tfolding-carton dfolding-carton">
+  <title id="tfolding-carton">Straight tuck end</title>
+  <desc id="dfolding-carton">Flat dieline. Black solid lines are cut lines, red dashed lines are fold lines, green dashed is the 3 mm bleed. Panels are labelled in their final orientation.</desc>
+  <g>
+  <line x1="70.00" y1="44.80" x2="70.00" y2="204.80" stroke="#FF0000" stroke-width="1.25" stroke-dasharray="7 4"/>
+  <line x1="140.00" y1="44.80" x2="140.00" y2="204.80" stroke="#FF0000" stroke-width="1.25" stroke-dasharray="7 4"/>
+  <line x1="210.00" y1="44.80" x2="210.00" y2="204.80" stroke="#FF0000" stroke-width="1.25" stroke-dasharray="7 4"/>
+  <line x1="0.00" y1="44.80" x2="280.00" y2="44.80" stroke="#FF0000" stroke-width="1.25" stroke-dasharray="7 4"/>
+  <line x1="0.00" y1="204.80" x2="280.00" y2="204.80" stroke="#FF0000" stroke-width="1.25" stroke-dasharray="7 4"/>
+  <line x1="0.00" y1="44.80" x2="0.00" y2="204.80" stroke="#FF0000" stroke-width="1.25" stroke-dasharray="7 4"/>
+  <path d="M0.00,44.80 L16.80,5.38 L10.50,0.00 L59.50,0.00 L70.00,36.74 L70.00,36.74 L80.08,6.27 L80.50,0.00 L129.50,0.00 L140.00,36.74 L140.00,36.74 L150.08,6.27 L150.50,0.00 L199.50,0.00 L210.00,36.74 L210.00,36.74 L220.08,6.27 L220.50,0.00 L263.20,5.38 L280.00,44.80 L280.00,204.80 L220.50,249.60 L220.08,243.33 L210.00,212.86 L210.00,212.86 L199.50,249.60 L150.50,249.60 L150.08,243.33 L140.00,212.86 L140.00,212.86 L129.50,249.60 L80.50,249.60 L80.08,243.33 L70.00,212.86 L70.00,212.86 L59.50,249.60 L10.50,249.60 L16.80,244.22 L0.00,220.03 L0.00,204.80 Z" fill="none" stroke="#000000" stroke-width="1.7" stroke-linejoin="miter"/>
+  <path d="M0.00,44.80 L-14.00,52.80 L-14.00,196.80 L0.00,204.80 Z" fill="none" stroke="#000000" stroke-width="1.7" stroke-linejoin="miter"/>
+  <path d="M-17.00,-3.00 L283.00,-3.00 L283.00,252.60 L-17.00,252.60 L-17.00,-3.00" fill="none" stroke="#69BD44" stroke-width="1.1" stroke-dasharray="12 5"/>
+  <text x="35.00" y="124.80" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="600" fill="#1A1A1A" text-anchor="middle" dominant-baseline="middle">Front</text>
+  <text x="105.00" y="124.80" transform="rotate(-90 105.00 124.80)" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="600" fill="#1A1A1A" text-anchor="middle" dominant-baseline="middle">Side</text>
+  <text x="175.00" y="124.80" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="600" fill="#1A1A1A" text-anchor="middle" dominant-baseline="middle">Back</text>
+  <text x="245.00" y="124.80" transform="rotate(-90 245.00 124.80)" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="600" fill="#1A1A1A" text-anchor="middle" dominant-baseline="middle">Side</text>
+  <text x="-7.00" y="124.80" transform="rotate(-90 -7.00 124.80)" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="500" fill="#57504B" text-anchor="middle" dominant-baseline="middle">Glue flap</text>
+  <text x="35.00" y="68.10" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="500" fill="#57504B" text-anchor="middle" dominant-baseline="middle">Tuck-in</text>
+  <text x="35.00" y="228.10" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="500" fill="#57504B" text-anchor="middle" dominant-baseline="middle">Tuck-in</text>
+  <line x1="-14.00" y1="-23.40" x2="280.00" y2="-23.40" stroke="#1A1A1A" stroke-width="0.95"/>
+  <line x1="-14.00" y1="0.00" x2="-14.00" y2="-28.40" stroke="#1A1A1A" stroke-width="0.6" stroke-dasharray="3 3"/>
+  <line x1="-14.00" y1="-28.40" x2="-14.00" y2="-18.40" stroke="#1A1A1A" stroke-width="0.95"/>
+  <line x1="280.00" y1="0.00" x2="280.00" y2="-28.40" stroke="#1A1A1A" stroke-width="0.6" stroke-dasharray="3 3"/>
+  <line x1="280.00" y1="-28.40" x2="280.00" y2="-18.40" stroke="#1A1A1A" stroke-width="0.95"/>
+  <text x="133.00" y="-36.40" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="500" fill="#1A1A1A" text-anchor="middle" dominant-baseline="middle">unfolded 294 mm</text>
+  <line x1="-45.08" y1="44.80" x2="-45.08" y2="204.80" stroke="#1A1A1A" stroke-width="0.95"/>
+  <line x1="-14.00" y1="44.80" x2="-50.08" y2="44.80" stroke="#1A1A1A" stroke-width="0.6" stroke-dasharray="3 3"/>
+  <line x1="-50.08" y1="44.80" x2="-40.08" y2="44.80" stroke="#1A1A1A" stroke-width="0.95"/>
+  <line x1="-14.00" y1="204.80" x2="-50.08" y2="204.80" stroke="#1A1A1A" stroke-width="0.6" stroke-dasharray="3 3"/>
+  <line x1="-50.08" y1="204.80" x2="-40.08" y2="204.80" stroke="#1A1A1A" stroke-width="0.95"/>
+  <text x="-58.08" y="124.80" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="500" fill="#1A1A1A" text-anchor="middle" dominant-baseline="middle">body 160</text>
+  </g>
+</svg>

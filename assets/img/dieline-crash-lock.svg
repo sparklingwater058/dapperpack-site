@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-91.0 -138.8 400.0 417.4" width="400" height="417" role="img" aria-labelledby="tcrash-lock dcrash-lock">
+  <title id="tcrash-lock">Crash-lock bottom</title>
+  <desc id="dcrash-lock">Flat dieline. Black solid lines are cut lines, red dashed lines are fold lines, green dashed is the 3 mm bleed. Panels are labelled in their final orientation.</desc>
+  <g>
+  <line x1="70.00" y1="44.80" x2="70.00" y2="204.80" stroke="#FF0000" stroke-width="1.25" stroke-dasharray="7 4"/>
+  <line x1="140.00" y1="44.80" x2="140.00" y2="204.80" stroke="#FF0000" stroke-width="1.25" stroke-dasharray="7 4"/>
+  <line x1="210.00" y1="44.80" x2="210.00" y2="204.80" stroke="#FF0000" stroke-width="1.25" stroke-dasharray="7 4"/>
+  <line x1="0.00" y1="44.80" x2="280.00" y2="44.80" stroke="#FF0000" stroke-width="1.25" stroke-dasharray="7 4"/>
+  <line x1="0.00" y1="204.80" x2="280.00" y2="204.80" stroke="#FF0000" stroke-width="1.25" stroke-dasharray="7 4"/>
+  <line x1="0.00" y1="44.80" x2="0.00" y2="204.80" stroke="#FF0000" stroke-width="1.25" stroke-dasharray="7 4"/>
+  <path d="M0.00,44.80 L23.80,32.26 L46.20,32.26 L63.00,20.16 L77.00,20.16 L93.80,32.26 L116.20,32.26 L133.00,20.16 L147.00,20.16 L163.80,32.26 L186.20,32.26 L203.00,20.16 L280.00,20.16 L280.00,44.80 L280.00,204.80 L220.50,249.60 L220.08,243.33 L210.00,212.86 L210.00,212.86 L199.50,249.60 L150.50,249.60 L150.08,243.33 L140.00,212.86 L140.00,212.86 L129.50,249.60 L80.50,249.60 L80.08,243.33 L70.00,212.86 L70.00,212.86 L59.50,249.60 L10.50,249.60 L16.80,244.22 L0.00,220.03 L0.00,204.80 Z" fill="none" stroke="#000000" stroke-width="1.7" stroke-linejoin="miter"/>
+  <path d="M0.00,44.80 L-14.00,52.80 L-14.00,196.80 L0.00,204.80 Z" fill="none" stroke="#000000" stroke-width="1.7" stroke-linejoin="miter"/>
+  <path d="M-17.00,17.16 L283.00,17.16 L283.00,252.60 L-17.00,252.60 L-17.00,17.16" fill="none" stroke="#69BD44" stroke-width="1.1" stroke-dasharray="12 5"/>
+  <text x="35.00" y="124.80" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="600" fill="#1A1A1A" text-anchor="middle" dominant-baseline="middle">Front</text>
+  <text x="105.00" y="124.80" transform="rotate(-90 105.00 124.80)" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="600" fill="#1A1A1A" text-anchor="middle" dominant-baseline="middle">Side</text>
+  <text x="175.00" y="124.80" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="600" fill="#1A1A1A" text-anchor="middle" dominant-baseline="middle">Back</text>
+  <text x="245.00" y="124.80" transform="rotate(-90 245.00 124.80)" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="600" fill="#1A1A1A" text-anchor="middle" dominant-baseline="middle">Side</text>
+  <text x="-7.00" y="124.80" transform="rotate(-90 -7.00 124.80)" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="500" fill="#57504B" text-anchor="middle" dominant-baseline="middle">Glue flap</text>
+  <text x="35.00" y="68.10" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="500" fill="#57504B" text-anchor="middle" dominant-baseline="middle">Crash-lock base</text>
+  <text x="35.00" y="228.10" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="500" fill="#57504B" text-anchor="middle" dominant-baseline="middle">Tuck-in</text>
+  <line x1="-14.00" y1="-3.24" x2="280.00" y2="-3.24" stroke="#1A1A1A" stroke-width="0.95"/>
+  <line x1="-14.00" y1="20.16" x2="-14.00" y2="-8.24" stroke="#1A1A1A" stroke-width="0.6" stroke-dasharray="3 3"/>
+  <line x1="-14.00" y1="-8.24" x2="-14.00" y2="1.76" stroke="#1A1A1A" stroke-width="0.95"/>
+  <line x1="280.00" y1="20.16" x2="280.00" y2="-8.24" stroke="#1A1A1A" stroke-width="0.6" stroke-dasharray="3 3"/>
+  <line x1="280.00" y1="-8.24" x2="280.00" y2="1.76" stroke="#1A1A1A" stroke-width="0.95"/>
+  <text x="133.00" y="-16.24" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="500" fill="#1A1A1A" text-anchor="middle" dominant-baseline="middle">unfolded 294 mm</text>
+  <line x1="-45.08" y1="44.80" x2="-45.08" y2="204.80" stroke="#1A1A1A" stroke-width="0.95"/>
+  <line x1="-14.00" y1="44.80" x2="-50.08" y2="44.80" stroke="#1A1A1A" stroke-width="0.6" stroke-dasharray="3 3"/>
+  <line x1="-50.08" y1="44.80" x2="-40.08" y2="44.80" stroke="#1A1A1A" stroke-width="0.95"/>
+  <line x1="-14.00" y1="204.80" x2="-50.08" y2="204.80" stroke="#1A1A1A" stroke-width="0.6" stroke-dasharray="3 3"/>
+  <line x1="-50.08" y1="204.80" x2="-40.08" y2="204.80" stroke="#1A1A1A" stroke-width="0.95"/>
+  <text x="-58.08" y="124.80" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="500" fill="#1A1A1A" text-anchor="middle" dominant-baseline="middle">body 160</text>
+  <text x="-89.0" y="-104.8" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="600" fill="#1A1A1A">Crash-lock bottom</text>
+  <text x="-89.0" y="-82.8" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="14" fill="#57504B">Interlocking bottom panels that lock as the box is</text>
+  <text x="-89.0" y="-60.8" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="14" fill="#57504B">erected. Stronger than a tuck end, and the box</text>
+  <text x="-89.0" y="-38.8" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="14" fill="#57504B">assembles in one movement.</text>
+  </g>
+</svg>
