@@ -2,17 +2,17 @@
   <title id="tcrash-lock">Crash-lock bottom (auto-lock)</title>
   <desc id="dcrash-lock">Flat dieline. Black solid lines are cut lines, red dashed lines are fold lines, green dashed is the 3 mm bleed. Every corner is rounded and every panel is labelled.</desc>
   <g>
-  <path d="M0.00,0.00 L230.36,0.00 L230.36,260.00 L0.00,260.00 L0.00,0.00 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="round"/>
-  <path d="M490.36,0.00 L720.72,0.00 L720.72,260.00 L490.36,260.00 L490.36,0.00 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="round"/>
-  <path d="M230.36,0.00 L490.36,0.00 L490.36,260.00 L230.36,260.00 L230.36,0.00 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="round"/>
-  <path d="M230.36,0.00 L230.36,-11.96 Q230.36,-23.92 235.62,-34.66 L236.21,-35.88 Q242.06,-47.84 255.37,-47.84 L465.35,-47.84 Q478.66,-47.84 484.51,-35.88 L485.10,-34.66 Q490.36,-23.92 490.36,-11.96 L490.36,0.00 L230.36,0.00 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="round"/>
-  <path d="M230.36,260.00 L230.36,299.75 L256.36,332.28 L318.76,332.28 L360.36,274.46 L401.96,332.28 L464.36,332.28 L490.36,299.75 L490.36,260.00 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="round"/>
-  <path d="M720.72,0.00 L980.72,0.00 L980.72,260.00 L720.72,260.00 L720.72,0.00 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="round"/>
-  <path d="M720.72,0.00 L720.72,-11.96 Q720.72,-23.92 725.98,-34.66 L726.57,-35.88 Q732.42,-47.84 745.73,-47.84 L955.71,-47.84 Q969.02,-47.84 974.87,-35.88 L975.46,-34.66 Q980.72,-23.92 980.72,-11.96 L980.72,0.00 L720.72,0.00 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="round"/>
-  <path d="M720.72,260.00 L720.72,288.91 L762.32,332.28 L939.12,332.28 L980.72,288.91 L980.72,260.00 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="round"/>
-  <path d="M0.00,260.00 L0.00,312.85 L50.68,385.84 L179.68,385.84 L230.36,312.85 L230.36,260.00 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="round"/>
-  <path d="M490.36,260.00 L490.36,312.85 L541.04,385.84 L670.04,385.84 L720.72,312.85 L720.72,260.00 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="round"/>
-  <path d="M980.72,19.89 L1026.74,19.89 L1026.74,240.11 L980.72,240.11 L980.72,19.89 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="round"/>
+  <path d="M0.00,0.00 L230.36,0.00 L230.36,260.00 L0.00,260.00 L0.00,0.00 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="miter"/>
+  <path d="M490.36,0.00 L720.72,0.00 L720.72,260.00 L490.36,260.00 L490.36,0.00 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="miter"/>
+  <path d="M230.36,0.00 L490.36,0.00 L490.36,260.00 L230.36,260.00 L230.36,0.00 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="miter"/>
+  <path d="M230.36,0.00 L230.36,-11.96 Q230.36,-23.92 235.62,-34.66 L236.21,-35.88 Q242.06,-47.84 255.37,-47.84 L465.35,-47.84 Q478.66,-47.84 484.51,-35.88 L485.10,-34.66 Q490.36,-23.92 490.36,-11.96 L490.36,0.00 L230.36,0.00 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="miter"/>
+  <path d="M230.36,260.00 L230.36,299.75 L256.36,332.28 L318.76,332.28 L360.36,274.46 L401.96,332.28 L464.36,332.28 L490.36,299.75 L490.36,260.00 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="miter"/>
+  <path d="M720.72,0.00 L980.72,0.00 L980.72,260.00 L720.72,260.00 L720.72,0.00 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="miter"/>
+  <path d="M720.72,0.00 L720.72,-11.96 Q720.72,-23.92 725.98,-34.66 L726.57,-35.88 Q732.42,-47.84 745.73,-47.84 L955.71,-47.84 Q969.02,-47.84 974.87,-35.88 L975.46,-34.66 Q980.72,-23.92 980.72,-11.96 L980.72,0.00 L720.72,0.00 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="miter"/>
+  <path d="M720.72,260.00 L720.72,288.91 L762.32,332.28 L939.12,332.28 L980.72,288.91 L980.72,260.00 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="miter"/>
+  <path d="M0.00,260.00 L0.00,312.85 L50.68,385.84 L179.68,385.84 L230.36,312.85 L230.36,260.00 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="miter"/>
+  <path d="M490.36,260.00 L490.36,312.85 L541.04,385.84 L670.04,385.84 L720.72,312.85 L720.72,260.00 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="miter"/>
+  <path d="M980.72,19.89 L1026.74,19.89 L1026.74,240.11 L980.72,240.11 L980.72,19.89 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="miter"/>
   <line x1="230.36" y1="0.00" x2="230.36" y2="260.00" stroke="#FF0000" stroke-width="1.3" stroke-dasharray="8 4.5"/>
   <line x1="490.36" y1="0.00" x2="490.36" y2="260.00" stroke="#FF0000" stroke-width="1.3" stroke-dasharray="8 4.5"/>
   <line x1="720.72" y1="0.00" x2="720.72" y2="260.00" stroke="#FF0000" stroke-width="1.3" stroke-dasharray="8 4.5"/>
@@ -42,8 +42,5 @@
   <text x="-107.2" y="-156.8" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="14" fill="#57504B">Two side panels, front and back in one strip with a glue flap. The base is four interlocking flaps: the side flaps are deepest, the front flap carries a V</text>
   <text x="-107.2" y="-133.8" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="14" fill="#57504B">notch that locks over them, and the back flap folds in last. Only the top carries tuck tabs. Only the tuck tabs are rounded — the outline and the base flaps</text>
   <text x="-107.2" y="-110.8" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="14" fill="#57504B">stay square, as a die would cut them.</text>
-  
-  <line x1="232.36" y1="0.00" x2="232.36" y2="-12.00" stroke="#000000" stroke-width="1.4"/>
-  <line x1="722.72" y1="0.00" x2="722.72" y2="-12.00" stroke="#000000" stroke-width="1.4"/>
-</g>
+  </g>
 </svg>

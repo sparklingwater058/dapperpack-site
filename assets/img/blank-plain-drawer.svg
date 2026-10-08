@@ -2,18 +2,18 @@
   <title id="tdrawer">Drawer box — sleeve and tray</title>
   <desc id="ddrawer">Flat dieline. Black solid lines are cut lines, red dashed lines are fold lines, green dashed is the 3 mm bleed. Every corner is rounded and every panel is labelled.</desc>
   <g>
-  <path d="M0.00,0.00 L1040.00,0.00 L1040.00,221.52 L0.00,221.52 L0.00,0.00 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="round"/>
-  <path d="M0.00,221.52 L260.00,221.52 L260.00,441.22 L0.00,441.22 L0.00,221.52 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="round"/>
-  <path d="M0.00,-219.70 L260.00,-219.70 L260.00,0.00 L0.00,0.00 L0.00,-219.70 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="round"/>
-  <path d="M520.00,221.52 L780.00,221.52 L780.00,441.22 L520.00,441.22 L520.00,221.52 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="round"/>
-  <path d="M520.00,-219.70 L780.00,-219.70 L780.00,0.00 L520.00,0.00 L520.00,-219.70 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="round"/>
+  <path d="M0.00,0.00 L1040.00,0.00 L1040.00,221.52 L0.00,221.52 L0.00,0.00 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="miter"/>
+  <path d="M0.00,221.52 L260.00,221.52 L260.00,441.22 L0.00,441.22 L0.00,221.52 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="miter"/>
+  <path d="M0.00,-219.70 L260.00,-219.70 L260.00,0.00 L0.00,0.00 L0.00,-219.70 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="miter"/>
+  <path d="M520.00,221.52 L780.00,221.52 L780.00,441.22 L520.00,441.22 L520.00,221.52 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="miter"/>
+  <path d="M520.00,-219.70 L780.00,-219.70 L780.00,0.00 L520.00,0.00 L520.00,-219.70 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="miter"/>
   <line x1="260.00" y1="0.00" x2="260.00" y2="221.52" stroke="#FF0000" stroke-width="1.3" stroke-dasharray="8 4.5"/>
   <line x1="520.00" y1="0.00" x2="520.00" y2="221.52" stroke="#FF0000" stroke-width="1.3" stroke-dasharray="8 4.5"/>
   <line x1="780.00" y1="0.00" x2="780.00" y2="221.52" stroke="#FF0000" stroke-width="1.3" stroke-dasharray="8 4.5"/>
   <line x1="0.00" y1="221.52" x2="1040.00" y2="221.52" stroke="#FF0000" stroke-width="1.3" stroke-dasharray="8 4.5"/>
   <line x1="0.00" y1="0.00" x2="1040.00" y2="0.00" stroke="#FF0000" stroke-width="1.3" stroke-dasharray="8 4.5"/>
   <line x1="0.00" y1="0.00" x2="0.00" y2="221.52" stroke="#FF0000" stroke-width="1.3" stroke-dasharray="8 4.5"/>
-  <path d="M-43.94,62.03 L0.00,62.03 L0.00,159.49 L-43.94,159.49 L-43.94,62.03 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="round"/>
+  <path d="M-43.94,62.03 L0.00,62.03 L0.00,159.49 L-43.94,159.49 L-43.94,62.03 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="miter"/>
   <text x="130.00" y="110.76" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="15" font-weight="600" fill="#1A1A1A" text-anchor="middle" dominant-baseline="middle">Sleeve front</text>
   <text x="390.00" y="110.76" transform="rotate(-90 390.00 110.76)" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="15" font-weight="600" fill="#1A1A1A" text-anchor="middle" dominant-baseline="middle">Sleeve side</text>
   <text x="650.00" y="110.76" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="15" font-weight="600" fill="#1A1A1A" text-anchor="middle" dominant-baseline="middle">Sleeve back</text>
@@ -24,16 +24,16 @@
   <text x="650.00" y="-120.84" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="600" fill="#57504B" text-anchor="middle" dominant-baseline="middle">Side flap</text>
   <text x="-21.97" y="110.76" transform="rotate(-90 -21.97 110.76)" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="600" fill="#57504B" text-anchor="middle" dominant-baseline="middle">Glue flap</text>
   <text x="520.00" y="471.22" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="600" fill="#1A1A1A" text-anchor="middle" dominant-baseline="middle">Sleeve (outer shell)</text>
-  <path d="M1183.00,0.00 L1496.04,0.00 L1496.04,208.78 L1183.00,208.78 L1183.00,0.00 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="round"/>
-  <path d="M1183.00,208.78 L1496.04,208.78 L1496.04,323.61 L1183.00,323.61 L1183.00,208.78 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="round"/>
-  <path d="M1183.00,-114.83 L1496.04,-114.83 L1496.04,0.00 L1183.00,0.00 L1183.00,-114.83 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="round"/>
-  <path d="M1053.56,0.00 L1183.00,0.00 L1183.00,208.78 L1053.56,208.78 L1053.56,0.00 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="round"/>
-  <path d="M1053.56,20.88 L1144.00,20.88 L1144.00,187.90 L1053.56,187.90 L1053.56,20.88 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="round"/>
+  <path d="M1183.00,0.00 L1496.04,0.00 L1496.04,208.78 L1183.00,208.78 L1183.00,0.00 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="miter"/>
+  <path d="M1183.00,208.78 L1496.04,208.78 L1496.04,323.61 L1183.00,323.61 L1183.00,208.78 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="miter"/>
+  <path d="M1183.00,-114.83 L1496.04,-114.83 L1496.04,0.00 L1183.00,0.00 L1183.00,-114.83 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="miter"/>
+  <path d="M1053.56,0.00 L1183.00,0.00 L1183.00,208.78 L1053.56,208.78 L1053.56,0.00 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="miter"/>
+  <path d="M1053.56,20.88 L1144.00,20.88 L1144.00,187.90 L1053.56,187.90 L1053.56,20.88 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="miter"/>
   <text x="1098.78" y="104.39" transform="rotate(-90 1098.78 104.39)" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="10.5" font-weight="600" fill="#57504B" text-anchor="middle" dominant-baseline="middle">Tuck-in</text>
-  <path d="M1496.04,0.00 L1625.48,0.00 L1625.48,208.78 L1496.04,208.78 L1496.04,0.00 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="round"/>
-  <path d="M1535.04,20.88 L1625.48,20.88 L1625.48,187.90 L1535.04,187.90 L1535.04,20.88 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="round"/>
+  <path d="M1496.04,0.00 L1625.48,0.00 L1625.48,208.78 L1496.04,208.78 L1496.04,0.00 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="miter"/>
+  <path d="M1535.04,20.88 L1625.48,20.88 L1625.48,187.90 L1535.04,187.90 L1535.04,20.88 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="miter"/>
   <text x="1580.26" y="104.39" transform="rotate(-90 1580.26 104.39)" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="10.5" font-weight="600" fill="#57504B" text-anchor="middle" dominant-baseline="middle">Tuck-in</text>
-  <path d="M1537.46,75.79 L1584.06,75.79 L1584.06,132.99 L1537.46,132.99 L1537.46,75.79 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="round"/>
+  <path d="M1537.46,75.79 L1584.06,75.79 L1584.06,132.99 L1537.46,132.99 L1537.46,75.79 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="miter"/>
   <text x="1560.76" y="-16.00" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="600" fill="#57504B" text-anchor="middle" dominant-baseline="middle">ribbon slot</text>
   <line x1="1183.00" y1="0.00" x2="1183.00" y2="208.78" stroke="#FF0000" stroke-width="1.3" stroke-dasharray="8 4.5"/>
   <line x1="1496.04" y1="0.00" x2="1496.04" y2="208.78" stroke="#FF0000" stroke-width="1.3" stroke-dasharray="8 4.5"/>

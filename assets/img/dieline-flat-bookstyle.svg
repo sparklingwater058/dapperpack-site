@@ -2,15 +2,15 @@
   <title id="tbookstyle">Book-style box — magnetic closing flap</title>
   <desc id="dbookstyle">Flat dieline. Black solid lines are cut lines, red dashed lines are fold lines, green dashed is the 3 mm bleed. Every corner is rounded and every panel is labelled.</desc>
   <g>
-  <path d="M0.00,0.00 L260.00,0.00 L260.00,260.00 L0.00,260.00 L0.00,0.00 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="round"/>
-  <path d="M260.00,0.00 L317.20,0.00 L317.20,260.00 L260.00,260.00 L260.00,0.00 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="round"/>
-  <path d="M317.20,0.00 L577.20,0.00 L577.20,260.00 L317.20,260.00 L317.20,0.00 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="round"/>
-  <path d="M577.20,49.40 L837.20,49.40 L837.20,210.60 L577.20,210.60 L577.20,49.40 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="round"/>
-  <path d="M0.00,260.00 L0.00,299.00 L15.60,338.00 L234.00,338.00 L247.00,287.30 L260.00,260.00 L0.00,260.00 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="round"/>
-  <path d="M317.20,260.00 L330.20,287.30 L343.20,338.00 L561.60,338.00 L577.20,299.00 L577.20,260.00 L317.20,260.00 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="round"/>
-  <path d="M0.00,0.00 L0.00,-39.00 L15.60,-78.00 L234.00,-78.00 L247.00,-27.30 L260.00,0.00 L0.00,0.00 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="round"/>
-  <path d="M317.20,0.00 L330.20,-27.30 L343.20,-78.00 L561.60,-78.00 L577.20,-39.00 L577.20,0.00 L317.20,0.00 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="round"/>
-  <path d="M837.20,84.86 L865.80,84.86 L865.80,175.14 L837.20,175.14 L837.20,84.86 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="round"/>
+  <path d="M0.00,0.00 L260.00,0.00 L260.00,260.00 L0.00,260.00 L0.00,0.00 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="miter"/>
+  <path d="M260.00,0.00 L317.20,0.00 L317.20,260.00 L260.00,260.00 L260.00,0.00 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="miter"/>
+  <path d="M317.20,0.00 L577.20,0.00 L577.20,260.00 L317.20,260.00 L317.20,0.00 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="miter"/>
+  <path d="M577.20,49.40 L837.20,49.40 L837.20,210.60 L577.20,210.60 L577.20,49.40 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="miter"/>
+  <path d="M0.00,260.00 L0.00,299.00 L15.60,338.00 L234.00,338.00 L247.00,287.30 L260.00,260.00 L0.00,260.00 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="miter"/>
+  <path d="M317.20,260.00 L330.20,287.30 L343.20,338.00 L561.60,338.00 L577.20,299.00 L577.20,260.00 L317.20,260.00 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="miter"/>
+  <path d="M0.00,0.00 L0.00,-39.00 L15.60,-78.00 L234.00,-78.00 L247.00,-27.30 L260.00,0.00 L0.00,0.00 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="miter"/>
+  <path d="M317.20,0.00 L330.20,-27.30 L343.20,-78.00 L561.60,-78.00 L577.20,-39.00 L577.20,0.00 L317.20,0.00 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="miter"/>
+  <path d="M837.20,84.86 L865.80,84.86 L865.80,175.14 L837.20,175.14 L837.20,84.86 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="miter"/>
   <path d="M800.80,77.58 C804.82,77.58 808.08,80.84 808.08,84.86 C808.08,88.88 804.82,92.14 800.80,92.14 C796.78,92.14 793.52,88.88 793.52,84.86 C793.52,80.84 796.78,77.58 800.80,77.58 Z" fill="none" stroke="#000000" stroke-width="1.75"/>
   <path d="M800.80,167.86 C804.82,167.86 808.08,171.12 808.08,175.14 C808.08,179.16 804.82,182.42 800.80,182.42 C796.78,182.42 793.52,179.16 793.52,175.14 C793.52,171.12 796.78,167.86 800.80,167.86 Z" fill="none" stroke="#000000" stroke-width="1.75"/>
   <line x1="260.00" y1="0.00" x2="260.00" y2="260.00" stroke="#FF0000" stroke-width="1.3" stroke-dasharray="8 4.5"/>

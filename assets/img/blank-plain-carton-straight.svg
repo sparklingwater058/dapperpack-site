@@ -2,15 +2,15 @@
   <title id="tfolding-carton">Straight tuck end</title>
   <desc id="dfolding-carton">Flat dieline. Black solid lines are cut lines, red dashed lines are fold lines, green dashed is the 3 mm bleed. Every corner is rounded and every panel is labelled.</desc>
   <g>
-  <path d="M19.58,-163.80 L210.78,-163.80 L230.36,0.00 L230.36,260.00 L210.78,423.80 L19.58,423.80 L0.00,260.00 L0.00,0.00 L19.58,-163.80 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="round"/>
-  <path d="M509.94,-163.80 L701.14,-163.80 L720.72,0.00 L720.72,260.00 L701.14,423.80 L509.94,423.80 L490.36,260.00 L490.36,0.00 L509.94,-163.80 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="round"/>
-  <path d="M230.36,0.00 L490.36,0.00 L490.36,260.00 L230.36,260.00 L230.36,0.00 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="round"/>
-  <path d="M230.36,260.00 L230.36,239.85 Q230.36,222.69 235.49,206.32 L236.21,204.03 Q242.06,185.38 261.61,185.38 L459.11,185.38 Q478.66,185.38 484.51,204.03 L485.23,206.32 Q490.36,222.69 490.36,239.85 L490.36,260.00 L230.36,260.00 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="round"/>
-  <path d="M230.36,0.00 L230.36,20.15 Q230.36,37.31 235.49,53.68 L236.21,55.96 Q242.06,74.62 261.61,74.62 L459.11,74.62 Q478.66,74.62 484.51,55.96 L485.23,53.68 Q490.36,37.31 490.36,20.15 L490.36,0.00 L230.36,0.00 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="round"/>
-  <path d="M720.72,0.00 L980.72,0.00 L980.72,260.00 L720.72,260.00 L720.72,0.00 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="round"/>
-  <path d="M720.72,260.00 L720.72,239.85 Q720.72,222.69 725.85,206.32 L726.57,204.03 Q732.42,185.38 751.97,185.38 L949.47,185.38 Q969.02,185.38 974.87,204.03 L975.59,206.32 Q980.72,222.69 980.72,239.85 L980.72,260.00 L720.72,260.00 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="round"/>
-  <path d="M720.72,0.00 L720.72,32.11 Q720.72,49.27 724.68,65.97 L726.57,73.91 Q732.42,98.54 757.74,98.54 L943.70,98.54 Q969.02,98.54 974.87,73.91 L976.76,65.97 Q980.72,49.27 980.72,32.11 L980.72,0.00 L720.72,0.00 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="round"/>
-  <path d="M980.72,19.89 L1052.74,19.89 L1052.74,240.11 L980.72,240.11 L980.72,19.89 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="round"/>
+  <path d="M19.58,-163.80 L210.78,-163.80 L230.36,0.00 L230.36,260.00 L210.78,423.80 L19.58,423.80 L0.00,260.00 L0.00,0.00 L19.58,-163.80 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="miter"/>
+  <path d="M509.94,-163.80 L701.14,-163.80 L720.72,0.00 L720.72,260.00 L701.14,423.80 L509.94,423.80 L490.36,260.00 L490.36,0.00 L509.94,-163.80 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="miter"/>
+  <path d="M230.36,0.00 L490.36,0.00 L490.36,260.00 L230.36,260.00 L230.36,0.00 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="miter"/>
+  <path d="M230.36,260.00 L230.36,239.85 Q230.36,222.69 235.49,206.32 L236.21,204.03 Q242.06,185.38 261.61,185.38 L459.11,185.38 Q478.66,185.38 484.51,204.03 L485.23,206.32 Q490.36,222.69 490.36,239.85 L490.36,260.00 L230.36,260.00 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="miter"/>
+  <path d="M230.36,0.00 L230.36,20.15 Q230.36,37.31 235.49,53.68 L236.21,55.96 Q242.06,74.62 261.61,74.62 L459.11,74.62 Q478.66,74.62 484.51,55.96 L485.23,53.68 Q490.36,37.31 490.36,20.15 L490.36,0.00 L230.36,0.00 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="miter"/>
+  <path d="M720.72,0.00 L980.72,0.00 L980.72,260.00 L720.72,260.00 L720.72,0.00 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="miter"/>
+  <path d="M720.72,260.00 L720.72,239.85 Q720.72,222.69 725.85,206.32 L726.57,204.03 Q732.42,185.38 751.97,185.38 L949.47,185.38 Q969.02,185.38 974.87,204.03 L975.59,206.32 Q980.72,222.69 980.72,239.85 L980.72,260.00 L720.72,260.00 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="miter"/>
+  <path d="M720.72,0.00 L720.72,32.11 Q720.72,49.27 724.68,65.97 L726.57,73.91 Q732.42,98.54 757.74,98.54 L943.70,98.54 Q969.02,98.54 974.87,73.91 L976.76,65.97 Q980.72,49.27 980.72,32.11 L980.72,0.00 L720.72,0.00 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="miter"/>
+  <path d="M980.72,19.89 L1052.74,19.89 L1052.74,240.11 L980.72,240.11 L980.72,19.89 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="miter"/>
   <line x1="230.36" y1="0.00" x2="230.36" y2="260.00" stroke="#FF0000" stroke-width="1.3" stroke-dasharray="8 4.5"/>
   <line x1="490.36" y1="0.00" x2="490.36" y2="260.00" stroke="#FF0000" stroke-width="1.3" stroke-dasharray="8 4.5"/>
   <line x1="720.72" y1="0.00" x2="720.72" y2="260.00" stroke="#FF0000" stroke-width="1.3" stroke-dasharray="8 4.5"/>
@@ -43,10 +43,5 @@
   <text x="-107.2" y="-292.5" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="14" fill="#57504B">Side, front, side, back and a glue flap in one strip. Both tuck tabs hang off the front panel — that is what makes it straight. The dust flaps are part of each</text>
   <text x="-107.2" y="-269.5" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="14" fill="#57504B">side panel: full width at the crease, tapering inward, and stopping short of the box depth. Only the tuck tabs are rounded; the rest of the outline stays square,</text>
   <text x="-107.2" y="-246.5" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="14" fill="#57504B">as a die would cut it.</text>
-  
-  <line x1="232.36" y1="260.00" x2="232.36" y2="248.00" stroke="#000000" stroke-width="1.4"/>
-  <line x1="232.36" y1="0.00" x2="232.36" y2="12.00" stroke="#000000" stroke-width="1.4"/>
-  <line x1="722.72" y1="260.00" x2="722.72" y2="248.00" stroke="#000000" stroke-width="1.4"/>
-  <line x1="722.72" y1="0.00" x2="722.72" y2="12.00" stroke="#000000" stroke-width="1.4"/>
-</g>
+  </g>
 </svg>

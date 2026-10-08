@@ -2,24 +2,24 @@
   <title id="tlidbase">Lid-and-base carton (two pieces)</title>
   <desc id="dlidbase">Flat dieline. Black solid lines are cut lines, red dashed lines are fold lines, green dashed is the 3 mm bleed. Every corner is rounded and every panel is labelled.</desc>
   <g>
-  <path d="M0.00,0.00 L260.00,0.00 L260.00,260.00 L0.00,260.00 L0.00,0.00 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="round"/>
-  <path d="M0.00,260.00 L260.00,260.00 L260.00,339.56 L0.00,339.56 L0.00,260.00 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="round"/>
-  <path d="M41.60,285.46 L218.40,285.46 L218.40,339.56 L41.60,339.56 L41.60,285.46 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="round"/>
+  <path d="M0.00,0.00 L260.00,0.00 L260.00,260.00 L0.00,260.00 L0.00,0.00 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="miter"/>
+  <path d="M0.00,260.00 L260.00,260.00 L260.00,339.56 L0.00,339.56 L0.00,260.00 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="miter"/>
+  <path d="M41.60,285.46 L218.40,285.46 L218.40,339.56 L41.60,339.56 L41.60,285.46 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="miter"/>
   <line x1="0.00" y1="339.56" x2="260.00" y2="339.56" stroke="#FF0000" stroke-width="1.3" stroke-dasharray="8 4.5"/>
   <text x="130.00" y="287.05" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="10.5" font-weight="600" fill="#57504B" text-anchor="middle" dominant-baseline="middle">Tuck-in</text>
-  <path d="M0.00,-79.56 L260.00,-79.56 L260.00,0.00 L0.00,0.00 L0.00,-79.56 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="round"/>
-  <path d="M41.60,-79.56 L218.40,-79.56 L218.40,-25.46 L41.60,-25.46 L41.60,-79.56 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="round"/>
+  <path d="M0.00,-79.56 L260.00,-79.56 L260.00,0.00 L0.00,0.00 L0.00,-79.56 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="miter"/>
+  <path d="M41.60,-79.56 L218.40,-79.56 L218.40,-25.46 L41.60,-25.46 L41.60,-79.56 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="miter"/>
   <line x1="0.00" y1="-79.56" x2="260.00" y2="-79.56" stroke="#FF0000" stroke-width="1.3" stroke-dasharray="8 4.5"/>
   <text x="130.00" y="-27.05" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="10.5" font-weight="600" fill="#57504B" text-anchor="middle" dominant-baseline="middle">Tuck-in</text>
-  <path d="M-97.24,0.00 L0.00,0.00 L0.00,260.00 L-97.24,260.00 L-97.24,0.00 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="round"/>
-  <path d="M-97.24,26.00 L-57.20,26.00 L-57.20,234.00 L-97.24,234.00 L-97.24,26.00 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="round"/>
+  <path d="M-97.24,0.00 L0.00,0.00 L0.00,260.00 L-97.24,260.00 L-97.24,0.00 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="miter"/>
+  <path d="M-97.24,26.00 L-57.20,26.00 L-57.20,234.00 L-97.24,234.00 L-97.24,26.00 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="miter"/>
   <text x="-77.22" y="130.00" transform="rotate(-90 -77.22 130.00)" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="10.5" font-weight="600" fill="#57504B" text-anchor="middle" dominant-baseline="middle">Tuck-in</text>
-  <path d="M-58.37,70.20 L-38.87,70.20 L-38.87,85.80 L-58.37,85.80 L-58.37,70.20 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="round"/>
-  <path d="M260.00,0.00 L357.24,0.00 L357.24,260.00 L260.00,260.00 L260.00,0.00 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="round"/>
-  <path d="M317.20,26.00 L357.24,26.00 L357.24,234.00 L317.20,234.00 L317.20,26.00 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="round"/>
+  <path d="M-58.37,70.20 L-38.87,70.20 L-38.87,85.80 L-58.37,85.80 L-58.37,70.20 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="miter"/>
+  <path d="M260.00,0.00 L357.24,0.00 L357.24,260.00 L260.00,260.00 L260.00,0.00 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="miter"/>
+  <path d="M317.20,26.00 L357.24,26.00 L357.24,234.00 L317.20,234.00 L317.20,26.00 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="miter"/>
   <text x="337.22" y="130.00" transform="rotate(-90 337.22 130.00)" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="10.5" font-weight="600" fill="#57504B" text-anchor="middle" dominant-baseline="middle">Tuck-in</text>
-  <path d="M298.87,70.20 L318.37,70.20 L318.37,85.80 L298.87,85.80 L298.87,70.20 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="round"/>
-  <path d="M91.00,339.56 L169.00,339.56 L169.00,362.96 L91.00,362.96 L91.00,339.56 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="round"/>
+  <path d="M298.87,70.20 L318.37,70.20 L318.37,85.80 L298.87,85.80 L298.87,70.20 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="miter"/>
+  <path d="M91.00,339.56 L169.00,339.56 L169.00,362.96 L91.00,362.96 L91.00,339.56 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="miter"/>
   <line x1="0.00" y1="0.00" x2="260.00" y2="0.00" stroke="#FF0000" stroke-width="1.3" stroke-dasharray="8 4.5"/>
   <line x1="0.00" y1="260.00" x2="260.00" y2="260.00" stroke="#FF0000" stroke-width="1.3" stroke-dasharray="8 4.5"/>
   <line x1="0.00" y1="0.00" x2="0.00" y2="260.00" stroke="#FF0000" stroke-width="1.3" stroke-dasharray="8 4.5"/>
@@ -32,22 +32,22 @@
   <text x="36.40" y="309.33" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="12.5" font-weight="600" fill="#57504B" text-anchor="middle" dominant-baseline="middle">Side</text>
   <text x="36.40" y="-49.33" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="12.5" font-weight="600" fill="#57504B" text-anchor="middle" dominant-baseline="middle">Side</text>
   <text x="130.00" y="378.96" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="11.5" font-weight="600" fill="#57504B" text-anchor="middle" dominant-baseline="middle">Glue flap</text>
-  <path d="M597.48,0.00 L857.48,0.00 L857.48,260.00 L597.48,260.00 L597.48,0.00 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="round"/>
-  <path d="M597.48,260.00 L857.48,260.00 L857.48,339.56 L597.48,339.56 L597.48,260.00 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="round"/>
-  <path d="M639.08,285.46 L815.88,285.46 L815.88,339.56 L639.08,339.56 L639.08,285.46 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="round"/>
+  <path d="M597.48,0.00 L857.48,0.00 L857.48,260.00 L597.48,260.00 L597.48,0.00 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="miter"/>
+  <path d="M597.48,260.00 L857.48,260.00 L857.48,339.56 L597.48,339.56 L597.48,260.00 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="miter"/>
+  <path d="M639.08,285.46 L815.88,285.46 L815.88,339.56 L639.08,339.56 L639.08,285.46 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="miter"/>
   <line x1="597.48" y1="339.56" x2="857.48" y2="339.56" stroke="#FF0000" stroke-width="1.3" stroke-dasharray="8 4.5"/>
   <text x="727.48" y="287.05" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="10.5" font-weight="600" fill="#57504B" text-anchor="middle" dominant-baseline="middle">Tuck-in</text>
-  <path d="M597.48,-79.56 L857.48,-79.56 L857.48,0.00 L597.48,0.00 L597.48,-79.56 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="round"/>
-  <path d="M639.08,-79.56 L815.88,-79.56 L815.88,-25.46 L639.08,-25.46 L639.08,-79.56 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="round"/>
+  <path d="M597.48,-79.56 L857.48,-79.56 L857.48,0.00 L597.48,0.00 L597.48,-79.56 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="miter"/>
+  <path d="M639.08,-79.56 L815.88,-79.56 L815.88,-25.46 L639.08,-25.46 L639.08,-79.56 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="miter"/>
   <line x1="597.48" y1="-79.56" x2="857.48" y2="-79.56" stroke="#FF0000" stroke-width="1.3" stroke-dasharray="8 4.5"/>
   <text x="727.48" y="-27.05" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="10.5" font-weight="600" fill="#57504B" text-anchor="middle" dominant-baseline="middle">Tuck-in</text>
-  <path d="M500.24,0.00 L597.48,0.00 L597.48,260.00 L500.24,260.00 L500.24,0.00 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="round"/>
-  <path d="M500.24,26.00 L540.28,26.00 L540.28,234.00 L500.24,234.00 L500.24,26.00 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="round"/>
+  <path d="M500.24,0.00 L597.48,0.00 L597.48,260.00 L500.24,260.00 L500.24,0.00 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="miter"/>
+  <path d="M500.24,26.00 L540.28,26.00 L540.28,234.00 L500.24,234.00 L500.24,26.00 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="miter"/>
   <text x="520.26" y="130.00" transform="rotate(-90 520.26 130.00)" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="10.5" font-weight="600" fill="#57504B" text-anchor="middle" dominant-baseline="middle">Tuck-in</text>
-  <path d="M857.48,0.00 L954.72,0.00 L954.72,260.00 L857.48,260.00 L857.48,0.00 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="round"/>
-  <path d="M914.68,26.00 L954.72,26.00 L954.72,234.00 L914.68,234.00 L914.68,26.00 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="round"/>
+  <path d="M857.48,0.00 L954.72,0.00 L954.72,260.00 L857.48,260.00 L857.48,0.00 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="miter"/>
+  <path d="M914.68,26.00 L954.72,26.00 L954.72,234.00 L914.68,234.00 L914.68,26.00 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="miter"/>
   <text x="934.70" y="130.00" transform="rotate(-90 934.70 130.00)" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="10.5" font-weight="600" fill="#57504B" text-anchor="middle" dominant-baseline="middle">Tuck-in</text>
-  <path d="M688.48,339.56 L766.48,339.56 L766.48,362.96 L688.48,362.96 L688.48,339.56 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="round"/>
+  <path d="M688.48,339.56 L766.48,339.56 L766.48,362.96 L688.48,362.96 L688.48,339.56 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="miter"/>
   <line x1="597.48" y1="0.00" x2="857.48" y2="0.00" stroke="#FF0000" stroke-width="1.3" stroke-dasharray="8 4.5"/>
   <line x1="597.48" y1="260.00" x2="857.48" y2="260.00" stroke="#FF0000" stroke-width="1.3" stroke-dasharray="8 4.5"/>
   <line x1="597.48" y1="0.00" x2="597.48" y2="260.00" stroke="#FF0000" stroke-width="1.3" stroke-dasharray="8 4.5"/>

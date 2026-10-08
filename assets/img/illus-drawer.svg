@@ -2,14 +2,14 @@
   <title id="ttl">Drawer rigid box</title>
   <desc id="dsc">Isometric drawing of a drawer rigid box: a wrapped outer sleeve with a rigid inner tray drawn part of the way out, showing the ribbon-pull slot and a gold band.</desc>
   <g>
-  <polygon points="300.0,372.0 177.1,301.1 177.1,249.5 300.0,320.5" fill="#F7F4EF" stroke="#8E1B2A" stroke-width="2.2" stroke-linejoin="round"/>
-  <polygon points="300.0,372.0 491.2,261.6 491.2,210.1 300.0,320.5" fill="#F1EBE3" stroke="#8E1B2A" stroke-width="2.2" stroke-linejoin="round"/>
-  <polygon points="300.0,320.5 491.2,210.1 368.3,139.1 177.1,249.5" fill="#FFFFFF" stroke="#8E1B2A" stroke-width="2.2" stroke-linejoin="round"/>
-  <line x1="282.8" y1="310.5" x2="474.0" y2="200.1" stroke="#8E1B2A" stroke-width="1.4" stroke-linecap="round"/>
-  <polygon points="182.0,440.0 59.1,369.1 59.1,317.5 182.0,388.5" fill="#FBF9F6" stroke="#8E1B2A" stroke-width="2.2" stroke-linejoin="round"/>
-  <polygon points="182.0,440.0 373.2,329.6 373.2,278.1 182.0,388.5" fill="#F7F4EF" stroke="#8E1B2A" stroke-width="2.2" stroke-linejoin="round"/>
-  <polygon points="182.0,388.5 373.2,278.1 250.3,207.1 59.1,317.5" fill="#FFFFFF" stroke="#8E1B2A" stroke-width="2.2" stroke-linejoin="round"/>
-  <polygon points="182.0,388.5 59.1,317.5 59.1,321.7 182.0,392.6" fill="#F1EBE3" stroke="#8E1B2A" stroke-width="1.4" stroke-linejoin="round"/>
+  <polygon points="300.0,372.0 177.1,301.1 177.1,249.5 300.0,320.5" fill="#F7F4EF" stroke="#8E1B2A" stroke-width="2.2"/>
+  <polygon points="300.0,372.0 491.2,261.6 491.2,210.1 300.0,320.5" fill="#F1EBE3" stroke="#8E1B2A" stroke-width="2.2"/>
+  <polygon points="300.0,320.5 491.2,210.1 368.3,139.1 177.1,249.5" fill="#FFFFFF" stroke="#8E1B2A" stroke-width="2.2"/>
+  <line x1="282.8" y1="310.5" x2="474.0" y2="200.1" stroke="#8E1B2A" stroke-width="1.4" stroke-linecap="butt"/>
+  <polygon points="182.0,440.0 59.1,369.1 59.1,317.5 182.0,388.5" fill="#FBF9F6" stroke="#8E1B2A" stroke-width="2.2"/>
+  <polygon points="182.0,440.0 373.2,329.6 373.2,278.1 182.0,388.5" fill="#F7F4EF" stroke="#8E1B2A" stroke-width="2.2"/>
+  <polygon points="182.0,388.5 373.2,278.1 250.3,207.1 59.1,317.5" fill="#FFFFFF" stroke="#8E1B2A" stroke-width="2.2"/>
+  <polygon points="182.0,388.5 59.1,317.5 59.1,321.7 182.0,392.6" fill="#F1EBE3" stroke="#8E1B2A" stroke-width="1.4"/>
   <polygon points="256.0,362.5 286.6,344.8 286.6,356.1 256.0,373.8" fill="#C9A227"/>
   <polygon points="78.2,342.6 231.2,254.2 231.2,248.1 78.2,336.4" fill="#C9A227"/>
   </g>
