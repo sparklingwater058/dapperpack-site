@@ -154,6 +154,38 @@ a:hover{color:var(--red-deep)}
 .grid--2{grid-template-columns:repeat(auto-fit,minmax(17rem,1fr))}
 .grid--3{grid-template-columns:repeat(auto-fit,minmax(14.5rem,1fr))}
 .grid--4{grid-template-columns:repeat(auto-fit,minmax(11.5rem,1fr))}
+/* 五品类版式：**4 张一行 + 第 5 张横跨整行的扁长卡**（2026-10-05 用户定稿）。
+   走过的弯路，记下来免得再犯：
+     ① 原来 `grid--3` + 5 张卡 → 宽屏排成 3+2，最后一行只有 1 张，看着不整齐
+     ② 改成 5 列一行 → 用户实测截图反馈"太难看了"：卡宽只剩 175px，正文被切成
+        每行 2–3 个词，完全不像专业 B2B 网站的品类概览
+   ⇒ 最终版：**4 列**，前 4 张各占 1 列，第 5 张 `.card--wide` 跨满 4 列并改为
+      **图左文右**的横向卡。卡片宽度回到 ~250px（与其它页面一致），且不留孤行。 */
+/* 2026-10-07：首页由图版式回到**两列**？否 —— 用户改选方案 ①（首页不放品牌），
+   因此不需要为品牌可读而放大图片，恢复到与其它页面一致的紧凑网格即可。
+   两列版式的规则已移除（_home_two_columns.py 作废）。 */
+.grid--5{grid-template-columns:repeat(auto-fit,minmax(13rem,1fr))}
+@media (min-width:60rem){
+  .grid--5{grid-template-columns:repeat(4,1fr)}
+  /* 第 5 张跨满 4 列，内部「图 | 文」两栏。
+     ⚠️ 文字必须**包在一个 .card__body 里**再作为第二个网格项 —— 否则 h3 / p / p
+        各自成为独立网格项，会被摆成 2×2 的错位版式（实测截图确认过）：
+        标题单独跑到中间、图片占满整列高。 */
+  .grid--5 > .card--wide{
+    grid-column:1 / -1;
+    display:grid; grid-template-columns:minmax(10rem,13rem) 1fr;
+    gap:clamp(1.2rem,3vw,2.4rem); align-items:center;
+  }
+  .grid--5 > .card--wide > img{margin:0; justify-self:center}
+  .grid--5 > .card--wide > .card__body > h3{margin-top:0}
+  /* 正文限宽：扁长卡里一行太长会难以阅读（约 60–70 字符/行） */
+  .grid--5 > .card--wide > .card__body > p{max-width:46rem}
+}
+@media (max-width:60rem){
+  /* 窄屏退回纵向卡，图片恢复常规居中间距 */
+  .grid--5 > .card--wide > img{margin:0 auto 1.1rem}
+  .grid--5 > .card--wide > .card__body > h3{margin-top:0}
+}
 .split{display:grid; gap:clamp(1.8rem,5vw,3.5rem); align-items:center;
        grid-template-columns:repeat(auto-fit,minmax(19rem,1fr))}
 
@@ -1069,33 +1101,3 @@ table.cmp td{color:var(--body)}
 @media print{
   .folds{display:none}
 }
-
-/* ── 首页「What we make」两列大图（2026-10-07，用户选定方案 ②）────────────
-   起因：五列布局下每张白样图只有 179px，而图的 viewBox 宽 400 单位、单面板
-   70 单位 ⇒ 面板仅约 31px ⇒ 品牌字号渲染后 **3.6px**，物理上读不出。
-   两列布局每张约 500px，面板约 87px，品牌字号约 **10px**，可读。
-
-   ⚠️ 必须覆盖 `.grid--5` 在 60rem 以上的四列规则与 `.card--wide` 的横跨，
-   否则两套网格会打架。这里用更高特异性 + 后置声明确保生效。
-   ⚠️ 卡片变高会改变 CLS 基线 —— 改完必须复测首屏性能闸门。 */
-.grid--what{
-  display:grid; gap:clamp(1.2rem,3vw,2rem);
-  grid-template-columns:1fr;
-  margin-top:1.6rem;
-}
-@media (min-width:52rem){
-  .grid--what{grid-template-columns:repeat(2,minmax(0,1fr))}
-}
-.grid--what > .card{
-  display:flex; flex-direction:column;
-  padding:clamp(1rem,2.2vw,1.4rem);
-}
-.grid--what > .card > img{
-  width:100%; height:auto; display:block;
-  margin:0 0 1rem;
-  background:#FDFCFA; border:1px solid var(--rule); border-radius:var(--radius);
-  padding:.7rem;
-}
-/* 第 5 张不再横跨，与其他卡一致 */
-.grid--what > .card--wide{grid-column:auto; display:flex; grid-template-columns:none}
-.grid--what > .card--wide > .card__body{display:block}
