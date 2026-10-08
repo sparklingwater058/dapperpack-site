@@ -1,27 +1,44 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="-77.0 -55.0 574.0 322.0" width="574" height="322" role="img" aria-labelledby="tbookstyle dbookstyle">
-  <title id="tbookstyle">Branded blank — book-style box</title>
-  <desc id="dbookstyle">Flat dieline. Black solid lines are cut lines, red dashed lines are fold lines, green dashed is the 3 mm bleed. Panels are labelled in their final orientation.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-109.2 -265.7 1006.0 634.7" width="1006" height="635" role="img" aria-labelledby="tbookstyle dbookstyle">
+  <title id="tbookstyle">Book-style box — magnetic closing flap</title>
+  <desc id="dbookstyle">Flat dieline. Black solid lines are cut lines, red dashed lines are fold lines, green dashed is the 3 mm bleed. Every corner is rounded and every panel is labelled.</desc>
   <g>
-  <rect class="blank" x="-4.00" y="-4.00" width="476.00" height="242.00" fill="#F7F4EF"/><rect x="0.00" y="44.00" width="200.00" height="150.00" fill="#FFFFFF"/><rect x="200.00" y="44.00" width="52.00" height="150.00" fill="#FFFFFF"/><rect x="252.00" y="44.00" width="200.00" height="150.00" fill="#FFFFFF"/>
-  <line x1="200.00" y1="44.00" x2="200.00" y2="194.00" stroke="#FF0000" stroke-width="1.25" stroke-dasharray="7 4"/>
-  <line x1="252.00" y1="44.00" x2="252.00" y2="194.00" stroke="#FF0000" stroke-width="1.25" stroke-dasharray="7 4"/>
-  <line x1="0.00" y1="44.00" x2="452.00" y2="44.00" stroke="#FF0000" stroke-width="1.25" stroke-dasharray="7 4"/>
-  <line x1="0.00" y1="194.00" x2="452.00" y2="194.00" stroke="#FF0000" stroke-width="1.25" stroke-dasharray="7 4"/>
-  <path d="M0.00,44.00 L0.00,0.00 L188.00,0.00 L200.00,15.40 L200.00,0.00 L248.88,0.00 L252.00,15.40 L252.00,0.00 L440.00,0.00 L452.00,15.40 L452.00,44.00 L452.00,194.00 L452.00,222.60 L440.00,238.00 L248.88,238.00 L203.12,238.00 L188.00,238.00 L12.00,238.00 L0.00,194.00 Z" fill="none" stroke="#000000" stroke-width="1.7" stroke-linejoin="miter"/>
-  <line x1="452.00" y1="44.00" x2="452.00" y2="194.00" stroke="#FF0000" stroke-width="1.25" stroke-dasharray="7 4"/>
-  <path d="M452.00,44.00 L468.00,52.00 L468.00,186.00 L452.00,194.00 Z" fill="none" stroke="#000000" stroke-width="1.7" stroke-linejoin="miter"/>
-  <path d="M-3.00,-3.00 L471.00,-3.00 L471.00,241.00 L-3.00,241.00 L-3.00,-3.00" fill="none" stroke="#69BD44" stroke-width="1.1" stroke-dasharray="12 5"/>
-  <line x1="-0.00" y1="-26.40" x2="468.00" y2="-26.40" stroke="#1A1A1A" stroke-width="0.95"/>
-  <line x1="-0.00" y1="-3.00" x2="-0.00" y2="-31.40" stroke="#1A1A1A" stroke-width="0.6" stroke-dasharray="3 3"/>
-  <line x1="-0.00" y1="-31.40" x2="-0.00" y2="-21.40" stroke="#1A1A1A" stroke-width="0.95"/>
-  <line x1="468.00" y1="-3.00" x2="468.00" y2="-31.40" stroke="#1A1A1A" stroke-width="0.6" stroke-dasharray="3 3"/>
-  <line x1="468.00" y1="-31.40" x2="468.00" y2="-21.40" stroke="#1A1A1A" stroke-width="0.95"/>
-  <text x="234.00" y="-39.40" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="500" fill="#1A1A1A" text-anchor="middle" dominant-baseline="middle">unfolded 468 mm</text>
-  <line x1="-31.08" y1="44.00" x2="-31.08" y2="194.00" stroke="#1A1A1A" stroke-width="0.95"/>
-  <line x1="-0.00" y1="44.00" x2="-36.08" y2="44.00" stroke="#1A1A1A" stroke-width="0.6" stroke-dasharray="3 3"/>
-  <line x1="-36.08" y1="44.00" x2="-26.08" y2="44.00" stroke="#1A1A1A" stroke-width="0.95"/>
-  <line x1="-0.00" y1="194.00" x2="-36.08" y2="194.00" stroke="#1A1A1A" stroke-width="0.6" stroke-dasharray="3 3"/>
-  <line x1="-36.08" y1="194.00" x2="-26.08" y2="194.00" stroke="#1A1A1A" stroke-width="0.95"/>
-  <text x="-44.08" y="119.00" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="500" fill="#1A1A1A" text-anchor="middle" dominant-baseline="middle">body 150</text>
+  <path d="M0.00,0.00 L260.00,0.00 L260.00,260.00 L0.00,260.00 L0.00,0.00 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="round"/>
+  <path d="M260.00,0.00 L317.20,0.00 L317.20,260.00 L260.00,260.00 L260.00,0.00 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="round"/>
+  <path d="M317.20,0.00 L577.20,0.00 L577.20,260.00 L317.20,260.00 L317.20,0.00 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="round"/>
+  <path d="M577.20,49.40 L837.20,49.40 L837.20,210.60 L577.20,210.60 L577.20,49.40 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="round"/>
+  <path d="M0.00,260.00 L0.00,291.20 Q0.00,299.00 2.90,306.24 L12.70,330.76 Q15.60,338.00 23.40,338.00 L226.20,338.00 Q234.00,338.00 235.94,330.44 L245.06,294.86 Q247.00,287.30 250.35,280.26 L256.65,267.04 Q260.00,260.00 252.20,260.00 L0.00,260.00 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="round"/>
+  <path d="M317.20,260.00 L326.85,280.26 Q330.20,287.30 332.14,294.86 L341.26,330.44 Q343.20,338.00 351.00,338.00 L553.80,338.00 Q561.60,338.00 564.50,330.76 L574.30,306.24 Q577.20,299.00 577.20,291.20 L577.20,267.80 Q577.20,260.00 569.40,260.00 L317.20,260.00 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="round"/>
+  <path d="M0.00,0.00 L0.00,-31.20 Q0.00,-39.00 2.90,-46.24 L12.70,-70.76 Q15.60,-78.00 23.40,-78.00 L226.20,-78.00 Q234.00,-78.00 235.94,-70.44 L245.06,-34.86 Q247.00,-27.30 250.35,-20.26 L256.65,-7.04 Q260.00,0.00 252.20,0.00 L0.00,0.00 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="round"/>
+  <path d="M317.20,0.00 L326.85,-20.26 Q330.20,-27.30 332.14,-34.86 L341.26,-70.44 Q343.20,-78.00 351.00,-78.00 L553.80,-78.00 Q561.60,-78.00 564.50,-70.76 L574.30,-46.24 Q577.20,-39.00 577.20,-31.20 L577.20,-7.80 Q577.20,0.00 569.40,0.00 L317.20,0.00 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="round"/>
+  <path d="M837.20,84.86 L861.12,84.86 Q865.80,84.86 865.80,89.54 L865.80,170.46 Q865.80,175.14 861.12,175.14 L841.88,175.14 Q837.20,175.14 837.20,170.46 L837.20,84.86 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="round"/>
+  <line x1="260.00" y1="0.00" x2="260.00" y2="260.00" stroke="#FF0000" stroke-width="1.3" stroke-dasharray="8 4.5"/>
+  <line x1="317.20" y1="0.00" x2="317.20" y2="260.00" stroke="#FF0000" stroke-width="1.3" stroke-dasharray="8 4.5"/>
+  <line x1="577.20" y1="0.00" x2="577.20" y2="260.00" stroke="#FF0000" stroke-width="1.3" stroke-dasharray="8 4.5"/>
+  <line x1="0.00" y1="0.00" x2="577.20" y2="0.00" stroke="#FF0000" stroke-width="1.3" stroke-dasharray="8 4.5"/>
+  <line x1="0.00" y1="260.00" x2="577.20" y2="260.00" stroke="#FF0000" stroke-width="1.3" stroke-dasharray="8 4.5"/>
+  <line x1="577.20" y1="49.40" x2="837.20" y2="49.40" stroke="#FF0000" stroke-width="1.3" stroke-dasharray="8 4.5"/>
+  <line x1="577.20" y1="210.60" x2="837.20" y2="210.60" stroke="#FF0000" stroke-width="1.3" stroke-dasharray="8 4.5"/>
+  <path d="M-3.00,-81.00 L868.80,-81.00 L868.80,341.00 L-3.00,341.00 Z" fill="none" stroke="#69BD44" stroke-width="1.1" stroke-dasharray="13 5"/>
+  <text x="130.00" y="130.00" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="22" font-weight="600" fill="#1A1A1A" text-anchor="middle" dominant-baseline="middle">Back cover</text>
+  <text x="288.60" y="130.00" transform="rotate(-90 288.60 130.00)" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="600" fill="#1A1A1A" text-anchor="middle" dominant-baseline="middle">Spine</text>
+  <text x="447.20" y="130.00" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="22" font-weight="600" fill="#1A1A1A" text-anchor="middle" dominant-baseline="middle">Front cover</text>
+  <text x="707.20" y="130.00" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="16" font-weight="600" fill="#1A1A1A" text-anchor="middle" dominant-baseline="middle">Closing flap — magnets</text>
+  <text x="130.00" y="302.90" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="600" fill="#57504B" text-anchor="middle" dominant-baseline="middle">Side wall</text>
+  <text x="447.20" y="302.90" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="600" fill="#57504B" text-anchor="middle" dominant-baseline="middle">Side wall</text>
+  <text x="130.00" y="-42.90" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="600" fill="#57504B" text-anchor="middle" dominant-baseline="middle">Side wall</text>
+  <text x="447.20" y="-42.90" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="600" fill="#57504B" text-anchor="middle" dominant-baseline="middle">Side wall</text>
+  <text x="851.50" y="130.00" transform="rotate(-90 851.50 130.00)" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="600" fill="#57504B" text-anchor="middle" dominant-baseline="middle">Glue flap</text>
+  <line x1="0.00" y1="-100.68" x2="865.80" y2="-100.68" stroke="#1A1A1A" stroke-width="0.95"/>
+  <line x1="0.00" y1="-78.00" x2="0.00" y2="-105.68" stroke="#1A1A1A" stroke-width="0.6" stroke-dasharray="3 3"/>
+  <line x1="865.80" y1="-78.00" x2="865.80" y2="-105.68" stroke="#1A1A1A" stroke-width="0.6" stroke-dasharray="3 3"/>
+  <text x="432.90" y="-114.68" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="600" fill="#1A1A1A" text-anchor="middle" dominant-baseline="middle">unfolded 866 mm</text>
+  <line x1="-31.20" y1="0.00" x2="-31.20" y2="260.00" stroke="#1A1A1A" stroke-width="0.95"/>
+  <line x1="0.00" y1="0.00" x2="-36.20" y2="0.00" stroke="#1A1A1A" stroke-width="0.6" stroke-dasharray="3 3"/>
+  <line x1="0.00" y1="260.00" x2="-36.20" y2="260.00" stroke="#1A1A1A" stroke-width="0.6" stroke-dasharray="3 3"/>
+  <text x="-45.20" y="130.00" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="600" fill="#1A1A1A" text-anchor="middle" dominant-baseline="middle">body 260</text>
+  <text x="-107.2" y="-229.7" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="18" font-weight="700" fill="#1A1A1A">Book-style box — magnetic closing flap</text>
+  <text x="-107.2" y="-206.7" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="14" fill="#57504B">Back cover, spine, front cover and the closing flap run as one strip. The flap folds over and is held by magnets set in the greyboard,</text>
+  <text x="-107.2" y="-183.7" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="14" fill="#57504B">so there is no tuck tab — that is what tells a book-style box from a tuck-end carton on the sheet. Side walls fold up on both long</text>
+  <text x="-107.2" y="-160.7" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="14" fill="#57504B">edges, with a locking notch beside the spine. Every corner is rounded, as the die would cut it.</text>
   </g>
 </svg>
