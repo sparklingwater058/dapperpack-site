@@ -1,50 +1,52 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="-78.0 -350.8 1511.8 2024.0" width="1512" height="2024" role="img" aria-labelledby="tdrawer ddrawer">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-121.9 -384.4 1775.4 883.6" width="1775" height="884" role="img" aria-labelledby="tdrawer ddrawer">
   <title id="tdrawer">Drawer box — sleeve and tray</title>
   <desc id="ddrawer">Flat dieline. Black solid lines are cut lines, red dashed lines are fold lines, green dashed is the 3 mm bleed. Every corner is rounded and every panel is labelled.</desc>
   <g>
-  <path d="M0.00,125.27 L260.00,125.27 L260.00,1619.23 L0.00,1619.23 L0.00,125.27 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="round"/>
-  <path d="M260.00,125.27 L479.70,125.27 L479.70,650.73 L260.00,650.73 L260.00,125.27 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="round"/>
-  <path d="M260.00,1397.71 L479.70,1397.71 L479.70,1619.23 L260.00,1619.23 L260.00,1397.71 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="round"/>
-  <line x1="0.00" y1="650.73" x2="260.00" y2="650.73" stroke="#FF0000" stroke-width="1.3" stroke-dasharray="8 4.5"/>
-  <line x1="0.00" y1="872.25" x2="260.00" y2="872.25" stroke="#FF0000" stroke-width="1.3" stroke-dasharray="8 4.5"/>
-  <line x1="0.00" y1="1397.71" x2="260.00" y2="1397.71" stroke="#FF0000" stroke-width="1.3" stroke-dasharray="8 4.5"/>
-  <line x1="260.00" y1="125.27" x2="260.00" y2="650.73" stroke="#FF0000" stroke-width="1.3" stroke-dasharray="8 4.5"/>
-  <line x1="260.00" y1="1397.71" x2="260.00" y2="1619.23" stroke="#FF0000" stroke-width="1.3" stroke-dasharray="8 4.5"/>
-  <line x1="0.00" y1="125.27" x2="260.00" y2="125.27" stroke="#FF0000" stroke-width="1.3" stroke-dasharray="8 4.5"/>
-  <path d="M57.20,81.33 L198.90,81.33 Q202.80,81.33 202.80,85.23 L202.80,121.37 Q202.80,125.27 198.90,125.27 L61.10,125.27 Q57.20,125.27 57.20,121.37 L57.20,81.33 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="round"/>
-  <text x="130.00" y="103.30" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="11.5" font-weight="600" fill="#57504B" text-anchor="middle" dominant-baseline="middle">Glue flap</text>
-  <text x="130.00" y="388.00" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="16" font-weight="600" fill="#1A1A1A" text-anchor="middle" dominant-baseline="middle">Sleeve front</text>
-  <text x="130.00" y="761.49" transform="rotate(-90 130.00 761.49)" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="16" font-weight="600" fill="#1A1A1A" text-anchor="middle" dominant-baseline="middle">Sleeve bottom</text>
-  <text x="130.00" y="1134.98" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="16" font-weight="600" fill="#1A1A1A" text-anchor="middle" dominant-baseline="middle">Sleeve back</text>
-  <text x="130.00" y="1508.47" transform="rotate(-90 130.00 1508.47)" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="16" font-weight="600" fill="#1A1A1A" text-anchor="middle" dominant-baseline="middle">Sleeve top</text>
-  <text x="369.85" y="388.00" transform="rotate(-90 369.85 388.00)" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="600" fill="#57504B" text-anchor="middle" dominant-baseline="middle">Side flap</text>
-  <text x="369.85" y="1508.47" transform="rotate(-90 369.85 1508.47)" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="600" fill="#57504B" text-anchor="middle" dominant-baseline="middle">Side flap</text>
-  <text x="130.00" y="1645.23" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="600" fill="#1A1A1A" text-anchor="middle" dominant-baseline="middle">Sleeve (outer shell)</text>
-  <path d="M884.00,0.00 L1197.04,0.00 L1197.04,527.28 L884.00,527.28 L884.00,0.00 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="round"/>
-  <path d="M884.00,527.28 L950.43,728.65 Q952.87,736.06 960.67,736.06 L1120.37,736.06 Q1128.17,736.06 1130.61,728.65 L1197.04,527.28 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="round"/>
-  <path d="M884.00,-208.78 L950.43,-7.41 Q952.87,0.00 960.67,0.00 L1120.37,0.00 Q1128.17,0.00 1130.61,-7.41 L1197.04,-208.78 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="round"/>
-  <path d="M675.22,0.00 L884.00,0.00 L884.00,527.28 L675.22,527.28 L675.22,0.00 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="round"/>
-  <path d="M675.22,42.18 L845.00,42.18 L845.00,485.10 L675.22,485.10 L675.22,42.18 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="round"/>
-  <text x="760.11" y="263.64" transform="rotate(-90 760.11 263.64)" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="600" fill="#57504B" text-anchor="middle" dominant-baseline="middle">Tuck-in</text>
-  <text x="779.61" y="543.28" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="600" fill="#57504B" text-anchor="middle" dominant-baseline="middle">Side</text>
-  <path d="M1197.04,0.00 L1405.82,0.00 L1405.82,527.28 L1197.04,527.28 L1197.04,0.00 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="round"/>
-  <path d="M1236.04,42.18 L1405.82,42.18 L1405.82,485.10 L1236.04,485.10 L1236.04,42.18 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="round"/>
-  <text x="1320.93" y="263.64" transform="rotate(-90 1320.93 263.64)" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="600" fill="#57504B" text-anchor="middle" dominant-baseline="middle">Tuck-in</text>
-  <text x="1301.43" y="543.28" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="600" fill="#57504B" text-anchor="middle" dominant-baseline="middle">Side</text>
-  <line x1="884.00" y1="0.00" x2="884.00" y2="527.28" stroke="#FF0000" stroke-width="1.3" stroke-dasharray="8 4.5"/>
-  <line x1="1197.04" y1="0.00" x2="1197.04" y2="527.28" stroke="#FF0000" stroke-width="1.3" stroke-dasharray="8 4.5"/>
-  <line x1="884.00" y1="0.00" x2="1197.04" y2="0.00" stroke="#FF0000" stroke-width="1.3" stroke-dasharray="8 4.5"/>
-  <line x1="884.00" y1="527.28" x2="1197.04" y2="527.28" stroke="#FF0000" stroke-width="1.3" stroke-dasharray="8 4.5"/>
-  <path d="M1270.11,232.44 L1328.85,232.44 Q1332.75,232.44 1332.75,236.34 L1332.75,290.94 Q1332.75,294.84 1328.85,294.84 L1274.01,294.84 Q1270.11,294.84 1270.11,290.94 L1270.11,232.44 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="round"/>
-  <text x="1040.52" y="263.64" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="16" font-weight="600" fill="#1A1A1A" text-anchor="middle" dominant-baseline="middle">Tray base</text>
-  <text x="1040.52" y="642.11" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="600" fill="#57504B" text-anchor="middle" dominant-baseline="middle">ribbon slot</text>
-  <text x="1040.52" y="766.06" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="600" fill="#1A1A1A" text-anchor="middle" dominant-baseline="middle">Tray (inner box)</text>
-  <line x1="0.00" y1="-74.62" x2="479.70" y2="-74.62" stroke="#1A1A1A" stroke-width="0.95"/>
-  <line x1="0.00" y1="-51.94" x2="0.00" y2="-79.62" stroke="#1A1A1A" stroke-width="0.6" stroke-dasharray="3 3"/>
-  <line x1="479.70" y1="-51.94" x2="479.70" y2="-79.62" stroke="#1A1A1A" stroke-width="0.6" stroke-dasharray="3 3"/>
-  <text x="239.85" y="-88.62" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="600" fill="#1A1A1A" text-anchor="middle" dominant-baseline="middle">sleeve 480 mm</text>
-  <text x="-76.0" y="-314.8" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="18" font-weight="700" fill="#1A1A1A">Drawer box — sleeve and tray</text>
-  <text x="-76.0" y="-291.8" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="14" fill="#57504B">Two pieces, drawn side by side. Left: the sleeve, folded from one strip with side flaps on two of its four panels. Right: the tray that slides inside it, with ribbon slot and tuck-ins. The fit between them</text>
-  <text x="-76.0" y="-268.8" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="14" fill="#57504B">is set at the drawing stage. Every corner is rounded, as the die would cut it.</text>
+  <path d="M0.00,0.00 L1040.00,0.00 L1040.00,221.52 L0.00,221.52 L0.00,0.00 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="round"/>
+  <path d="M0.00,221.52 L260.00,221.52 L260.00,441.22 L0.00,441.22 L0.00,221.52 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="round"/>
+  <path d="M520.00,221.52 L780.00,221.52 L780.00,441.22 L520.00,441.22 L520.00,221.52 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="round"/>
+  <path d="M0.00,-219.70 L260.00,-219.70 L260.00,0.00 L0.00,0.00 L0.00,-219.70 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="round"/>
+  <path d="M520.00,-219.70 L780.00,-219.70 L780.00,0.00 L520.00,0.00 L520.00,-219.70 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="round"/>
+  <line x1="260.00" y1="0.00" x2="260.00" y2="221.52" stroke="#FF0000" stroke-width="1.3" stroke-dasharray="8 4.5"/>
+  <line x1="520.00" y1="0.00" x2="520.00" y2="221.52" stroke="#FF0000" stroke-width="1.3" stroke-dasharray="8 4.5"/>
+  <line x1="780.00" y1="0.00" x2="780.00" y2="221.52" stroke="#FF0000" stroke-width="1.3" stroke-dasharray="8 4.5"/>
+  <line x1="0.00" y1="221.52" x2="1040.00" y2="221.52" stroke="#FF0000" stroke-width="1.3" stroke-dasharray="8 4.5"/>
+  <line x1="0.00" y1="0.00" x2="1040.00" y2="0.00" stroke="#FF0000" stroke-width="1.3" stroke-dasharray="8 4.5"/>
+  <line x1="0.00" y1="0.00" x2="0.00" y2="221.52" stroke="#FF0000" stroke-width="1.3" stroke-dasharray="8 4.5"/>
+  <path d="M-43.94,62.03 L-3.90,62.03 Q0.00,62.03 0.00,65.93 L0.00,155.59 Q0.00,159.49 -3.90,159.49 L-40.04,159.49 Q-43.94,159.49 -43.94,155.59 L-43.94,62.03 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="round"/>
+  <text x="130.00" y="110.76" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="15" font-weight="600" fill="#1A1A1A" text-anchor="middle" dominant-baseline="middle">Sleeve front</text>
+  <text x="390.00" y="110.76" transform="rotate(-90 390.00 110.76)" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="15" font-weight="600" fill="#1A1A1A" text-anchor="middle" dominant-baseline="middle">Sleeve side</text>
+  <text x="650.00" y="110.76" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="15" font-weight="600" fill="#1A1A1A" text-anchor="middle" dominant-baseline="middle">Sleeve back</text>
+  <text x="910.00" y="110.76" transform="rotate(-90 910.00 110.76)" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="15" font-weight="600" fill="#1A1A1A" text-anchor="middle" dominant-baseline="middle">Sleeve side</text>
+  <text x="130.00" y="342.36" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="600" fill="#57504B" text-anchor="middle" dominant-baseline="middle">Side flap</text>
+  <text x="650.00" y="342.36" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="600" fill="#57504B" text-anchor="middle" dominant-baseline="middle">Side flap</text>
+  <text x="130.00" y="-120.84" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="600" fill="#57504B" text-anchor="middle" dominant-baseline="middle">Side flap</text>
+  <text x="650.00" y="-120.84" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="600" fill="#57504B" text-anchor="middle" dominant-baseline="middle">Side flap</text>
+  <text x="-21.97" y="110.76" transform="rotate(-90 -21.97 110.76)" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="600" fill="#57504B" text-anchor="middle" dominant-baseline="middle">Glue flap</text>
+  <text x="520.00" y="471.22" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="600" fill="#1A1A1A" text-anchor="middle" dominant-baseline="middle">Sleeve (outer shell)</text>
+  <path d="M1183.00,-62.63 L1496.04,-62.63 L1496.04,146.15 L1183.00,146.15 L1183.00,-62.63 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="round"/>
+  <path d="M1183.00,146.15 L1183.00,234.39 Q1183.00,242.19 1188.52,247.71 L1196.27,255.46 Q1201.78,260.98 1209.58,260.98 L1469.46,260.98 Q1477.26,260.98 1482.77,255.46 L1490.52,247.71 Q1496.04,242.19 1496.04,234.39 L1496.04,146.15 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="round"/>
+  <path d="M1183.00,-177.46 L1183.00,-89.22 Q1183.00,-81.42 1188.52,-75.90 L1196.27,-68.15 Q1201.78,-62.63 1209.58,-62.63 L1469.46,-62.63 Q1477.26,-62.63 1482.77,-68.15 L1490.52,-75.90 Q1496.04,-81.42 1496.04,-89.22 L1496.04,-177.46 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="round"/>
+  <path d="M1053.56,-62.63 L1183.00,-62.63 L1183.00,146.15 L1053.56,146.15 L1053.56,-62.63 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="round"/>
+  <path d="M1053.56,-41.76 L1144.00,-41.76 L1144.00,125.27 L1053.56,125.27 L1053.56,-41.76 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="round"/>
+  <text x="1098.78" y="41.76" transform="rotate(-90 1098.78 41.76)" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="10.5" font-weight="600" fill="#57504B" text-anchor="middle" dominant-baseline="middle">Tuck-in</text>
+  <path d="M1496.04,-62.63 L1625.48,-62.63 L1625.48,146.15 L1496.04,146.15 L1496.04,-62.63 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="round"/>
+  <path d="M1535.04,-41.76 L1625.48,-41.76 L1625.48,125.27 L1535.04,125.27 L1535.04,-41.76 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="round"/>
+  <text x="1580.26" y="41.76" transform="rotate(-90 1580.26 41.76)" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="10.5" font-weight="600" fill="#57504B" text-anchor="middle" dominant-baseline="middle">Tuck-in</text>
+  <line x1="1183.00" y1="-62.63" x2="1183.00" y2="146.15" stroke="#FF0000" stroke-width="1.3" stroke-dasharray="8 4.5"/>
+  <line x1="1496.04" y1="-62.63" x2="1496.04" y2="146.15" stroke="#FF0000" stroke-width="1.3" stroke-dasharray="8 4.5"/>
+  <line x1="1183.00" y1="-62.63" x2="1496.04" y2="-62.63" stroke="#FF0000" stroke-width="1.3" stroke-dasharray="8 4.5"/>
+  <line x1="1183.00" y1="146.15" x2="1496.04" y2="146.15" stroke="#FF0000" stroke-width="1.3" stroke-dasharray="8 4.5"/>
+  <path d="M1541.97,15.76 L1576.43,15.76 Q1579.55,15.76 1579.55,18.88 L1579.55,64.64 Q1579.55,67.76 1576.43,67.76 L1545.09,67.76 Q1541.97,67.76 1541.97,64.64 L1541.97,15.76 Z" fill="none" stroke="#000000" stroke-width="1.75" stroke-linejoin="round"/>
+  <text x="1339.52" y="41.76" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="15" font-weight="600" fill="#1A1A1A" text-anchor="middle" dominant-baseline="middle">Tray base</text>
+  <text x="1560.76" y="-20.64" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="600" fill="#57504B" text-anchor="middle" dominant-baseline="middle">ribbon slot</text>
+  <text x="1339.52" y="-201.46" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="600" fill="#1A1A1A" text-anchor="middle" dominant-baseline="middle">Tray (inner box)</text>
+  <line x1="-43.94" y1="-242.38" x2="1040.00" y2="-242.38" stroke="#1A1A1A" stroke-width="0.95"/>
+  <line x1="-43.94" y1="-219.70" x2="-43.94" y2="-247.38" stroke="#1A1A1A" stroke-width="0.6" stroke-dasharray="3 3"/>
+  <line x1="1040.00" y1="-219.70" x2="1040.00" y2="-247.38" stroke="#1A1A1A" stroke-width="0.6" stroke-dasharray="3 3"/>
+  <text x="498.03" y="-256.38" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="600" fill="#1A1A1A" text-anchor="middle" dominant-baseline="middle">sleeve 1084 mm</text>
+  <text x="-119.9" y="-348.4" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="18" font-weight="700" fill="#1A1A1A">Drawer box — sleeve and tray</text>
+  <text x="-119.9" y="-325.4" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="14" fill="#57504B">Two pieces, drawn side by side. Left: the sleeve, folded from one strip, with side flaps on two of its four panels. Right: the tray that slides inside it, with a ribbon slot and tuck-ins on the short sides. The fit between the two is set at</text>
+  <text x="-119.9" y="-302.4" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="14" fill="#57504B">the drawing stage. Every corner is rounded, as the die would cut it.</text>
   </g>
 </svg>
