@@ -8,7 +8,7 @@
 <link rel="canonical" href="https://dapperpack.com/contact.html">
 <meta name="theme-color" content="#8E1B2A">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link rel="preload" href="assets/fonts/source-serif-4-600-latin.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="assets/css/site.css?v=8cc9897776">
+<link rel="preload" href="assets/fonts/source-serif-4-600-latin.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="assets/css/site.css?v=4018cb987f">
 <script src="assets/js/motion.js?v=35ffd58e37" defer></script>
 <script src="assets/js/site.js?v=31a021dd7b" defer></script>
 
@@ -124,6 +124,93 @@
       </div>
     </div>
   </div>
+
+<section class="section section--paper" id="quote">
+    <div class="wrap numbered">
+      <div class="section__head">
+        <p class="eyebrow">Request a quotation</p>
+        <h2>Seven fields, and the quote comes back with the dieline</h2>
+        <p>
+          Fields marked <span aria-hidden="true">*</span><span class="visually-hidden">required</span>
+          are required. We reply within <strong>three working days</strong> &mdash; the quote and
+          the structural drawing arrive together.
+        </p>
+      </div>
+
+      <form class="quote" method="post" action="mailto:scott@dapperpack.com" enctype="text/plain"
+            novalidate>
+        <div class="quote__grid">
+          <p class="quote__field">
+            <label for="q-name">Your name <span aria-hidden="true">*</span></label>
+            <input id="q-name" name="name" type="text" required maxlength="120"
+                   autocomplete="name" placeholder="Jane Cooper">
+          </p>
+          <p class="quote__field">
+            <label for="q-company">Company <span aria-hidden="true">*</span></label>
+            <input id="q-company" name="company" type="text" required maxlength="160"
+                   autocomplete="organization" placeholder="Cooper &amp; Sons Ltd.">
+          </p>
+          <p class="quote__field">
+            <label for="q-email">Work email <span aria-hidden="true">*</span></label>
+            <input id="q-email" name="email" type="email" required maxlength="200"
+                   autocomplete="email" placeholder="jane@company.com">
+          </p>
+          <p class="quote__field">
+            <label for="q-country">Country or region</label>
+            <input id="q-country" name="country" type="text" maxlength="120"
+                   autocomplete="country-name" placeholder="United States">
+          </p>
+          <p class="quote__field">
+            <label for="q-product">Product type <span aria-hidden="true">*</span></label>
+            <select id="q-product" name="product_type" required>
+              <option value="">Select&hellip;</option>
+              <option value="folding-carton">Folding cartons</option>
+              <option value="corrugated">Corrugated cartons</option>
+              <option value="rigid">Rigid &amp; gift boxes</option>
+              <option value="book-style">Book-style boxes</option>
+              <option value="drawer">Drawer boxes</option>
+              <option value="other">Something else</option>
+            </select>
+          </p>
+          <p class="quote__field">
+            <label for="q-quantity">Estimated quantity</label>
+            <input id="q-quantity" name="quantity" type="text" maxlength="60"
+                   placeholder="e.g. 5,000 pcs">
+          </p>
+        </div>
+
+        <p class="quote__field quote__field--wide">
+          <label for="q-details">Project details <span aria-hidden="true">*</span></label>
+          <textarea id="q-details" name="details" rows="7" required maxlength="4000"
+                    placeholder="Dimensions, board and finish, artwork status, target price or timeline&hellip;"></textarea>
+        </p>
+
+        <!-- 蜜罐：对真人不可见、Tab 不到、自动填充不碰。被填即判机器人。 -->
+        <p class="quote__trap" aria-hidden="true">
+          <label for="q-hp">Leave this field empty</label>
+          <input id="q-hp" name="hp" type="text" tabindex="-1" autocomplete="off">
+        </p>
+
+        <div class="quote__actions">
+          <button class="btn btn--gold" type="submit">Send inquiry</button>
+          <span class="quote__state" role="status" aria-live="polite"></span>
+        </div>
+
+        <p class="small muted quote__privacy">
+          What you send is used only to prepare your quotation and to make your job if it goes
+          ahead. It is stored on our own server for <strong>24 months</strong>, never sold, and
+          never shown to another client. We do not store your IP address &mdash; only a
+          shortened fingerprint, so that repeated automated submissions can be recognised.
+          Ask us to delete your enquiry at any time and we will.
+        </p>
+        <p class="small muted">
+          If the form does not send &mdash; for example with JavaScript switched off or if our
+          server is unreachable &mdash; the button falls back to email and you can send the same
+          details to <a href="mailto:scott@dapperpack.com">scott@dapperpack.com</a>.
+        </p>
+      </form>
+    </div>
+  </section>
 
   <section class="section section--paper">
     <div class="wrap">
@@ -277,5 +364,6 @@ Market:       (where it will be sold)</pre>
   </div>
 </footer>
 
+<script src="assets/js/inquiry.js" defer></script>
 </body>
 </html>

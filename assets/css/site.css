@@ -1101,3 +1101,40 @@ table.cmp td{color:var(--body)}
 @media print{
   .folds{display:none}
 }
+
+/* ── 询价表单（2026-10-07，用户拍板方案 B）────────────────────────────────
+   版式借鉴用户提供的设计稿（两列字段网格、整宽 textarea、金色主按钮），
+   但**时限口径改为三个工作日**（站上一致口径，用户明确要求）。
+
+   ⚠️ 蜜罐字段 `.quote__trap` 必须**真正隐藏**（不是移出视口——那会留下
+   Tab 焦点），用绝对定位 + 零尺寸 + aria-hidden + tabindex=-1 四重。 */
+.quote{margin-top:1.6rem}
+.quote__grid{display:grid; gap:1rem 1.4rem; grid-template-columns:1fr}
+@media (min-width:46rem){ .quote__grid{grid-template-columns:1fr 1fr} }
+.quote__field{margin:0; display:flex; flex-direction:column; gap:.4rem}
+.quote__field label{
+  font-size:.8rem; font-weight:600; letter-spacing:.09em; text-transform:uppercase;
+  color:var(--ink);
+}
+.quote__field input, .quote__field select, .quote__field textarea{
+  font:inherit; font-size:1rem; color:var(--ink); background:#fff;
+  border:1px solid var(--rule); border-radius:var(--radius);
+  padding:.7rem .8rem; width:100%;
+}
+.quote__field textarea{resize:vertical; min-height:9rem}
+.quote__field input:focus-visible, .quote__field select:focus-visible,
+.quote__field textarea:focus-visible{
+  outline:2px solid var(--gold); outline-offset:1px; border-color:var(--gold);
+}
+.quote__field--wide{margin-top:1rem}
+.quote__actions{display:flex; align-items:center; gap:1rem; margin-top:1.2rem;
+  flex-wrap:wrap}
+.quote__state{font-size:.95rem; color:var(--muted)}
+.quote__state[data-state="ok"]{color:#2C6E49; font-weight:600}
+.quote__state[data-state="err"]{color:var(--red); font-weight:600}
+.quote__privacy{margin-top:1rem; max-width:52rem}
+/* 蜜罐：四重隐藏，真人不可见、不可聚焦、读屏不读 */
+.quote__trap{position:absolute; width:1px; height:1px; overflow:hidden;
+  clip-path:inset(50%); white-space:nowrap; margin:0; padding:0; border:0}
+/* 打印态：表单不打印（一页纸预算由 fact-sheet 承担） */
+@media print{ .quote{display:none} }
