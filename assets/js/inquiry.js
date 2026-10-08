@@ -16,7 +16,10 @@
   if (!form) return;
   var state = form.querySelector('.quote__state');
   var btn = form.querySelector('button[type="submit"]');
-  var ENDPOINT = 'https://dapperpack.com/api/v2/site/inquiries';
+  // ⚠️ 必须用**隧道域名**，不能用 dapperpack.com —— 后者是 GitHub Pages 静态托管，
+  // 没有后端，POST 会得到 nginx 的 405 Not Allowed（实测）。
+  // 与 site.js 的 HIT_ENDPOINT 同一个域，理由相同。
+  var ENDPOINT = 'https://laptop-rp8mb72g.tailf027d9.ts.net/api/v2/site/inquiries';
 
   function say(msg, kind) {
     if (!state) return;
