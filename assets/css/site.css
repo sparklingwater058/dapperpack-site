@@ -1138,3 +1138,17 @@ table.cmp td{color:var(--body)}
   clip-path:inset(50%); white-space:nowrap; margin:0; padding:0; border:0}
 /* 打印态：表单不打印（一页纸预算由 fact-sheet 承担） */
 @media print{ .quote{display:none} }
+
+/* ── 联系页备用通道（2026-10-07）────────────────────────────────────────
+   表单提到首屏后，邮件/WhatsApp 降为备用。原先它独占一个 section，
+   上下留白在页面上留出一大块空白，与表单形成两个互相竞争的入口。
+   改为一层紧凑的块，紧跟在表单之后。 */
+.alt{
+  margin-top:clamp(1.4rem,3vw,2.2rem);
+  padding-top:clamp(1.2rem,2.6vw,1.8rem);
+  border-top:1px solid var(--rule);
+  max-width:44rem;
+}
+.alt .contact-mail{margin:.5rem 0 .7rem}
+.alt .btn-row{margin-top:.9rem}
+.alt .note{margin-top:1.1rem}
