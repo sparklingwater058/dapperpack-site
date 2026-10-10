@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 552 332" width="552" height="332" role="img" aria-labelledby="ttl dsc">
+  <title id="ttl">Drawer box</title>
+  <desc id="dsc">Isometric view of a drawer box with the tray pulled part of the way out of its sleeve.</desc>
+  <rect width="552" height="332" fill="#FFFFFF"/>
+  <g transform="translate(173.6,375.9)">
+  <polygon points="-144.4,-73.6 102.5,-63.5 349.3,-73.6 102.5,-84.1" fill="#EAE3DA" stroke="none" opacity="0.55"/>
+  
+  <polygon points="132.8,-146.9 344.5,-269.1 218.4,-341.9 6.8,-219.7" fill="#FFFFFF" stroke="#8E1B2A" stroke-width="3.0" stroke-linejoin="miter"/>
+  <polygon points="6.8,-162.5 218.4,-284.7 218.4,-341.9 6.8,-219.7" fill="#F1EBE3" stroke="#8E1B2A" stroke-width="3.0" stroke-linejoin="miter"/>
+  <polygon points="344.5,-211.9 218.4,-284.7 218.4,-341.9 344.5,-269.1" fill="#F7F4EF" stroke="#8E1B2A" stroke-width="3.0" stroke-linejoin="miter"/>
+  <polygon points="0.0,-78.0 225.2,-208.0 85.6,-288.6 -139.6,-158.6" fill="#F7F4EF" stroke="#8E1B2A" stroke-width="3.0" stroke-linejoin="miter"/>
+  <polygon points="-139.6,-80.6 85.6,-210.6 85.6,-288.6 -139.6,-158.6" fill="#F1EBE3" stroke="#8E1B2A" stroke-width="3.0" stroke-linejoin="miter"/>
+  <polygon points="225.2,-130.0 85.6,-210.6 85.6,-288.6 225.2,-208.0" fill="#FFFFFF" stroke="#8E1B2A" stroke-width="3.0" stroke-linejoin="miter"/>
+  </g>
+</svg>

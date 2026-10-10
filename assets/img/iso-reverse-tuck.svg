@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 493 390" width="493" height="390" role="img" aria-labelledby="ttl dsc">
+  <title id="ttl">Reverse tuck end carton</title>
+  <desc id="dsc">Isometric view of a closed reverse tuck end folding carton.</desc>
+  <rect width="493" height="390" fill="#FFFFFF"/>
+  <g transform="translate(233.5,471.6)">
+  <polygon points="-203.7,-109.9 12.8,-97.5 229.4,-109.9 12.8,-122.6" fill="#EAE3DA" stroke="none" opacity="0.55"/>
+  
+  <polygon points="0.0,-192.4 225.2,-322.4 25.7,-437.6 -199.5,-307.6" fill="#F7F4EF" stroke="#8E1B2A" stroke-width="3.0" stroke-linejoin="miter"/>
+  <polygon points="-199.5,-115.2 25.7,-245.2 25.7,-437.6 -199.5,-307.6" fill="#F1EBE3" stroke="#8E1B2A" stroke-width="3.0" stroke-linejoin="miter"/>
+  <polygon points="225.2,-130.0 25.7,-245.2 25.7,-437.6 225.2,-322.4" fill="#FFFFFF" stroke="#8E1B2A" stroke-width="3.0" stroke-linejoin="miter"/>
+  </g>
+</svg>

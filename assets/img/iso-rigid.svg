@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 503 432" width="503" height="432" role="img" aria-labelledby="ttl dsc">
+  <title id="ttl">Rigid lid-and-base box</title>
+  <desc id="dsc">Isometric view of a rigid lid-and-base box with the lid lifted clear of the base, showing the two-piece construction.</desc>
+  <rect width="503" height="432" fill="#FFFFFF"/>
+  <g transform="translate(238.2,507.1)">
+  <polygon points="-208.5,-103.2 13.1,-89.2 234.7,-103.2 13.1,-117.6" fill="#EAE3DA" stroke="none" opacity="0.55"/>
+  
+  <polygon points="0.0,-109.2 225.2,-239.2 26.1,-354.1 -199.0,-224.1" fill="#F7F4EF" stroke="#8E1B2A" stroke-width="3.0" stroke-linejoin="miter"/>
+  <polygon points="-199.0,-114.9 26.1,-244.9 26.1,-354.1 -199.0,-224.1" fill="#F1EBE3" stroke="#8E1B2A" stroke-width="3.0" stroke-linejoin="miter"/>
+  <polygon points="225.2,-130.0 26.1,-244.9 26.1,-354.1 225.2,-239.2" fill="#FFFFFF" stroke="#8E1B2A" stroke-width="3.0" stroke-linejoin="miter"/>
+  <polygon points="0.0,-222.2 230.4,-355.2 26.1,-473.1 -204.2,-340.1" fill="#F7F4EF" stroke="#8E1B2A" stroke-width="3.0" stroke-linejoin="miter"/>
+  <polygon points="-204.2,-262.1 26.1,-395.1 26.1,-473.1 -204.2,-340.1" fill="#FBF8F4" stroke="#8E1B2A" stroke-width="3.0" stroke-linejoin="miter"/>
+  <polygon points="230.4,-277.2 26.1,-395.1 26.1,-473.1 230.4,-355.2" fill="#FFFFFF" stroke="#8E1B2A" stroke-width="3.0" stroke-linejoin="miter"/>
+  </g>
+</svg>

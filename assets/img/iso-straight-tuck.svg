@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 493 458" width="493" height="458" role="img" aria-labelledby="ttl dsc">
+  <title id="ttl">Straight tuck end carton</title>
+  <desc id="dsc">Isometric view of a closed straight tuck end folding carton, drawn to the measured proportions used in our dieline drawings.</desc>
+  <rect width="493" height="458" fill="#FFFFFF"/>
+  <g transform="translate(233.5,539.2)">
+  <polygon points="-203.7,-108.8 12.8,-93.8 229.4,-108.8 12.8,-124.2" fill="#EAE3DA" stroke="none" opacity="0.55"/>
+  
+  <polygon points="-199.5,-115.2 25.7,-245.2 25.7,-505.2 -199.5,-375.2" fill="#F1EBE3" stroke="#8E1B2A" stroke-width="3.0" stroke-linejoin="miter"/>
+  <polygon points="0.0,-260.0 225.2,-390.0 25.7,-505.2 -199.5,-375.2" fill="#F7F4EF" stroke="#8E1B2A" stroke-width="3.0" stroke-linejoin="miter"/>
+  <polygon points="225.2,-130.0 25.7,-245.2 25.7,-505.2 225.2,-390.0" fill="#FFFFFF" stroke="#8E1B2A" stroke-width="3.0" stroke-linejoin="miter"/>
+  </g>
+</svg>

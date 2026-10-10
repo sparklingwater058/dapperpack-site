@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 493 427" width="493" height="427" role="img" aria-labelledby="ttl dsc">
+  <title id="ttl">Crash-lock bottom carton</title>
+  <desc id="dsc">Isometric view of a closed crash-lock bottom folding carton.</desc>
+  <rect width="493" height="427" fill="#FFFFFF"/>
+  <g transform="translate(233.5,508.0)">
+  <polygon points="-203.7,-109.3 12.8,-95.5 229.4,-109.3 12.8,-123.5" fill="#EAE3DA" stroke="none" opacity="0.55"/>
+  
+  <polygon points="0.0,-228.8 225.2,-358.8 25.7,-474.0 -199.5,-344.0" fill="#F7F4EF" stroke="#8E1B2A" stroke-width="3.0" stroke-linejoin="miter"/>
+  <polygon points="-199.5,-115.2 25.7,-245.2 25.7,-474.0 -199.5,-344.0" fill="#F1EBE3" stroke="#8E1B2A" stroke-width="3.0" stroke-linejoin="miter"/>
+  <polygon points="225.2,-130.0 25.7,-245.2 25.7,-474.0 225.2,-358.8" fill="#FFFFFF" stroke="#8E1B2A" stroke-width="3.0" stroke-linejoin="miter"/>
+  </g>
+</svg>

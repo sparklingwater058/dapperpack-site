@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 471 420" width="471" height="420" role="img" aria-labelledby="ttl dsc">
+  <title id="ttl">Book-style magnetic box</title>
+  <desc id="dsc">Isometric view of a book-style box with the magnetic flap open, which is how the box is opened.</desc>
+  <rect width="471" height="420" fill="#FFFFFF"/>
+  <g transform="translate(211.7,385.8)">
+  <polygon points="-181.7,5.8 23.8,19.3 229.2,5.8 23.8,-8.1" fill="#EAE3DA" stroke="none" opacity="0.55"/>
+  
+  <polygon points="0.0,-23.4 -146.4,-107.9 -146.4,-184.6 0.0,-100.1" fill="#F1EBE3" stroke="#8E1B2A" stroke-width="2.2" stroke-linejoin="miter"/>
+  <polygon points="0.0,-23.4 204.9,-141.7 204.9,-218.4 0.0,-100.1" fill="#FBF8F4" stroke="#8E1B2A" stroke-width="2.2" stroke-linejoin="miter"/>
+  <polygon points="0.0,-23.4 204.9,-141.7 58.5,-226.2 -146.4,-107.9" fill="#FBF8F4" stroke="#8E1B2A" stroke-width="2.2" stroke-linejoin="miter"/>
+  <polygon points="225.2,-130.0 58.5,-226.2 58.5,-314.6 225.2,-218.4" fill="#FFFFFF" stroke="#8E1B2A" stroke-width="3.0" stroke-linejoin="miter"/>
+  <polygon points="-166.6,-96.2 58.5,-226.2 58.5,-314.6 -166.6,-184.6" fill="#FFFFFF" stroke="#8E1B2A" stroke-width="3.0" stroke-linejoin="miter"/>
+  <polygon points="0.0,-0.0 -166.6,-96.2 -166.6,-184.6 0.0,-88.4" fill="#F1EBE3" stroke="#8E1B2A" stroke-width="3.0" stroke-linejoin="miter"/>
+  <polygon points="0.0,-0.0 225.2,-130.0 225.2,-218.4 0.0,-88.4" fill="#F1EBE3" stroke="#8E1B2A" stroke-width="3.0" stroke-linejoin="miter"/>
+  <polygon points="0.0,-88.4 225.2,-218.4 204.9,-218.4 0.0,-100.1" fill="#F7F4EF" stroke="#8E1B2A" stroke-width="2.2" stroke-linejoin="miter"/>
+  <polygon points="-166.6,-184.6 58.5,-314.6 58.5,-302.9 -146.4,-184.6" fill="#F7F4EF" stroke="#8E1B2A" stroke-width="2.2" stroke-linejoin="miter"/>
+  <polygon points="0.0,-88.4 0.0,-100.1 -146.4,-184.6 -166.6,-184.6" fill="#F7F4EF" stroke="#8E1B2A" stroke-width="2.2" stroke-linejoin="miter"/>
+  <polygon points="225.2,-218.4 204.9,-218.4 58.5,-302.9 58.5,-314.6" fill="#F7F4EF" stroke="#8E1B2A" stroke-width="2.2" stroke-linejoin="miter"/>
+  <polygon points="-0.0,-88.4 -166.6,-184.6 -143.2,-351.8 23.5,-255.6" fill="#F7F4EF" stroke="#8E1B2A" stroke-width="3.0" stroke-linejoin="miter"/>
+  <polygon points="23.5,-255.6 -143.2,-351.8 -154.3,-343.1 12.4,-246.9" fill="#FFFFFF" stroke="#8E1B2A" stroke-width="2.2" stroke-linejoin="miter"/>
+  <polygon points="-166.6,-184.6 -143.2,-351.8 -154.3,-343.1 -177.7,-175.9" fill="#F1EBE3" stroke="#8E1B2A" stroke-width="2.2" stroke-linejoin="miter"/>
+  </g>
+</svg>
