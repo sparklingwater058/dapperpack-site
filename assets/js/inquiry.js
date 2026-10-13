@@ -16,10 +16,14 @@
   if (!form) return;
   var state = form.querySelector('.quote__state');
   var btn = form.querySelector('button[type="submit"]');
-  // ⚠️ 必须用**隧道域名**，不能用 dapperpack.com —— 后者是 GitHub Pages 静态托管，
+  // ⚠️ 必须用**后端域名**，不能用 dapperpack.com —— 后者是 GitHub Pages 静态托管，
   // 没有后端，POST 会得到 nginx 的 405 Not Allowed（实测）。
   // 与 site.js 的 HIT_ENDPOINT 同一个域，理由相同。
-  var ENDPOINT = 'https://laptop-rp8mb72g.tailf027d9.ts.net/api/v2/site/inquiries';
+  // 2026-10-13: 原为隧道机器名；现改走**自有稳定域名** `go.dapperpack.com`
+  //（Cloudflare Worker 反代回源，换机只改 cf-worker-go-entry.js 的 ORIGIN）。
+  // 这条尤其要紧：**询盘接口断掉 = 客户填了表单你没收到，而且前端只会提示失败**，
+  // 属于"换机必须复查"的两处之一（另一处是 site.js 的埋点）。
+  var ENDPOINT = 'https://go.dapperpack.com/api/v2/site/inquiries';
 
   function say(msg, kind) {
     if (!state) return;

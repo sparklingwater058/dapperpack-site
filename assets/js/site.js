@@ -84,7 +84,11 @@
          重试只会更慢）；
        · 只在正式域名上跑——本地预览与闸门探针不该污染真实访客数据。
      端点实现见 printx/api/router.py 的 site_hit；表见 migrations/043。 */
-  var HIT_ENDPOINT = 'https://laptop-rp8mb72g.tailf027d9.ts.net/api/v2/site/hit';
+  // 2026-10-13: 原为隧道机器名（https://laptop-rp8mb72g.tailf027d9.ts.net/…）——
+  // 机器一换/一改名，官网埋点就会**静默全断**（不报错、只是没有数据）。
+  // 现走**自有稳定域名** `go.dapperpack.com`：Cloudflare Worker 反代回源隧道
+  //（见根目录 cf-worker-go-entry.js）。**换机时只改 Worker 里的 ORIGIN 常量**，前端无需再动。
+  var HIT_ENDPOINT = 'https://go.dapperpack.com/api/v2/site/hit';
   var HIT_HOSTS = ['dapperpack.com', 'www.dapperpack.com'];
 
   /* 唯一的发送实现——真站埋点与闸门自测都走这里（避免两条路径各自漂移）。 */

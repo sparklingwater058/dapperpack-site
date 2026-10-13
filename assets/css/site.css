@@ -814,7 +814,12 @@ address{font-style:normal; line-height:1.72}
      覆盖成两列（首版就踩了：图片撑高 40px，把一页纸顶到第二页）。
      这里强制三列 + 图高收到 4.6rem 内，配合下面的区块留白微调换回单页。 */
   .three-up{grid-template-columns:1fr 1fr 1fr; gap:.5rem}
-  .three-up img{max-width:4.6rem; margin-bottom:.15rem}
+  /* 2026-10-13: 原来只限宽（max-width:4.6rem）——那是在旧图 503x432（约 1.16:1）前提下够用的。
+     新版 iso 图改成**正方形**（1296x1296）后，同样限宽 4.6rem 会让高度从 ~63px 涨到 ~73.6px，
+     三栏整体撑高约 10px，把 A4 一页纸顶到第二页（打印跨引擎闸门实测：chromium 超 6px / webkit 超 4px，
+     换回 HEAD 旧图即 PASS）。
+     修法：**按高度收口**（4.0rem ≈ 64px，与旧图渲染高度基本一致），宽度改 auto 保持比例不裁切。 */
+  .three-up img{max-width:4.6rem; max-height:4rem; width:auto; margin-bottom:.15rem}
   .three-up h3{font-size:9.4pt; margin-bottom:.05rem}
   .three-up p{font-size:8.6pt; line-height:1.28}
   /* 不给 mailto 补 "(mailto:…)"：本页链接文字本身就是邮箱地址，补了是重复 */

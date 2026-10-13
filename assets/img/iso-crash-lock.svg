@@ -1,12 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 493 427" width="493" height="427" role="img" aria-labelledby="ttl dsc">
-  <title id="ttl">Crash-lock bottom carton</title>
-  <desc id="dsc">Isometric view of a closed crash-lock bottom folding carton.</desc>
-  <rect width="493" height="427" fill="#FFFFFF"/>
-  <g transform="translate(233.5,508.0)">
-  <polygon points="-203.7,-109.3 12.8,-95.5 229.4,-109.3 12.8,-123.5" fill="#EAE3DA" stroke="none" opacity="0.55"/>
-  
-  <polygon points="0.0,-228.8 225.2,-358.8 25.7,-474.0 -199.5,-344.0" fill="#F7F4EF" stroke="#8E1B2A" stroke-width="3.0" stroke-linejoin="miter"/>
-  <polygon points="-199.5,-115.2 25.7,-245.2 25.7,-474.0 -199.5,-344.0" fill="#F1EBE3" stroke="#8E1B2A" stroke-width="3.0" stroke-linejoin="miter"/>
-  <polygon points="225.2,-130.0 25.7,-245.2 25.7,-474.0 225.2,-358.8" fill="#FFFFFF" stroke="#8E1B2A" stroke-width="3.0" stroke-linejoin="miter"/>
-  </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-648 -648 1296 1296" width="1296" height="1296"><path d="M-432.8668211700142,-176.93550765637923L-515.4162287250266,152.71999171737102L-129.6387874666204,-526.6143382561152z" style="fill:rgb(255,255,254);fill-opacity:1"></path><path d="M-130.57082169114966,-526.5931915587145L-160.14001558949198,-214.55351400468385L234.9159708464328,-261.39586824634694z" style="fill:rgb(247,244,239);fill-opacity:1"></path><path d="M-515.8448885255722,151.9395073370535L-99.72564038455263,355.4624399571628L-159.3006808818457,-215.96691415655934z" style="fill:rgb(255,253,248);fill-opacity:1"></path><path d="M-160.5149798879937,-215.3198531062834L281.028709957851,65.35650935543163L234.44016869052413,-262.1840400002498z" style="fill:rgb(247,244,239);fill-opacity:1"></path><path d="M-100.57286103580346,355.5458035312459L281.35548512639207,64.55816629990478L-160.07048512705256,-215.87570021968546z" style="fill:rgb(255,253,248);fill-opacity:1"></path><path d="M-515.6425725029203,152.59410032446922L-159.29514412013623,-214.9718810677098L-129.91975187192816,-526.7343950564672z" style="fill:rgb(255,255,254);fill-opacity:1"></path></svg>
