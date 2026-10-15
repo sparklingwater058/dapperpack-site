@@ -363,7 +363,7 @@ a:hover{color:var(--red-deep)}
           list-style:none; margin:0; padding:0}
 .swatch{border:1px solid var(--line); border-radius:var(--radius); overflow:hidden;
         background:var(--white)}
-.swatch__chip{height:4.6rem; position:relative}
+.swatch__chip{display:block; width:100%; height:4.6rem; object-fit:cover}
 .swatch__name{font-size:.86rem; font-weight:600; color:var(--ink); padding:.6rem .7rem .1rem}
 .swatch__note{font-size:.78rem; color:var(--muted); padding:0 .7rem .7rem}
 
@@ -439,21 +439,11 @@ address{font-style:normal; line-height:1.72}
             max-width:100%; height:auto}
 .steps h3{margin-bottom:.2rem}
 
-/* ── 工艺色卡（用 CSS 渐变示意表面效果，不引入图片） ────────────────── */
-.chip--foil{background:
-  linear-gradient(102deg,
-    #A8851A 0%, #E3C05C 18%, #F6E6AE 30%, #C9A227 44%,
-    #8E6F14 58%, #E3C05C 74%, #F6E6AE 86%, #B9931F 100%)}
-.chip--emboss{background:
-  linear-gradient(158deg,
-    var(--white) 0%, var(--line-soft) 34%, var(--white) 48%,
-    var(--line) 66%, var(--white) 82%, var(--line-soft) 100%)}
-.chip--uv{background:
-  linear-gradient(116deg,
-    #EDE7DF 0%, #EDE7DF 38%, var(--white) 46%, var(--paper) 54%,
-    #EDE7DF 62%, #E4DCD2 100%)}
-.chip--soft{background:
-  radial-gradient(130% 100% at 28% 18%, #F5F1EA 0%, #E6DCD1 62%, #DCD1C5 100%)}
+/* ── 工艺色卡 ────────────────────────────────────────────────────────
+   2026-10-13：原先四张色卡是 CSS 渐变"示意"（注释原文"不引入图片"）。
+   现改为真实工艺微距图（finish-*.webp）——烫金/击凸/局部UV/覆膜是这家厂
+   唯一无法用文字传递的卖点，用四条渐变示意等于把最强的差异点留白。
+   四条 .chip--* 渐变规则随之删除（否则 CSS 死代码闸门会判死）。 */
 
 /* ==========================================================================
    设计升级层 v2（2026-09-18）
