@@ -1,1 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="-648 -648 1296 1296" width="1296" height="1296"><path d="M-440.7066446681466,-184.48650690218818L-521.434173084798,130.76904750635322L-150.21979023210443,-521.883247115849z" style="fill:rgb(255,255,254);fill-opacity:1"></path><path d="M-151.1446100295905,-521.8589862452783L-183.78895029067766,-223.32578967200138L246.71586382127865,-235.25205402528036z" style="fill:rgb(247,244,239);fill-opacity:1"></path><path d="M-521.8565645877534,129.99015655766374L-71.33044410600276,352.4250815322257L-182.98481042107852,-224.68938531995116z" style="fill:rgb(255,253,248);fill-opacity:1"></path><path d="M-184.15702743823584,-224.0908309473286L292.4369166469405,78.09569350919988L246.23665046906063,-236.03854572482186z" style="fill:rgb(247,244,239);fill-opacity:1"></path><path d="M-72.1783462384693,352.5048016686233L292.76281160383337,77.2997129533358L-183.75235271275508,-224.595263686106z" style="fill:rgb(255,253,248);fill-opacity:1"></path><path d="M-521.6553908878918,130.64625933944387L-182.94329150482722,-223.70149993307788L-150.49224418926678,-522.0014207184792z" style="fill:rgb(255,255,254);fill-opacity:1"></path></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 493 458" width="493" height="458" role="img" aria-labelledby="ttl dsc">
+  <title id="ttl">Straight tuck end carton</title>
+  <desc id="dsc">Isometric view of a closed straight tuck end folding carton, drawn to the measured proportions used in our dieline drawings.</desc>
+  <rect width="493" height="458" fill="#FFFFFF"/>
+  <g transform="translate(233.5,539.2)">
+  <polygon points="-203.7,-108.8 12.8,-93.8 229.4,-108.8 12.8,-124.2" fill="#EAE3DA" stroke="none" opacity="0.55"/>
+  
+  <polygon points="-199.5,-115.2 25.7,-245.2 25.7,-505.2 -199.5,-375.2" fill="#F1EBE3" stroke="#8E1B2A" stroke-width="3.0" stroke-linejoin="miter"/>
+  <polygon points="0.0,-260.0 225.2,-390.0 25.7,-505.2 -199.5,-375.2" fill="#F7F4EF" stroke="#8E1B2A" stroke-width="3.0" stroke-linejoin="miter"/>
+  <polygon points="225.2,-130.0 25.7,-245.2 25.7,-505.2 225.2,-390.0" fill="#FFFFFF" stroke="#8E1B2A" stroke-width="3.0" stroke-linejoin="miter"/>
+  </g>
+</svg>

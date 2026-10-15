@@ -1,1 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="-648 -648 1296 1296" width="1296" height="1296"><path d="M-422.0699279205749,-167.06687730120683L-506.3896256479379,180.25631156922628L-103.18541920626305,-531.271647349282z" style="fill:rgb(255,255,254);fill-opacity:1"></path><path d="M-104.12700875451745,-531.2543260218263L-129.03335400574753,-202.51286657205563L219.06443344273924,-294.68598914413093z" style="fill:rgb(247,244,239);fill-opacity:1"></path><path d="M-506.82654674128327,179.47353561952977L-136.41591804100477,358.551614362795L-128.1540929816472,-203.99567208764054z" style="fill:rgb(255,253,248);fill-opacity:1"></path><path d="M-129.41736584156257,-203.28072194543591L265.1304850479903,48.308047359552184L218.593312272979,-295.4762359860082z" style="fill:rgb(247,244,239);fill-opacity:1"></path><path d="M-506.62280418887417,180.1262945755438L-128.19842113990464,-202.99719101744273L-103.47755371033408,-531.3940615097199z" style="fill:rgb(255,255,254);fill-opacity:1"></path><path d="M-137.26205612834582,358.6397055688802L265.45859878980684,47.506489015391786L-128.92690237657146,-203.90828534850908z" style="fill:rgb(255,253,248);fill-opacity:1"></path></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 493 390" width="493" height="390" role="img" aria-labelledby="ttl dsc">
+  <title id="ttl">Reverse tuck end carton</title>
+  <desc id="dsc">Isometric view of a closed reverse tuck end folding carton.</desc>
+  <rect width="493" height="390" fill="#FFFFFF"/>
+  <g transform="translate(233.5,471.6)">
+  <polygon points="-203.7,-109.9 12.8,-97.5 229.4,-109.9 12.8,-122.6" fill="#EAE3DA" stroke="none" opacity="0.55"/>
+  
+  <polygon points="0.0,-192.4 225.2,-322.4 25.7,-437.6 -199.5,-307.6" fill="#F7F4EF" stroke="#8E1B2A" stroke-width="3.0" stroke-linejoin="miter"/>
+  <polygon points="-199.5,-115.2 25.7,-245.2 25.7,-437.6 -199.5,-307.6" fill="#F1EBE3" stroke="#8E1B2A" stroke-width="3.0" stroke-linejoin="miter"/>
+  <polygon points="225.2,-130.0 25.7,-245.2 25.7,-437.6 225.2,-322.4" fill="#FFFFFF" stroke="#8E1B2A" stroke-width="3.0" stroke-linejoin="miter"/>
+  </g>
+</svg>
