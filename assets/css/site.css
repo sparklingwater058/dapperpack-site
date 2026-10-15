@@ -173,7 +173,11 @@ a:hover{color:var(--red-deep)}
         标题单独跑到中间、图片占满整列高。 */
   .grid--5 > .card--wide{
     grid-column:1 / -1;
-    display:grid; grid-template-columns:minmax(10rem,13rem) 1fr;
+    /* 2026-10-15：图栏上限由 13rem 放宽到 22rem。
+       实测原因：13rem 让抽屉盒渲染图只有 **208px**，而这张卡净宽 971px
+       —— 图只占 21%，在这么宽的区域里等于没有图（用户反馈"图太小 / 版式不满意"）。
+       22rem 下图为约 352×211，与右侧文字栏配重正常。 */
+    display:grid; grid-template-columns:minmax(13rem,22rem) 1fr;
     gap:clamp(1.2rem,3vw,2.4rem); align-items:center;
   }
   .grid--5 > .card--wide > img{margin:0; justify-self:center}
