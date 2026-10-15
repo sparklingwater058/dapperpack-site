@@ -367,6 +367,11 @@ a:hover{color:var(--red-deep)}
 .swatch__name{font-size:.86rem; font-weight:600; color:var(--ink); padding:.6rem .7rem .1rem}
 .swatch__note{font-size:.78rem; color:var(--muted); padding:0 .7rem .7rem}
 
+/* 刀线图：点开看原尺寸。技术图纸的标注（16-20px 字号 / 1100+ 宽画布）
+   在 400px 卡片里必然读不了，所以给定一个原尺寸入口，而不是继续缩。 */
+.dieline-zoom{display:block; cursor:zoom-in; text-decoration:none}
+.dieline-zoom:focus-visible{outline:2px solid var(--gold); outline-offset:3px}
+
 /* 引述 / 提示条 */
 .note{
   border-left:3px solid var(--gold); background:var(--paper);
