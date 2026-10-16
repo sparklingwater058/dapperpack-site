@@ -8,7 +8,7 @@
 <link rel="canonical" href="https://dapperpack.com/capabilities.html">
 <meta name="theme-color" content="#8E1B2A">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link rel="preload" href="assets/fonts/source-serif-4-600-latin.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="assets/css/site.css?v=43102cf56f">
+<link rel="preload" href="assets/fonts/source-serif-4-600-latin.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="assets/css/site.css?v=9a0bc436db">
 <script src="assets/js/motion.js?v=35ffd58e37" defer></script>
 <script src="assets/js/site.js?v=5c0ad583e7" defer></script>
 
@@ -157,7 +157,7 @@
         <h2>Print, then make the surface do the work</h2>
       </div>
 
-      <div class="grid grid--2">
+      <div class="grid grid--2 grid--cards">
         <div class="card">
           <h3>Spot colour, matched to your reference</h3>
           <img src="assets/img/finish-spot-vs-cmyk.webp?v=4e36c92e37" width="560" height="420" loading="lazy"
@@ -169,6 +169,16 @@
         </div>
         <div class="card">
           <h3>Foil, emboss, spot UV</h3>
+          <!-- 2026-10-16：这一卡讲的是**三样**工艺，所以配三格小图（各自的微距本来就有，
+               index 的工艺色卡在共用），而不是硬凑一张合成图。 -->
+          <div class="card__tiles">
+            <img src="assets/img/finish-foil.webp?v=4811f6a6d2" width="600" height="450" loading="lazy"
+                 alt="Macro illustration: a crisp-edged gold foil block stamped on unprinted white board.">
+            <img src="assets/img/finish-emboss.webp?v=c0cf7e1af3" width="600" height="450" loading="lazy"
+                 alt="Macro illustration: a blind-embossed shape in unprinted white board, lit from a low angle.">
+            <img src="assets/img/finish-spotuv.webp?v=6fcf4749b5" width="600" height="450" loading="lazy"
+                 alt="Macro illustration: a gloss spot-UV pattern catching the light over a matt white board.">
+          </div>
           <p class="small">
             Metallic and coloured foils, raised or debossed relief, and gloss highlights over a
             matt base. These three finishes do more to change how a box feels in the hand than any others.
@@ -185,6 +195,8 @@
         </div>
         <div class="card">
           <h3>Recyclable board options</h3>
+          <img src="assets/img/board-recyclable.webp?v=b9d14ffc27" width="640" height="480" loading="lazy"
+               alt="Photograph of an unprinted corrugated carton in unbleached kraft board, with the fluting visible at the cut edges.">
           <p class="small">
             Where the product allows it, we will quote board and laminations that keep the pack
             recyclable — and tell you when a finish would work against that.

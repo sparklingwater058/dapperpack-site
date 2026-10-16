@@ -376,6 +376,19 @@ a:hover{color:var(--red-deep)}
 .dieline-zoom{display:block; cursor:zoom-in; text-decoration:none}
 .dieline-zoom:focus-visible{outline:2px solid var(--gold); outline-offset:3px}
 
+/* ── 02 — Print & finish 的四张工艺卡（capabilities.html） ──────────────────
+   2026-10-16：`.grid--2` 是 auto-fit，在宽屏上把四张卡排成 **3+1**（第四张孤零零一行），
+   而且 `.card > img` 的 `max-height:15rem` 会把配图压小、四张卡高矮不一。
+   这里只给这一节加修饰类：≥60rem 锁 **2 列**（正好 2×2），配图撑满卡宽并统一 4:3 裁切。
+   只作用于本节 —— 全局改 `.grid--2` 会把 contact 的三步弄成 2+1，更难看。 */
+@media (min-width:60rem){ .grid--cards{grid-template-columns:repeat(2,1fr)} }
+.grid--cards > .card > img{
+  width:100%; height:auto; max-height:none; object-fit:cover; aspect-ratio:4/3;
+}
+/* 一卡讲三样工艺时用三格小图，而不是硬凑一张合成图 */
+.card__tiles{display:grid; grid-template-columns:repeat(3,1fr); gap:.45rem; margin:0 0 1rem}
+.card__tiles img{width:100%; height:auto; aspect-ratio:1; object-fit:cover; border-radius:var(--radius)}
+
 /* 引述 / 提示条 */
 .note{
   border-left:3px solid var(--gold); background:var(--paper);
