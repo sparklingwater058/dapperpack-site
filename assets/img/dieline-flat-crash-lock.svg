@@ -1,43 +1,127 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1004mm" height="675mm" viewBox="-4 -1 1004 675">
-  <path d="M -3 253 L 1 122 L 229 122 L 233 253" fill="none" stroke="#69BD44" stroke-width="1.43" stroke-dasharray="13 5" stroke-linejoin="miter" stroke-linecap="butt"/>
-  <path d="M 227 253 L 227 20 L 232 20 Q 232 0 235 0 L 485 0 Q 488 0 488 20 L 493 20 L 493 253" fill="none" stroke="#69BD44" stroke-width="1.43" stroke-dasharray="13 5" stroke-linejoin="miter" stroke-linecap="butt"/>
-  <path d="M 487 253 L 491 122 L 719 122 L 723 253" fill="none" stroke="#69BD44" stroke-width="1.43" stroke-dasharray="13 5" stroke-linejoin="miter" stroke-linecap="butt"/>
-  <path d="M -3 250 L -3 513" fill="none" stroke="#69BD44" stroke-width="1.43" stroke-dasharray="13 5" stroke-linejoin="miter" stroke-linecap="butt"/>
-  <path d="M 720 247 L 999 247 L 999 513 L 977 513" fill="none" stroke="#69BD44" stroke-width="1.43" stroke-dasharray="13 5" stroke-linejoin="miter" stroke-linecap="butt"/>
-  <path d="M -3 507 L -3 612 L 115 673 L 233 612 L 233 507" fill="none" stroke="#69BD44" stroke-width="1.43" stroke-dasharray="13 5" stroke-linejoin="miter" stroke-linecap="butt"/>
-  <path d="M 227 507 L 227 663 L 342 663 L 360 633 L 378 663 L 493 663 L 493 507" fill="none" stroke="#69BD44" stroke-width="1.43" stroke-dasharray="13 5" stroke-linejoin="miter" stroke-linecap="butt"/>
-  <path d="M 487 507 L 487 612 L 605 673 L 723 612 L 723 507" fill="none" stroke="#69BD44" stroke-width="1.43" stroke-dasharray="13 5" stroke-linejoin="miter" stroke-linecap="butt"/>
-  <path d="M 717 507 L 727 633 L 973 633 L 983 507" fill="none" stroke="#69BD44" stroke-width="1.43" stroke-dasharray="13 5" stroke-linejoin="miter" stroke-linecap="butt"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="1020mm" height="418mm" viewBox="-4 -4 1020 418" version="1.1">
+  <title>Hook-bottom carton technical dieline, millimetre units</title>
+  <desc>Single closed cut outline with four body panels, right glue flap, bottom lock/base flaps, fold lines, diagonal creases, labels, and 3 mm bleed rectangle. One SVG user unit equals one millimetre.</desc>
 
-  <path d="M 230 250 L 230 510 M 490 250 L 490 510 M 720 250 L 720 510 M 980 250 L 980 510" fill="none" stroke="#FF0000" stroke-width="1.69" stroke-dasharray="8 4.5" stroke-linecap="butt"/>
-  <path d="M 0 250 L 720 250 M 0 510 L 980 510" fill="none" stroke="#FF0000" stroke-width="1.69" stroke-dasharray="8 4.5" stroke-linecap="butt"/>
-  <path d="M 235 23 L 485 23" fill="none" stroke="#FF0000" stroke-width="1.69" stroke-dasharray="8 4.5" stroke-linecap="butt"/>
-  <path d="M 0 510 L 115 670 M 230 510 L 115 670 M 230 510 L 360 630 M 490 510 L 360 630 M 490 510 L 605 670 M 720 510 L 605 670 M 720 510 L 850 630 M 980 510 L 850 630" fill="none" stroke="#FF0000" stroke-width="1.69" stroke-dasharray="8 4.5" stroke-linecap="butt"/>
+  <path id="b l e e d r e c t a n g l e -3 m m"
+        d="M -3 -3 L 999 -3 L 999 413 L -3 413 Z"
+        fill="none"
+        stroke="#69BD44"
+        stroke-width="1.43"
+        stroke-dasharray="13 5"
+        stroke-linejoin="miter"
+        stroke-linecap="butt"/>
 
-  <path d="M 0 250 L 4 125 L 226 125 L 230 250" fill="none" stroke="#000000" stroke-width="2.27" stroke-linejoin="miter" stroke-linecap="butt"/>
-  <path d="M 230 250 L 230 23 L 232 23 Q 235 23 235 20 L 235 3 L 485 3 L 485 20 Q 485 23 488 23 L 490 23 L 490 250" fill="none" stroke="#000000" stroke-width="2.27" stroke-linejoin="miter" stroke-linecap="butt"/>
-  <path d="M 490 250 L 494 125 L 716 125 L 720 250" fill="none" stroke="#000000" stroke-width="2.27" stroke-linejoin="miter" stroke-linecap="butt"/>
-  <path d="M 0 250 L 0 510" fill="none" stroke="#000000" stroke-width="2.27" stroke-linecap="butt"/>
-  <path d="M 720 250 L 996 250 L 996 510 L 980 510" fill="none" stroke="#000000" stroke-width="2.27" stroke-linejoin="miter" stroke-linecap="butt"/>
-  <path d="M 0 510 L 0 610 L 115 670 L 230 610 L 230 510" fill="none" stroke="#000000" stroke-width="2.27" stroke-linejoin="miter" stroke-linecap="butt"/>
-  <path d="M 230 510 L 230 660 L 345 660 L 360 630 L 375 660 L 490 660 L 490 510" fill="none" stroke="#000000" stroke-width="2.27" stroke-linejoin="miter" stroke-linecap="butt"/>
-  <path d="M 490 510 L 490 610 L 605 670 L 720 610 L 720 510" fill="none" stroke="#000000" stroke-width="2.27" stroke-linejoin="miter" stroke-linecap="butt"/>
-  <path d="M 720 510 L 730 630 L 970 630 L 980 510" fill="none" stroke="#000000" stroke-width="2.27" stroke-linejoin="miter" stroke-linecap="butt"/>
+  <path id="s i n g l e c l o s e d c u t o u t l i n e"
+        d="M 0 0 L 999 0 L 999 260 L 980 260 L 960 380 L 740 380 L 720 260 L 702 330 L 605 405 L 508 330 L 490 260 L 470 410 L 384 410 L 360 386 L 336 410 L 250 410 L 230 260 L 212 330 L 115 405 L 18 330 L 0 260 L 0 0 Z"
+        fill="none"
+        stroke="#000000"
+        stroke-width="1.69"
+        stroke-linejoin="miter"
+        stroke-linecap="butt"/>
 
-  <text x="115" y="380" font-size="34" fill="#1A1A1A" text-anchor="middle" dominant-baseline="middle">Side</text>
-  <text x="360" y="380" font-size="34" fill="#1A1A1A" text-anchor="middle" dominant-baseline="middle">Front</text>
-  <text x="605" y="380" font-size="34" fill="#1A1A1A" text-anchor="middle" dominant-baseline="middle">Side</text>
-  <text x="850" y="380" font-size="34" fill="#1A1A1A" text-anchor="middle" dominant-baseline="middle">Back</text>
-  <text x="988" y="380" font-size="22" fill="#1A1A1A" text-anchor="middle" dominant-baseline="middle" transform="rotate(90 988 380)">Glue flap</text>
+  <path id="f o l d v e r t i c a l s i d e f r o n t x 230"
+        d="M 230 0 L 230 260"
+        fill="none"
+        stroke="#FF0000"
+        stroke-width="1.69"
+        stroke-dasharray="8 4.5"
+        stroke-linejoin="miter"
+        stroke-linecap="butt"/>
 
-  <text x="115" y="185" font-size="22" fill="#1A1A1A" text-anchor="middle" dominant-baseline="middle">Dust flap</text>
-  <text x="605" y="185" font-size="22" fill="#1A1A1A" text-anchor="middle" dominant-baseline="middle">Dust flap</text>
-  <text x="360" y="135" font-size="28" fill="#1A1A1A" text-anchor="middle" dominant-baseline="middle">Tuck flap</text>
-  <text x="360" y="14" font-size="22" fill="#1A1A1A" text-anchor="middle" dominant-baseline="middle">Tuck tab</text>
+  <path id="f o l d v e r t i c a l f r o n t s i d e x 490"
+        d="M 490 0 L 490 260"
+        fill="none"
+        stroke="#FF0000"
+        stroke-width="1.69"
+        stroke-dasharray="8 4.5"
+        stroke-linejoin="miter"
+        stroke-linecap="butt"/>
 
-  <text x="115" y="605" font-size="26" fill="#1A1A1A" text-anchor="middle" dominant-baseline="middle">Base flap</text>
-  <text x="360" y="585" font-size="26" fill="#1A1A1A" text-anchor="middle" dominant-baseline="middle">Base flap</text>
-  <text x="605" y="605" font-size="26" fill="#1A1A1A" text-anchor="middle" dominant-baseline="middle">Base flap</text>
-  <text x="850" y="575" font-size="26" fill="#1A1A1A" text-anchor="middle" dominant-baseline="middle">Base flap</text>
-  <text x="360" y="648" font-size="22" fill="#1A1A1A" text-anchor="middle" dominant-baseline="middle">Lock tab</text>
+  <path id="f o l d v e r t i c a l s i d e b a c k x 720"
+        d="M 720 0 L 720 260"
+        fill="none"
+        stroke="#FF0000"
+        stroke-width="1.69"
+        stroke-dasharray="8 4.5"
+        stroke-linejoin="miter"
+        stroke-linecap="butt"/>
+
+  <path id="f o l d v e r t i c a l b a c k g l u e x 980"
+        d="M 980 0 L 980 260"
+        fill="none"
+        stroke="#FF0000"
+        stroke-width="1.69"
+        stroke-dasharray="8 4.5"
+        stroke-linejoin="miter"
+        stroke-linecap="butt"/>
+
+  <path id="f o l d b a s e l e f t s i d e y 260"
+        d="M 0 260 L 230 260"
+        fill="none"
+        stroke="#FF0000"
+        stroke-width="1.69"
+        stroke-dasharray="8 4.5"
+        stroke-linejoin="miter"
+        stroke-linecap="butt"/>
+
+  <path id="f o l d b a s e f r o n t y 260"
+        d="M 230 260 L 490 260"
+        fill="none"
+        stroke="#FF0000"
+        stroke-width="1.69"
+        stroke-dasharray="8 4.5"
+        stroke-linejoin="miter"
+        stroke-linecap="butt"/>
+
+  <path id="f o l d b a s e r i g h t s i d e y 260"
+        d="M 490 260 L 720 260"
+        fill="none"
+        stroke="#FF0000"
+        stroke-width="1.69"
+        stroke-dasharray="8 4.5"
+        stroke-linejoin="miter"
+        stroke-linecap="butt"/>
+
+  <path id="f o l d b a s e b a c k y 260"
+        d="M 720 260 L 980 260"
+        fill="none"
+        stroke="#FF0000"
+        stroke-width="1.69"
+        stroke-dasharray="8 4.5"
+        stroke-linejoin="miter"
+        stroke-linecap="butt"/>
+
+  <path id="d i a g o n a l c r e a s e l e f t s i d e b a s e f l a p"
+        d="M 0 260 L 115 405"
+        fill="none"
+        stroke="#FF0000"
+        stroke-width="1.69"
+        stroke-dasharray="8 4.5"
+        stroke-linejoin="miter"
+        stroke-linecap="butt"/>
+
+  <path id="d i a g o n a l c r e a s e r i g h t s i d e b a s e f l a p"
+        d="M 720 260 L 605 405"
+        fill="none"
+        stroke="#FF0000"
+        stroke-width="1.69"
+        stroke-dasharray="8 4.5"
+        stroke-linejoin="miter"
+        stroke-linecap="butt"/>
+
+  <g id="l a b e l s" font-family="Arial, Helvetica, sans-serif" fill="#1A1A1A" stroke="none">
+    <text id="l a b e l p a n e l s i d e l e f t" x="115" y="135" font-size="36" text-anchor="middle" dominant-baseline="middle">Side</text>
+    <text id="l a b e l p a n e l f r o n t" x="360" y="135" font-size="36" text-anchor="middle" dominant-baseline="middle">Front</text>
+    <text id="l a b e l p a n e l s i d e r i g h t" x="605" y="135" font-size="36" text-anchor="middle" dominant-baseline="middle">Side</text>
+    <text id="l a b e l p a n e l b a c k" x="850" y="135" font-size="36" text-anchor="middle" dominant-baseline="middle">Back</text>
+
+    <text id="l a b e l g l u e f l a p" x="0" y="0" font-size="13" text-anchor="middle" dominant-baseline="middle" transform="translate(996 130) rotate(90)">Glue flap</text>
+
+    <text id="l a b e l b a s e f l a p l e f t s i d e" x="115" y="335" font-size="22" text-anchor="middle" dominant-baseline="middle">Base flap</text>
+    <text id="l a b e l b a s e f l a p f r o n t" x="360" y="338" font-size="22" text-anchor="middle" dominant-baseline="middle">Base flap</text>
+    <text id="l a b e l b a s e f l a p r i g h t s i d e" x="605" y="335" font-size="22" text-anchor="middle" dominant-baseline="middle">Base flap</text>
+    <text id="l a b e l b a s e f l a p b a c k" x="850" y="326" font-size="22" text-anchor="middle" dominant-baseline="middle">Base flap</text>
+
+    <text id="l a b e l l o c k t a b" x="360" y="374" font-size="22" text-anchor="middle" dominant-baseline="middle">Lock tab</text>
+  </g>
 </svg>
