@@ -9,16 +9,16 @@
   <path d="M0.00,-74.00 L528.00,-74.00 L528.00,0.00 L0.00,0.00 Z" fill="none" stroke="#000000" stroke-width="1.7" stroke-linejoin="miter"/>
   <line x1="528.00" y1="-74.00" x2="528.00" y2="0.00" stroke="#FF0000" stroke-width="1.25" stroke-dasharray="7 4"/>
   <path d="M528.00,-74.00 L544.00,-66.00 L544.00,-8.00 L528.00,0.00 Z" fill="none" stroke="#000000" stroke-width="1.7" stroke-linejoin="miter"/>
-  <line x1="634.00" y1="-74.00" x2="752.00" y2="-74.00" stroke="#FF0000" stroke-width="1.25" stroke-dasharray="7 4"/>
+  <line x1="634.00" y1="-72.0" x2="752.00" y2="-72.0" stroke="#FF0000" stroke-width="1.25" stroke-dasharray="7 4"/>
   <line x1="634.00" y1="0.00" x2="752.00" y2="0.00" stroke="#FF0000" stroke-width="1.25" stroke-dasharray="7 4"/>
-  <line x1="634.00" y1="-74.00" x2="634.00" y2="0.00" stroke="#FF0000" stroke-width="1.25" stroke-dasharray="7 4"/>
-  <line x1="752.00" y1="-74.00" x2="752.00" y2="0.00" stroke="#FF0000" stroke-width="1.25" stroke-dasharray="7 4"/>
-  <path d="M634.00,-74.00 L752.00,-74.00 L752.00,0.00 L634.00,0.00 Z" fill="none" stroke="#000000" stroke-width="1.7" stroke-linejoin="miter"/>
-  <path d="M634.00,-74.00 L576.00,-74.00 L576.00,0.00 L634.00,0.00 Z" fill="none" stroke="#000000" stroke-width="1.7" stroke-linejoin="miter"/>
-  <path d="M752.00,-74.00 L810.00,-74.00 L810.00,0.00 L752.00,0.00 Z" fill="none" stroke="#000000" stroke-width="1.7" stroke-linejoin="miter"/>
-  <path d="M634.00,-74.00 L634.00,-132.00 L752.00,-132.00 L752.00,-74.00 Z" fill="none" stroke="#000000" stroke-width="1.7" stroke-linejoin="miter"/>
-  <line x1="634.00" y1="-132.00" x2="752.00" y2="-132.00" stroke="#FF0000" stroke-width="1.25" stroke-dasharray="7 4"/>
-  <path d="M634.00,0.00 L634.00,58.00 L752.00,58.00 L752.00,0.00 Z" fill="none" stroke="#000000" stroke-width="1.7" stroke-linejoin="miter"/>
+  <line x1="634.00" y1="-72.0" x2="634.00" y2="0.00" stroke="#FF0000" stroke-width="1.25" stroke-dasharray="7 4"/>
+  <line x1="752.00" y1="-72.0" x2="752.00" y2="0.00" stroke="#FF0000" stroke-width="1.25" stroke-dasharray="7 4"/>
+  <path d="M 634.00 -72.0 L 752.00 -72.0 L 752.00 0.0 L 634.00 0.0 Z" fill="none" stroke="#000000" stroke-width="1.7" stroke-linejoin="miter"/>
+  <path d="M 634.00 -72.0 L 576.00 -72.0 L 576.00 0.0 L 634.00 0.0 Z" fill="none" stroke="#000000" stroke-width="1.7" stroke-linejoin="miter"/>
+  <path d="M 752.00 -72.0 L 810.00 -72.0 L 810.00 0.0 L 752.00 0.0 Z" fill="none" stroke="#000000" stroke-width="1.7" stroke-linejoin="miter"/>
+  <path d="M 634.00 -72.0 L 634.00 -130.0 L 752.00 -130.0 L 752.00 -72.0 Z" fill="none" stroke="#000000" stroke-width="1.7" stroke-linejoin="miter"/>
+  <line x1="634.00" y1="-130.0" x2="752.00" y2="-130.0" stroke="#FF0000" stroke-width="1.25" stroke-dasharray="7 4"/>
+  <path d="M 634.00 0.0 L 634.00 58.0 L 752.00 58.0 L 752.00 0.0 Z" fill="none" stroke="#000000" stroke-width="1.7" stroke-linejoin="miter"/>
   <line x1="634.00" y1="58.00" x2="752.00" y2="58.00" stroke="#FF0000" stroke-width="1.25" stroke-dasharray="7 4"/>
   <path d="M-3.00,-135.00 L813.00,-135.00 L813.00,61.00 L-3.00,61.00 L-3.00,-135.00" fill="none" stroke="#69BD44" stroke-width="1.1" stroke-dasharray="12 5"/>
   <line x1="0.00" y1="-119.40" x2="544.00" y2="-119.40" stroke="#1A1A1A" stroke-width="0.95"/>
