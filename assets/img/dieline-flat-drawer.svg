@@ -41,12 +41,13 @@
   <line x1="1183.00" y1="208.78" x2="1496.04" y2="208.78" stroke="#FF0000" stroke-width="1.69" stroke-dasharray="8 4.5"/>
   <text x="1339.52" y="104.39" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="24.0" font-weight="600" fill="#1A1A1A" text-anchor="middle" dominant-baseline="middle">Tray base</text>
   <text x="1339.52" y="-144.83" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="27.2" font-weight="600" fill="#1A1A1A" text-anchor="middle" dominant-baseline="middle">Tray (inner box)</text>
-  <line x1="0.00" y1="-242.38" x2="1083.94" y2="-242.38" stroke="#1A1A1A" stroke-width="1.23"/>
+  <line x1="0.00" y1="505.00" x2="1083.94" y2="505.00" stroke="#1A1A1A" stroke-width="1.23"/>
   <line x1="0.00" y1="-219.70" x2="0.00" y2="-247.38" stroke="#1A1A1A" stroke-width="0.78" stroke-dasharray="3 3"/>
   <line x1="1083.94" y1="-219.70" x2="1083.94" y2="-247.38" stroke="#1A1A1A" stroke-width="0.78" stroke-dasharray="3 3"/>
-  <text x="541.97" y="-256.38" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="22.4" font-weight="600" fill="#1A1A1A" text-anchor="middle" dominant-baseline="middle">sleeve 1084 mm</text>
+  <text x="542.0" y="497.0" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="22.4" font-weight="600" fill="#1A1A1A" text-anchor="middle" dominant-baseline="middle">sleeve 1084 mm</text>
   <text x="-119.9" y="-348.4" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="28.8" font-weight="700" fill="#1A1A1A">Drawer box — sleeve and tray</text>
-  <text x="-119.9" y="-325.4" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="22.4" fill="#57504B">Two pieces, drawn side by side. Left: the sleeve, folded from one strip with side flaps on two of its four panels and a glue flap on the end. Right: the tray that slides inside, with a tuck-in strip on each short side and a ribbon slot on one</text>
-  <text x="-119.9" y="-302.4" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="22.4" fill="#57504B">long side. Neither piece has a tuck tab, so nothing here is rounded — the outline is square, as a die would cut it.</text>
+  <text x="-119.9" y="-279.7" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="22.4" font-weight="600" fill="#57504B">Two pieces, drawn side by side. Left: the sleeve, folded from one strip with side flaps on two of its four panels and a glue flap on the end. Right:</text>
+<text x="-119.9" y="-256.7" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="22.4" font-weight="600" fill="#57504B">the tray that slides inside, with a tuck-in strip on each short side and a ribbon slot on one long side. Neither piece has a tuck tab, so nothing here</text>
+<text x="-119.9" y="-233.7" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="22.4" font-weight="600" fill="#57504B">is rounded — the outline is square, as a die would cut it.</text>
   </g>
 </svg>
