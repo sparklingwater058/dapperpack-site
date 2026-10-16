@@ -1,27 +1,38 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="-77.0 -55.0 574.0 322.0" width="574" height="322" role="img" aria-labelledby="tbookstyle dbookstyle">
-  <title id="tbookstyle">Branded blank — book-style box</title>
-  <desc id="dbookstyle">Flat dieline. Black solid lines are cut lines, red dashed lines are fold lines, green dashed is the 3 mm bleed. Panels are labelled in their final orientation.</desc>
-  <g>
-  <rect class="blank" x="-4.00" y="-4.00" width="476.00" height="242.00" fill="#F7F4EF"/><rect x="0.00" y="44.00" width="200.00" height="150.00" fill="#FFFFFF"/><rect x="200.00" y="44.00" width="52.00" height="150.00" fill="#FFFFFF"/><rect x="252.00" y="44.00" width="200.00" height="150.00" fill="#FFFFFF"/><g class="brand__mark" transform="translate(10.69 119.00) scale(0.3985)"><path d="M -72 34 L 8 -66 L 76 22 C 36 38 -28 10 -72 34 Z" fill="#8E1B2A"/><path d="M 8 -66 L 76 22 L 22 10 Z" fill="#C9A227"/></g><g class="wordmark"><text x="131.02" y="109.97" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="26.6" font-weight="700" fill="#8E1B2A" letter-spacing="3.72" text-anchor="middle" dominant-baseline="middle">澄彩</text><line x1="110.30" y1="123.25" x2="151.75" y2="123.25" stroke="#C9A227" stroke-width="1.99"/><text x="131.02" y="137.60" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="12.2" font-weight="600" fill="#A8862A" letter-spacing="5.84" text-anchor="middle" dominant-baseline="middle">DAPPER PACK</text></g>
-  <line x1="200.00" y1="44.00" x2="200.00" y2="194.00" stroke="#FF0000" stroke-width="1.25" stroke-dasharray="7 4"/>
-  <line x1="252.00" y1="44.00" x2="252.00" y2="194.00" stroke="#FF0000" stroke-width="1.25" stroke-dasharray="7 4"/>
-  <line x1="0.00" y1="44.00" x2="452.00" y2="44.00" stroke="#FF0000" stroke-width="1.25" stroke-dasharray="7 4"/>
-  <line x1="0.00" y1="194.00" x2="452.00" y2="194.00" stroke="#FF0000" stroke-width="1.25" stroke-dasharray="7 4"/>
-  <path d="M0.00,44.00 L0.00,0.00 L188.00,0.00 L200.00,15.40 L200.00,0.00 L248.88,0.00 L252.00,15.40 L252.00,0.00 L440.00,0.00 L452.00,15.40 L452.00,44.00 L452.00,194.00 L452.00,222.60 L440.00,238.00 L248.88,238.00 L203.12,238.00 L188.00,238.00 L12.00,238.00 L0.00,194.00 Z" fill="none" stroke="#000000" stroke-width="1.7" stroke-linejoin="miter"/>
-  <line x1="452.00" y1="44.00" x2="452.00" y2="194.00" stroke="#FF0000" stroke-width="1.25" stroke-dasharray="7 4"/>
-  <path d="M452.00,44.00 L468.00,52.00 L468.00,186.00 L452.00,194.00 Z" fill="none" stroke="#000000" stroke-width="1.7" stroke-linejoin="miter"/>
-  <path d="M-3.00,-3.00 L471.00,-3.00 L471.00,241.00 L-3.00,241.00 L-3.00,-3.00" fill="none" stroke="#69BD44" stroke-width="1.1" stroke-dasharray="12 5"/>
-  <line x1="-0.00" y1="-26.40" x2="468.00" y2="-26.40" stroke="#1A1A1A" stroke-width="0.95"/>
-  <line x1="-0.00" y1="-3.00" x2="-0.00" y2="-31.40" stroke="#1A1A1A" stroke-width="0.6" stroke-dasharray="3 3"/>
-  <line x1="-0.00" y1="-31.40" x2="-0.00" y2="-21.40" stroke="#1A1A1A" stroke-width="0.95"/>
-  <line x1="468.00" y1="-3.00" x2="468.00" y2="-31.40" stroke="#1A1A1A" stroke-width="0.6" stroke-dasharray="3 3"/>
-  <line x1="468.00" y1="-31.40" x2="468.00" y2="-21.40" stroke="#1A1A1A" stroke-width="0.95"/>
-  <text x="234.00" y="-39.40" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="500" fill="#1A1A1A" text-anchor="middle" dominant-baseline="middle">unfolded 468 mm</text>
-  <line x1="-31.08" y1="44.00" x2="-31.08" y2="194.00" stroke="#1A1A1A" stroke-width="0.95"/>
-  <line x1="-0.00" y1="44.00" x2="-36.08" y2="44.00" stroke="#1A1A1A" stroke-width="0.6" stroke-dasharray="3 3"/>
-  <line x1="-36.08" y1="44.00" x2="-26.08" y2="44.00" stroke="#1A1A1A" stroke-width="0.95"/>
-  <line x1="-0.00" y1="194.00" x2="-36.08" y2="194.00" stroke="#1A1A1A" stroke-width="0.6" stroke-dasharray="3 3"/>
-  <line x1="-36.08" y1="194.00" x2="-26.08" y2="194.00" stroke="#1A1A1A" stroke-width="0.95"/>
-  <text x="-44.08" y="119.00" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="500" fill="#1A1A1A" text-anchor="middle" dominant-baseline="middle">body 150</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-109.2 -288.7 1006.0 657.7" width="1006" height="658" role="img" aria-labelledby="tbookstyle dbookstyle">
+  <title id="tb">Branded blank — Book-style box</title>
+  <desc id="db">White sample blank for a book-style box carton, drawn from the same verified geometry as the dimensioned dieline: cut lines solid, folds dashed, our mark printed on one panel in place of client artwork. Illustration, not a specification.</desc>
+  <g transform="translate(447.2,130.0) scale(1.15) translate(-60,-16)">
+    <g class="brand__mark" transform="translate(10.69 119.00) scale(0.3985)"><path d="M -72 34 L 8 -66 L 76 22 C 36 38 -28 10 -72 34 Z" fill="#8E1B2A"/><path d="M 8 -66 L 76 22 L 22 10 Z" fill="#C9A227"/></g>
+    <g class="wordmark"><text x="131.02" y="109.97" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="26.6" font-weight="700" fill="#8E1B2A" letter-spacing="3.72" text-anchor="middle" dominant-baseline="middle">澄彩</text><line x1="110.30" y1="123.25" x2="151.75" y2="123.25" stroke="#C9A227" stroke-width="1.99"/><text x="131.02" y="137.60" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="12.2" font-weight="600" fill="#A8862A" letter-spacing="5.84" text-anchor="middle" dominant-baseline="middle">DAPPER PACK</text></g>
   </g>
+  
+  <path d="M0.00,0.00 L260.00,0.00 L260.00,260.00 L0.00,260.00 L0.00,0.00 Z" fill="none" stroke="#000000" stroke-width="2.27" stroke-linejoin="miter"/>
+  <path d="M260.00,0.00 L317.20,0.00 L317.20,260.00 L260.00,260.00 L260.00,0.00 Z" fill="none" stroke="#000000" stroke-width="2.27" stroke-linejoin="miter"/>
+  <path d="M317.20,0.00 L577.20,0.00 L577.20,260.00 L317.20,260.00 L317.20,0.00 Z" fill="none" stroke="#000000" stroke-width="2.27" stroke-linejoin="miter"/>
+  <path d="M577.20,49.40 L837.20,49.40 L837.20,210.60 L577.20,210.60 L577.20,49.40 Z" fill="none" stroke="#000000" stroke-width="2.27" stroke-linejoin="miter"/>
+  <path d="M0.00,260.00 L0.00,299.00 L15.60,338.00 L234.00,338.00 L247.00,287.30 L260.00,260.00 L0.00,260.00 Z" fill="none" stroke="#000000" stroke-width="2.27" stroke-linejoin="miter"/>
+  <path d="M317.20,260.00 L330.20,287.30 L343.20,338.00 L561.60,338.00 L577.20,299.00 L577.20,260.00 L317.20,260.00 Z" fill="none" stroke="#000000" stroke-width="2.27" stroke-linejoin="miter"/>
+  <path d="M0.00,0.00 L0.00,-39.00 L15.60,-78.00 L234.00,-78.00 L247.00,-27.30 L260.00,0.00 L0.00,0.00 Z" fill="none" stroke="#000000" stroke-width="2.27" stroke-linejoin="miter"/>
+  <path d="M317.20,0.00 L330.20,-27.30 L343.20,-78.00 L561.60,-78.00 L577.20,-39.00 L577.20,0.00 L317.20,0.00 Z" fill="none" stroke="#000000" stroke-width="2.27" stroke-linejoin="miter"/>
+  <path d="M837.20,84.86 L865.80,84.86 L865.80,175.14 L837.20,175.14 L837.20,84.86 Z" fill="none" stroke="#000000" stroke-width="2.27" stroke-linejoin="miter"/>
+  <path d="M800.80,77.58 C804.82,77.58 808.08,80.84 808.08,84.86 C808.08,88.88 804.82,92.14 800.80,92.14 C796.78,92.14 793.52,88.88 793.52,84.86 C793.52,80.84 796.78,77.58 800.80,77.58 Z" fill="none" stroke="#000000" stroke-width="2.27"/>
+  <path d="M800.80,167.86 C804.82,167.86 808.08,171.12 808.08,175.14 C808.08,179.16 804.82,182.42 800.80,182.42 C796.78,182.42 793.52,179.16 793.52,175.14 C793.52,171.12 796.78,167.86 800.80,167.86 Z" fill="none" stroke="#000000" stroke-width="2.27"/>
+  <line x1="260.00" y1="0.00" x2="260.00" y2="260.00" stroke="#FF0000" stroke-width="1.69" stroke-dasharray="8 4.5"/>
+  <line x1="317.20" y1="0.00" x2="317.20" y2="260.00" stroke="#FF0000" stroke-width="1.69" stroke-dasharray="8 4.5"/>
+  <line x1="577.20" y1="0.00" x2="577.20" y2="260.00" stroke="#FF0000" stroke-width="1.69" stroke-dasharray="8 4.5"/>
+  <line x1="0.00" y1="0.00" x2="577.20" y2="0.00" stroke="#FF0000" stroke-width="1.69" stroke-dasharray="8 4.5"/>
+  <line x1="0.00" y1="260.00" x2="577.20" y2="260.00" stroke="#FF0000" stroke-width="1.69" stroke-dasharray="8 4.5"/>
+  <line x1="577.20" y1="49.40" x2="837.20" y2="49.40" stroke="#FF0000" stroke-width="1.69" stroke-dasharray="8 4.5"/>
+  <line x1="577.20" y1="210.60" x2="837.20" y2="210.60" stroke="#FF0000" stroke-width="1.69" stroke-dasharray="8 4.5"/>
+  <path d="M-3.00,-81.00 L868.80,-81.00 L868.80,341.00 L-3.00,341.00 Z" fill="none" stroke="#69BD44" stroke-width="1.43" stroke-dasharray="13 5"/>
+  <text x="130.00" y="130.00" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="35.2" font-weight="600" fill="#1A1A1A" text-anchor="middle" dominant-baseline="middle">Back cover</text>
+  <text x="288.60" y="130.00" transform="rotate(-90 288.60 130.00)" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="22.4" font-weight="600" fill="#1A1A1A" text-anchor="middle" dominant-baseline="middle">Spine</text>
+  <text x="447.20" y="130.00" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="35.2" font-weight="600" fill="#1A1A1A" text-anchor="middle" dominant-baseline="middle">Front cover</text>
+  <text x="707.20" y="100.00" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="25.6" font-weight="600" fill="#1A1A1A" text-anchor="middle" dominant-baseline="middle">Closing flap</text>
+  <text x="768.04" y="148.00" transform="rotate(-90 768.04 130.00)" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="17.6" font-weight="600" fill="#57504B" text-anchor="middle" dominant-baseline="middle">magnet</text>
+  <text x="130.00" y="302.90" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="20.8" font-weight="600" fill="#57504B" text-anchor="middle" dominant-baseline="middle">Side wall</text>
+  <text x="447.20" y="302.90" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="20.8" font-weight="600" fill="#57504B" text-anchor="middle" dominant-baseline="middle">Side wall</text>
+  <text x="130.00" y="-42.90" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="20.8" font-weight="600" fill="#57504B" text-anchor="middle" dominant-baseline="middle">Side wall</text>
+  <text x="447.20" y="-42.90" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="20.8" font-weight="600" fill="#57504B" text-anchor="middle" dominant-baseline="middle">Side wall</text>
+  <text x="851.50" y="130.00" transform="rotate(-90 851.50 130.00)" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="17.6" font-weight="600" fill="#57504B" text-anchor="middle" dominant-baseline="middle">Glue flap</text>
 </svg>

@@ -72,6 +72,14 @@
   <line x1="996.00" y1="385.00" x2="996.00" y2="546.00" stroke="#1A1A1A" stroke-width="0.78" stroke-dasharray="3 3"/>
   <line x1="980.00" y1="540.00" x2="996.00" y2="540.00" stroke="#1A1A1A" stroke-width="1.23"/>
   <text x="988.00" y="532.00" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="20.8" font-weight="600" fill="#1A1A1A" text-anchor="middle">glue 16</text>
+  <line x1="516.00" y1="0.00" x2="516.00" y2="-227.00" stroke="#1A1A1A" stroke-width="1.23"/>
+  <text x="522.00" y="-113.50" transform="rotate(-90 522.00 -113.50)" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="20.8" font-weight="600" fill="#1A1A1A" text-anchor="middle">lid 227</text>
+  <line x1="516.00" y1="-227.00" x2="516.00" y2="-247.00" stroke="#1A1A1A" stroke-width="1.23"/>
+  <text x="522.00" y="-237.00" transform="rotate(-90 522.00 -237.00)" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="20.8" font-weight="600" fill="#1A1A1A" text-anchor="middle">tab 20</text>
+  <line x1="516.00" y1="260.00" x2="516.00" y2="487.00" stroke="#1A1A1A" stroke-width="1.23"/>
+  <text x="522.00" y="373.50" transform="rotate(-90 522.00 373.50)" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="20.8" font-weight="600" fill="#1A1A1A" text-anchor="middle">lid 227</text>
+  <line x1="516.00" y1="487.00" x2="516.00" y2="507.00" stroke="#1A1A1A" stroke-width="1.23"/>
+  <text x="522.00" y="497.00" transform="rotate(-90 522.00 497.00)" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="20.8" font-weight="600" fill="#1A1A1A" text-anchor="middle">tab 20</text>
   <line x1="0.00" y1="580.00" x2="996.00" y2="580.00" stroke="#1A1A1A" stroke-width="1.23"/>
   <line x1="0.00" y1="560.00" x2="0.00" y2="584.00" stroke="#1A1A1A" stroke-width="0.78" stroke-dasharray="3 3"/>
   <line x1="996.00" y1="560.00" x2="996.00" y2="584.00" stroke="#1A1A1A" stroke-width="0.78" stroke-dasharray="3 3"/>

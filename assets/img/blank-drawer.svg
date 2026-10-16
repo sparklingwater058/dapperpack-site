@@ -1,31 +1,47 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="-77.0 -187.0 916.0 299.0" width="916" height="299" role="img" aria-labelledby="tdrawer ddrawer">
-  <title id="tdrawer">Branded blank — drawer box, sleeve printed</title>
-  <desc id="ddrawer">Flat dieline. Black solid lines are cut lines, red dashed lines are fold lines, green dashed is the 3 mm bleed. Panels are labelled in their final orientation.</desc>
-  <g>
-  <rect class="blank" x="-4.00" y="-136.00" width="818.00" height="66.00" fill="#F7F4EF"/><rect x="0.00" y="-74.00" width="132.00" height="96.00" fill="#FFFFFF"/><rect x="132.00" y="-74.00" width="132.00" height="96.00" fill="#FFFFFF"/><rect x="264.00" y="-74.00" width="132.00" height="96.00" fill="#FFFFFF"/><rect x="396.00" y="-74.00" width="132.00" height="96.00" fill="#FFFFFF"/><rect x="576.00" y="-132.00" width="234.00" height="190.00" fill="#F1ECE4"/><g class="brand__mark" transform="translate(7.06 -26.00) scale(0.2630)"><path d="M -72 34 L 8 -66 L 76 22 C 36 38 -28 10 -72 34 Z" fill="#8E1B2A"/><path d="M 8 -66 L 76 22 L 22 10 Z" fill="#C9A227"/></g><g class="wordmark"><text x="86.48" y="-31.96" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="17.5" font-weight="700" fill="#8E1B2A" letter-spacing="2.45" text-anchor="middle" dominant-baseline="middle">澄彩</text><line x1="72.80" y1="-23.19" x2="100.15" y2="-23.19" stroke="#C9A227" stroke-width="1.32"/><text x="86.48" y="-13.73" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="8.1" font-weight="600" fill="#A8862A" letter-spacing="3.86" text-anchor="middle" dominant-baseline="middle">DAPPER PACK</text></g>
-  <line x1="132.00" y1="-74.00" x2="132.00" y2="0.00" stroke="#FF0000" stroke-width="1.25" stroke-dasharray="7 4"/>
-  <line x1="264.00" y1="-74.00" x2="264.00" y2="0.00" stroke="#FF0000" stroke-width="1.25" stroke-dasharray="7 4"/>
-  <line x1="396.00" y1="-74.00" x2="396.00" y2="0.00" stroke="#FF0000" stroke-width="1.25" stroke-dasharray="7 4"/>
-  <path d="M0.00,-74.00 L528.00,-74.00 L528.00,0.00 L0.00,0.00 Z" fill="none" stroke="#000000" stroke-width="1.7" stroke-linejoin="miter"/>
-  <line x1="528.00" y1="-74.00" x2="528.00" y2="0.00" stroke="#FF0000" stroke-width="1.25" stroke-dasharray="7 4"/>
-  <path d="M528.00,-74.00 L544.00,-66.00 L544.00,-8.00 L528.00,0.00 Z" fill="none" stroke="#000000" stroke-width="1.7" stroke-linejoin="miter"/>
-  <line x1="634.00" y1="-72.0" x2="752.00" y2="-72.0" stroke="#FF0000" stroke-width="1.25" stroke-dasharray="7 4"/>
-  <line x1="634.00" y1="0.00" x2="752.00" y2="0.00" stroke="#FF0000" stroke-width="1.25" stroke-dasharray="7 4"/>
-  <line x1="634.00" y1="-72.0" x2="634.00" y2="0.00" stroke="#FF0000" stroke-width="1.25" stroke-dasharray="7 4"/>
-  <line x1="752.00" y1="-72.0" x2="752.00" y2="0.00" stroke="#FF0000" stroke-width="1.25" stroke-dasharray="7 4"/>
-  <path d="M 634.00 -72.0 L 752.00 -72.0 L 752.00 0.0 L 634.00 0.0 Z" fill="none" stroke="#000000" stroke-width="1.7" stroke-linejoin="miter"/>
-  <path d="M 634.00 -72.0 L 576.00 -72.0 L 576.00 0.0 L 634.00 0.0 Z" fill="none" stroke="#000000" stroke-width="1.7" stroke-linejoin="miter"/>
-  <path d="M 752.00 -72.0 L 810.00 -72.0 L 810.00 0.0 L 752.00 0.0 Z" fill="none" stroke="#000000" stroke-width="1.7" stroke-linejoin="miter"/>
-  <path d="M 634.00 -72.0 L 634.00 -130.0 L 752.00 -130.0 L 752.00 -72.0 Z" fill="none" stroke="#000000" stroke-width="1.7" stroke-linejoin="miter"/>
-  <line x1="634.00" y1="-130.0" x2="752.00" y2="-130.0" stroke="#FF0000" stroke-width="1.25" stroke-dasharray="7 4"/>
-  <path d="M 634.00 0.0 L 634.00 58.0 L 752.00 58.0 L 752.00 0.0 Z" fill="none" stroke="#000000" stroke-width="1.7" stroke-linejoin="miter"/>
-  <line x1="634.00" y1="58.00" x2="752.00" y2="58.00" stroke="#FF0000" stroke-width="1.25" stroke-dasharray="7 4"/>
-  <path d="M-3.00,-135.00 L813.00,-135.00 L813.00,61.00 L-3.00,61.00 L-3.00,-135.00" fill="none" stroke="#69BD44" stroke-width="1.1" stroke-dasharray="12 5"/>
-  <line x1="0.00" y1="-119.40" x2="544.00" y2="-119.40" stroke="#1A1A1A" stroke-width="0.95"/>
-  <line x1="0.00" y1="-96.00" x2="0.00" y2="-124.40" stroke="#1A1A1A" stroke-width="0.6" stroke-dasharray="3 3"/>
-  <line x1="0.00" y1="-124.40" x2="0.00" y2="-114.40" stroke="#1A1A1A" stroke-width="0.95"/>
-  <line x1="544.00" y1="-96.00" x2="544.00" y2="-124.40" stroke="#1A1A1A" stroke-width="0.6" stroke-dasharray="3 3"/>
-  <line x1="544.00" y1="-124.40" x2="544.00" y2="-114.40" stroke="#1A1A1A" stroke-width="0.95"/>
-  <text x="272.00" y="-132.40" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="500" fill="#1A1A1A" text-anchor="middle" dominant-baseline="middle">sleeve 544 mm</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-121.9 -384.4 1775.4 883.6" width="1775" height="884" role="img" aria-labelledby="tdrawer ddrawer">
+  <title id="tb">Branded blank — Drawer box</title>
+  <desc id="db">White sample blank for a drawer box carton, drawn from the same verified geometry as the dimensioned dieline: cut lines solid, folds dashed, our mark printed on one panel in place of client artwork. Illustration, not a specification.</desc>
+  <g transform="translate(981.5,110.8) scale(1.15) translate(-60,-16)">
+    <g class="brand__mark" transform="translate(7.06 -26.00) scale(0.2630)"><path d="M -72 34 L 8 -66 L 76 22 C 36 38 -28 10 -72 34 Z" fill="#8E1B2A"/><path d="M 8 -66 L 76 22 L 22 10 Z" fill="#C9A227"/></g>
+    <g class="wordmark"><text x="86.48" y="-31.96" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="17.5" font-weight="700" fill="#8E1B2A" letter-spacing="2.45" text-anchor="middle" dominant-baseline="middle">澄彩</text><line x1="72.80" y1="-23.19" x2="100.15" y2="-23.19" stroke="#C9A227" stroke-width="1.32"/><text x="86.48" y="-13.73" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="8.1" font-weight="600" fill="#A8862A" letter-spacing="3.86" text-anchor="middle" dominant-baseline="middle">DAPPER PACK</text></g>
   </g>
+  
+  <path d="M0.00,0.00 L1040.00,0.00 L1040.00,221.52 L0.00,221.52 L0.00,0.00 Z" fill="none" stroke="#000000" stroke-width="2.27" stroke-linejoin="miter"/>
+  <path d="M0.00,221.52 L260.00,221.52 L260.00,441.22 L0.00,441.22 L0.00,221.52 Z" fill="none" stroke="#000000" stroke-width="2.27" stroke-linejoin="miter"/>
+  <path d="M0.00,-219.70 L260.00,-219.70 L260.00,0.00 L0.00,0.00 L0.00,-219.70 Z" fill="none" stroke="#000000" stroke-width="2.27" stroke-linejoin="miter"/>
+  <path d="M520.00,221.52 L780.00,221.52 L780.00,441.22 L520.00,441.22 L520.00,221.52 Z" fill="none" stroke="#000000" stroke-width="2.27" stroke-linejoin="miter"/>
+  <path d="M520.00,-219.70 L780.00,-219.70 L780.00,0.00 L520.00,0.00 L520.00,-219.70 Z" fill="none" stroke="#000000" stroke-width="2.27" stroke-linejoin="miter"/>
+  <line x1="260.00" y1="0.00" x2="260.00" y2="221.52" stroke="#FF0000" stroke-width="1.69" stroke-dasharray="8 4.5"/>
+  <line x1="520.00" y1="0.00" x2="520.00" y2="221.52" stroke="#FF0000" stroke-width="1.69" stroke-dasharray="8 4.5"/>
+  <line x1="780.00" y1="0.00" x2="780.00" y2="221.52" stroke="#FF0000" stroke-width="1.69" stroke-dasharray="8 4.5"/>
+  <line x1="0.00" y1="221.52" x2="1040.00" y2="221.52" stroke="#FF0000" stroke-width="1.69" stroke-dasharray="8 4.5"/>
+  <line x1="0.00" y1="0.00" x2="1040.00" y2="0.00" stroke="#FF0000" stroke-width="1.69" stroke-dasharray="8 4.5"/>
+  <line x1="0.00" y1="0.00" x2="0.00" y2="221.52" stroke="#FF0000" stroke-width="1.69" stroke-dasharray="8 4.5"/>
+  <path d="M-43.94,62.03 L0.00,62.03 L0.00,159.49 L-43.94,159.49 L-43.94,62.03 Z" fill="none" stroke="#000000" stroke-width="2.27" stroke-linejoin="miter"/>
+  <text x="130.00" y="110.76" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="24.0" font-weight="600" fill="#1A1A1A" text-anchor="middle" dominant-baseline="middle">Sleeve front</text>
+  <text x="390.00" y="110.76" transform="rotate(-90 390.00 110.76)" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="24.0" font-weight="600" fill="#1A1A1A" text-anchor="middle" dominant-baseline="middle">Sleeve side</text>
+  <text x="650.00" y="110.76" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="24.0" font-weight="600" fill="#1A1A1A" text-anchor="middle" dominant-baseline="middle">Sleeve back</text>
+  <text x="910.00" y="110.76" transform="rotate(-90 910.00 110.76)" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="24.0" font-weight="600" fill="#1A1A1A" text-anchor="middle" dominant-baseline="middle">Sleeve side</text>
+  <text x="130.00" y="342.36" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="19.2" font-weight="600" fill="#57504B" text-anchor="middle" dominant-baseline="middle">Side flap</text>
+  <text x="130.00" y="-120.84" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="19.2" font-weight="600" fill="#57504B" text-anchor="middle" dominant-baseline="middle">Side flap</text>
+  <text x="650.00" y="342.36" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="19.2" font-weight="600" fill="#57504B" text-anchor="middle" dominant-baseline="middle">Side flap</text>
+  <text x="650.00" y="-120.84" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="19.2" font-weight="600" fill="#57504B" text-anchor="middle" dominant-baseline="middle">Side flap</text>
+  <text x="-21.97" y="110.76" transform="rotate(-90 -21.97 110.76)" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="17.6" font-weight="600" fill="#57504B" text-anchor="middle" dominant-baseline="middle">Glue flap</text>
+  <path d="M1183.00,0.00 L1496.04,0.00 L1496.04,208.78 L1183.00,208.78 L1183.00,0.00 Z" fill="none" stroke="#000000" stroke-width="2.27" stroke-linejoin="miter"/>
+  <path d="M1183.00,208.78 L1496.04,208.78 L1496.04,323.61 L1183.00,323.61 L1183.00,208.78 Z" fill="none" stroke="#000000" stroke-width="2.27" stroke-linejoin="miter"/>
+  <path d="M1183.00,-114.83 L1496.04,-114.83 L1496.04,0.00 L1183.00,0.00 L1183.00,-114.83 Z" fill="none" stroke="#000000" stroke-width="2.27" stroke-linejoin="miter"/>
+  <path d="M1053.56,0.00 L1183.00,0.00 L1183.00,208.78 L1053.56,208.78 L1053.56,0.00 Z" fill="none" stroke="#000000" stroke-width="2.27" stroke-linejoin="miter"/>
+  <path d="M1053.56,20.88 L1144.00,20.88 L1144.00,187.90 L1053.56,187.90 L1053.56,20.88 Z" fill="none" stroke="#000000" stroke-width="2.27" stroke-linejoin="miter"/>
+  <text x="1098.78" y="104.39" transform="rotate(-90 1098.78 104.39)" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="16.8" font-weight="600" fill="#57504B" text-anchor="middle" dominant-baseline="middle">Tuck-in</text>
+  <path d="M1496.04,0.00 L1625.48,0.00 L1625.48,208.78 L1496.04,208.78 L1496.04,0.00 Z" fill="none" stroke="#000000" stroke-width="2.27" stroke-linejoin="miter"/>
+  <path d="M1535.04,20.88 L1625.48,20.88 L1625.48,187.90 L1535.04,187.90 L1535.04,20.88 Z" fill="none" stroke="#000000" stroke-width="2.27" stroke-linejoin="miter"/>
+  <text x="1580.26" y="104.39" transform="rotate(-90 1580.26 104.39)" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="16.8" font-weight="600" fill="#57504B" text-anchor="middle" dominant-baseline="middle">Tuck-in</text>
+  <path d="M1537.46,75.79 L1584.06,75.79 L1584.06,132.99 L1537.46,132.99 L1537.46,75.79 Z" fill="none" stroke="#000000" stroke-width="2.27" stroke-linejoin="miter"/>
+  <text x="1560.76" y="-16.00" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="17.6" font-weight="600" fill="#57504B" text-anchor="middle" dominant-baseline="middle">ribbon slot</text>
+  <line x1="1183.00" y1="0.00" x2="1183.00" y2="208.78" stroke="#FF0000" stroke-width="1.69" stroke-dasharray="8 4.5"/>
+  <line x1="1496.04" y1="0.00" x2="1496.04" y2="208.78" stroke="#FF0000" stroke-width="1.69" stroke-dasharray="8 4.5"/>
+  <line x1="1183.00" y1="0.00" x2="1496.04" y2="0.00" stroke="#FF0000" stroke-width="1.69" stroke-dasharray="8 4.5"/>
+  <line x1="1183.00" y1="208.78" x2="1496.04" y2="208.78" stroke="#FF0000" stroke-width="1.69" stroke-dasharray="8 4.5"/>
+  <text x="1339.52" y="104.39" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="24.0" font-weight="600" fill="#1A1A1A" text-anchor="middle" dominant-baseline="middle">Tray base</text>
+  <text x="1339.52" y="-144.83" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="27.2" font-weight="600" fill="#1A1A1A" text-anchor="middle" dominant-baseline="middle">Tray (inner box)</text>
 </svg>
