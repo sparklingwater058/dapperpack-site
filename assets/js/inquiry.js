@@ -23,9 +23,8 @@
   //（Cloudflare Worker 反代回源，换机只改 cf-worker-go-entry.js 的 ORIGIN）。
   // 这条尤其要紧：**询盘接口断掉 = 客户填了表单你没收到，而且前端只会提示失败**，
   // 属于"换机必须复查"的两处之一（另一处是 site.js 的埋点）。
-  // ⚠️ 2026-10-19 临时回退：CF→隧道这一跳持续 **525**（Worker 正常、隧道直连 200），
-  //    询盘是唯一转化通道，先保证可用 → 暂时改回隧道域名；待 Cloudflare Tunnel 上线后回切。
-  var ENDPOINT = 'https://laptop-rp8mb72g.tailf027d9.ts.net/api/v2/site/inquiries';
+  // ⚠️ 2026-10-19：当日 CF→隧道瞬时 525 期间曾临时回退到隧道域名；已确认自动恢复并切回本域名。
+  var ENDPOINT = 'https://go.dapperpack.com/api/v2/site/inquiries';
 
   function say(msg, kind) {
     if (!state) return;
