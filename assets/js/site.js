@@ -88,7 +88,11 @@
   // 机器一换/一改名，官网埋点就会**静默全断**（不报错、只是没有数据）。
   // 现走**自有稳定域名** `go.dapperpack.com`：Cloudflare Worker 反代回源隧道
   //（见根目录 cf-worker-go-entry.js）。**换机时只改 Worker 里的 ORIGIN 常量**，前端无需再动。
-  var HIT_ENDPOINT = 'https://go.dapperpack.com/api/v2/site/hit';
+  // ⚠️ 2026-10-19 临时回退：CF→隧道这一跳出现持续 **525**（Worker 自身正常、隧道直连 200），
+  //    客户侧埋点与询盘全部失败。为保证官网可用，**暂时**改回隧道域名（浏览器可直连）；
+  //    待改用 Cloudflare Tunnel（cloudflared 出站）后切回 `go.dapperpack.com`。
+  //    回切时只需把下面这行改回 `https://go.dapperpack.com/api/v2/site/hit` 并重新发布。
+  var HIT_ENDPOINT = 'https://laptop-rp8mb72g.tailf027d9.ts.net/api/v2/site/hit';
   var HIT_HOSTS = ['dapperpack.com', 'www.dapperpack.com'];
 
   /* 唯一的发送实现——真站埋点与闸门自测都走这里（避免两条路径各自漂移）。 */
