@@ -2,8 +2,6 @@
   <title id="tb">Branded blank — Straight tuck end</title>
   <desc id="db">White sample blank for a straight tuck end carton, drawn from the same verified geometry as the dimensioned dieline: cut lines solid, folds dashed, our mark printed on one panel in place of client artwork. Illustration, not a specification.</desc>
   <g transform="translate(850.0,130.0) scale(1.15) translate(-60,-16)">
-    <g class="brand__mark" transform="translate(3.74 124.80) scale(0.1395)"><path d="M -72 34 L 8 -66 L 76 22 C 36 38 -28 10 -72 34 Z" fill="#8E1B2A"/><path d="M 8 -66 L 76 22 L 22 10 Z" fill="#C9A227"/></g>
-    <g class="wordmark"><text x="45.86" y="121.64" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="9.3" font-weight="700" fill="#8E1B2A" letter-spacing="1.30" text-anchor="middle" dominant-baseline="middle">澄彩</text><line x1="38.61" y1="126.29" x2="53.11" y2="126.29" stroke="#C9A227" stroke-width="1.00"/><text x="45.86" y="131.31" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="4.3" font-weight="600" fill="#A8862A" letter-spacing="2.05" text-anchor="middle" dominant-baseline="middle">DAPPER PACK</text></g>
   </g>
   
   <path d="M-3.00,-250.00 L999.00,-250.00 L999.00,510.00 L-3.00,510.00 Z" fill="none" stroke="#69BD44" stroke-width="1.43" stroke-dasharray="13 5"/>
