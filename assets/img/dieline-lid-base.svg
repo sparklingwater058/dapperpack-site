@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 654.2 1300.0" width="654" height="1300" role="img">
+  <title>Lid and base box</title>
+  <desc>One set of product paper, shown flat: the greyboard knife (top) and the printed wrap that covers it (bottom).</desc>
+  <rect class="ground" width="654.2" height="1300.0" fill="#FFFFFF"/>
+  <g transform="translate(30.0,126.0)">
+  <rect x="-14" y="-14" width="622.2" height="1152.0" fill="none" stroke="#69BD44" stroke-width="1.5" stroke-dasharray="15 6"/>
+  <path d="M198.06,366.99 L96.11,366.99" stroke="#000000" stroke-width="2.2" fill="none" stroke-linejoin="miter"/>
+  <path d="M198.06,366.99 L198.06,468.94" stroke="#000000" stroke-width="2.2" fill="none" stroke-linejoin="miter"/>
+  <path d="M198.06,101.94 L96.11,101.94" stroke="#000000" stroke-width="2.2" fill="none" stroke-linejoin="miter"/>
+  <path d="M198.06,101.94 L198.06,0.00" stroke="#000000" stroke-width="2.2" fill="none" stroke-linejoin="miter"/>
+  <path d="M492.23,366.99 L594.18,366.99" stroke="#000000" stroke-width="2.2" fill="none" stroke-linejoin="miter"/>
+  <path d="M492.23,366.99 L492.23,468.94" stroke="#000000" stroke-width="2.2" fill="none" stroke-linejoin="miter"/>
+  <path d="M492.23,101.94 L594.18,101.94" stroke="#000000" stroke-width="2.2" fill="none" stroke-linejoin="miter"/>
+  <path d="M492.23,101.94 L492.23,0.00" stroke="#000000" stroke-width="2.2" fill="none" stroke-linejoin="miter"/>
+  <path d="M594.18,34.96 L594.18,433.98 L559.23,468.94 L131.07,468.94 L96.11,433.98 L96.11,34.96 L131.07,0.00 L559.23,0.00 L594.18,34.96 Z" stroke="#000000" stroke-width="2.2" fill="none" stroke-linejoin="miter"/>
+  <path d="M109.19,661.64 L109.19,583.58" stroke="#000000" stroke-width="2.2" fill="none" stroke-linejoin="miter"/>
+  <path d="M145.32,685.63 C146.50,685.41 147.28,684.26 147.05,683.07 C146.96,682.55 146.67,682.09 146.25,681.76" stroke="#000000" stroke-width="2.2" fill="none" stroke-linejoin="miter"/>
+  <path d="M109.19,661.64 L146.25,681.76" stroke="#000000" stroke-width="2.2" fill="none" stroke-linejoin="miter"/>
+  <path d="M145.32,685.63 L133.37,687.42" stroke="#000000" stroke-width="2.2" fill="none" stroke-linejoin="miter"/>
+  <path d="M45.88,687.42 L133.37,687.42" stroke="#000000" stroke-width="2.2" fill="none" stroke-linejoin="miter"/>
+  <path d="M151.46,573.12 L151.46,534.97" stroke="#000000" stroke-width="2.2" fill="none" stroke-linejoin="miter"/>
+  <path d="M151.46,573.12 L147.68,578.63" stroke="#000000" stroke-width="2.2" fill="none" stroke-linejoin="miter"/>
+  <path d="M109.23,583.58 L127.63,583.58" stroke="#000000" stroke-width="2.2" fill="none" stroke-linejoin="miter"/>
+  <path d="M138.21,574.26 L127.63,583.58" stroke="#000000" stroke-width="2.2" fill="none" stroke-linejoin="miter"/>
+  <path d="M138.21,574.26 L147.68,578.63" stroke="#000000" stroke-width="2.2" fill="none" stroke-linejoin="miter"/>
+  <path d="M41.94,689.60 L45.88,687.42" stroke="#000000" stroke-width="2.2" fill="none" stroke-linejoin="miter"/>
+  <path d="M150.01,684.94 L150.01,583.00" stroke="#000000" stroke-width="2.2" fill="none" stroke-linejoin="miter"/>
+  <path d="M0.00,689.60 L41.94,689.60" stroke="#000000" stroke-width="2.2" fill="none" stroke-linejoin="miter"/>
+  <path d="M109.19,973.30 L109.19,1051.36" stroke="#000000" stroke-width="2.2" fill="none" stroke-linejoin="miter"/>
+  <path d="M146.25,953.18 C147.20,952.44 147.37,951.06 146.63,950.11 C146.31,949.69 145.84,949.41 145.32,949.30" stroke="#000000" stroke-width="2.2" fill="none" stroke-linejoin="miter"/>
+  <path d="M109.19,973.30 L146.25,953.18" stroke="#000000" stroke-width="2.2" fill="none" stroke-linejoin="miter"/>
+  <path d="M145.32,949.30 L133.37,947.52" stroke="#000000" stroke-width="2.2" fill="none" stroke-linejoin="miter"/>
+  <path d="M45.88,947.52 L133.37,947.52" stroke="#000000" stroke-width="2.2" fill="none" stroke-linejoin="miter"/>
+  <path d="M151.46,1061.82 L151.46,1099.97" stroke="#000000" stroke-width="2.2" fill="none" stroke-linejoin="miter"/>
+  <path d="M151.46,1061.82 L147.68,1056.31" stroke="#000000" stroke-width="2.2" fill="none" stroke-linejoin="miter"/>
+  <path d="M109.23,1051.36 L127.63,1051.36" stroke="#000000" stroke-width="2.2" fill="none" stroke-linejoin="miter"/>
+  <path d="M138.21,1060.68 L127.63,1051.36" stroke="#000000" stroke-width="2.2" fill="none" stroke-linejoin="miter"/>
+  <path d="M138.21,1060.68 L147.68,1056.31" stroke="#000000" stroke-width="2.2" fill="none" stroke-linejoin="miter"/>
+  <path d="M41.94,945.34 L45.88,947.52" stroke="#000000" stroke-width="2.2" fill="none" stroke-linejoin="miter"/>
+  <path d="M150.01,949.99 L150.01,1051.93" stroke="#000000" stroke-width="2.2" fill="none" stroke-linejoin="miter"/>
+  <path d="M0.00,945.34 L41.94,945.34" stroke="#000000" stroke-width="2.2" fill="none" stroke-linejoin="miter"/>
+  <path d="M0.00,689.60 L0.00,945.34" stroke="#000000" stroke-width="2.2" fill="none" stroke-linejoin="miter"/>
+  <path d="M43.69,684.94 L43.69,949.99" stroke="#000000" stroke-width="2.2" fill="none" stroke-linejoin="miter"/>
+  <path d="M48.06,684.94 L48.06,949.99" stroke="#000000" stroke-width="2.2" fill="none" stroke-linejoin="miter"/>
+  <path d="M150.01,684.94 L150.01,949.99" stroke="#000000" stroke-width="2.2" fill="none" stroke-linejoin="miter"/>
+  <path d="M484.99,661.64 L484.99,583.58" stroke="#000000" stroke-width="2.2" fill="none" stroke-linejoin="miter"/>
+  <path d="M447.94,681.76 C446.98,682.50 446.82,683.87 447.56,684.83 C447.88,685.24 448.35,685.53 448.86,685.63" stroke="#000000" stroke-width="2.2" fill="none" stroke-linejoin="miter"/>
+  <path d="M484.99,661.64 L447.94,681.76" stroke="#000000" stroke-width="2.2" fill="none" stroke-linejoin="miter"/>
+  <path d="M448.86,685.63 L460.81,687.42" stroke="#000000" stroke-width="2.2" fill="none" stroke-linejoin="miter"/>
+  <path d="M548.31,687.42 L460.81,687.42" stroke="#000000" stroke-width="2.2" fill="none" stroke-linejoin="miter"/>
+  <path d="M442.73,573.12 L442.73,534.94" stroke="#000000" stroke-width="2.2" fill="none" stroke-linejoin="miter"/>
+  <path d="M442.73,573.12 L446.51,578.63" stroke="#000000" stroke-width="2.2" fill="none" stroke-linejoin="miter"/>
+  <path d="M484.96,583.58 L466.56,583.58" stroke="#000000" stroke-width="2.2" fill="none" stroke-linejoin="miter"/>
+  <path d="M455.98,574.26 L466.56,583.58" stroke="#000000" stroke-width="2.2" fill="none" stroke-linejoin="miter"/>
+  <path d="M455.98,574.26 L446.51,578.63" stroke="#000000" stroke-width="2.2" fill="none" stroke-linejoin="miter"/>
+  <path d="M552.24,689.60 L548.31,687.42" stroke="#000000" stroke-width="2.2" fill="none" stroke-linejoin="miter"/>
+  <path d="M444.19,684.94 L444.19,583.00" stroke="#000000" stroke-width="2.2" fill="none" stroke-linejoin="miter"/>
+  <path d="M594.18,689.60 L552.24,689.60" stroke="#000000" stroke-width="2.2" fill="none" stroke-linejoin="miter"/>
+  <path d="M484.99,973.30 L484.99,1051.36" stroke="#000000" stroke-width="2.2" fill="none" stroke-linejoin="miter"/>
+  <path d="M448.86,949.30 C447.68,949.53 446.91,950.68 447.14,951.86 C447.24,952.39 447.52,952.85 447.94,953.18" stroke="#000000" stroke-width="2.2" fill="none" stroke-linejoin="miter"/>
+  <path d="M484.99,973.30 L447.94,953.18" stroke="#000000" stroke-width="2.2" fill="none" stroke-linejoin="miter"/>
+  <path d="M448.86,949.30 L460.81,947.52" stroke="#000000" stroke-width="2.2" fill="none" stroke-linejoin="miter"/>
+  <path d="M548.31,947.52 L460.81,947.52" stroke="#000000" stroke-width="2.2" fill="none" stroke-linejoin="miter"/>
+  <path d="M442.73,1100.00 L151.46,1099.97" stroke="#000000" stroke-width="2.2" fill="none" stroke-linejoin="miter"/>
+  <path d="M442.73,1061.82 L442.73,1100.00" stroke="#000000" stroke-width="2.2" fill="none" stroke-linejoin="miter"/>
+  <path d="M444.19,1056.31 L150.01,1056.31" stroke="#000000" stroke-width="2.2" fill="none" stroke-linejoin="miter"/>
+  <path d="M444.19,1051.93 L150.01,1051.93" stroke="#000000" stroke-width="2.2" fill="none" stroke-linejoin="miter"/>
+  <path d="M442.73,1061.82 L446.51,1056.31" stroke="#000000" stroke-width="2.2" fill="none" stroke-linejoin="miter"/>
+  <path d="M484.96,1051.36 L466.56,1051.36" stroke="#000000" stroke-width="2.2" fill="none" stroke-linejoin="miter"/>
+  <path d="M455.98,1060.68 L466.56,1051.36" stroke="#000000" stroke-width="2.2" fill="none" stroke-linejoin="miter"/>
+  <path d="M455.98,1060.68 L446.51,1056.31" stroke="#000000" stroke-width="2.2" fill="none" stroke-linejoin="miter"/>
+  <path d="M552.24,945.34 L548.31,947.52" stroke="#000000" stroke-width="2.2" fill="none" stroke-linejoin="miter"/>
+  <path d="M444.19,949.99 L444.19,1051.93" stroke="#000000" stroke-width="2.2" fill="none" stroke-linejoin="miter"/>
+  <path d="M594.18,945.34 L552.24,945.34" stroke="#000000" stroke-width="2.2" fill="none" stroke-linejoin="miter"/>
+  <path d="M442.73,534.94 L151.46,534.97" stroke="#000000" stroke-width="2.2" fill="none" stroke-linejoin="miter"/>
+  <path d="M444.19,578.63 L150.01,578.63" stroke="#000000" stroke-width="2.2" fill="none" stroke-linejoin="miter"/>
+  <path d="M444.19,583.00 L150.01,583.00" stroke="#000000" stroke-width="2.2" fill="none" stroke-linejoin="miter"/>
+  <path d="M150.01,684.94 L444.19,684.94" stroke="#000000" stroke-width="2.2" fill="none" stroke-linejoin="miter"/>
+  <path d="M444.19,949.99 L150.01,949.99" stroke="#000000" stroke-width="2.2" fill="none" stroke-linejoin="miter"/>
+  <path d="M594.18,689.60 L594.18,945.34" stroke="#000000" stroke-width="2.2" fill="none" stroke-linejoin="miter"/>
+  <path d="M550.49,684.94 L550.49,949.99" stroke="#000000" stroke-width="2.2" fill="none" stroke-linejoin="miter"/>
+  <path d="M546.13,684.94 L546.13,949.99" stroke="#000000" stroke-width="2.2" fill="none" stroke-linejoin="miter"/>
+  <path d="M444.19,684.94 L444.19,949.99" stroke="#000000" stroke-width="2.2" fill="none" stroke-linejoin="miter"/>
+  <path d="M594.18,683.05 L594.18,951.88" stroke="#000000" stroke-width="2.2" fill="none" stroke-linejoin="miter"/>
+  </g>
+  <text x="30.0" y="40" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="36" font-weight="700" fill="#241F1A">Lid and base box</text>
+  <text x="30.0" y="68.0" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="20" fill="#5B5348">One set of product paper, shown flat: the greyboard knife (top) and the printed wrap</text>
+  <text x="30.0" y="92.0" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="20" fill="#5B5348">that covers it (bottom).</text>
+  <text x="375.1" y="616.9" text-anchor="middle" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="23" font-weight="600" fill="#3A342D">greyboard · 161 × 171 mm</text>
+  <text x="327.1" y="1248.0" text-anchor="middle" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="23" font-weight="600" fill="#3A342D">wrap paper · 194 × 204 mm</text>
+  <text x="30.0" y="1288.0" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="17" fill="#8A8072">one product, 2 parts</text>
+  <text x="624.2" y="1288.0" text-anchor="end" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="16" fill="#6E6660">cut solid · green = bleed · source sheet has no crease layer</text>
+</svg>

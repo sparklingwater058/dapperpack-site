@@ -664,9 +664,8 @@ address{font-style:normal; line-height:1.72}
 .struct__figs{display:grid; grid-template-columns:1fr; gap:.8rem}
 .struct__figs figcaption{font-size:.75rem; color:var(--muted); margin-top:.55rem;
   text-align:center}
-.struct__figure--blank{background:#FDFCFA; border:1px solid var(--rule);
-  border-radius:var(--radius); padding:.9rem; margin:0}
-.struct__figure--blank img{width:100%; height:auto; display:block; max-height:none}
+/* 2026-10-22：`--blank` 那套（白样图并排）随白样图下架一起删 —— 保留就是死 CSS，
+   而 `.dsh/shots/audit_css_usage.py` 会把"定义了从没用"当成错误报出来。 */
 @media (max-width:52rem){ .struct__figs{grid-template-columns:1fr} }
 .struct__body h3{margin:0 0 .5rem}
 .struct__body p{margin:0 0 .7rem}
