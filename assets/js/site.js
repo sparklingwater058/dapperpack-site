@@ -78,7 +78,9 @@
   /* ── 5. 无 cookie 页面计数 ───────────────────────────────────────────
      设计约束（docs/SITE_DESIGN_PLAN_20260918.md §六「测量」+ §八 Q4）：
        · 无 cookie、无 localStorage、无指纹、无访客标识；
-       · 只上报 { 路径, 引荐域名, ?from= 标记, 事件类型 } 四项；
+       · 只上报 { 路径, 引荐域名, ?from= 标记, 事件类型 } 四项 + **gclid** 一项
+         （2026-11-14，FREE_FIRST_PLAN 阶段2：广告点击标识，URL 参数、无设备存取；
+         privacy.html 同批披露，IP/UA/cookie/指纹仍一条不存）；
        · **计数失败绝不影响访客**：整段包在 try 里，失败静默；
        · 不做重试（重试会把一次浏览放大成多次，且失败原因通常是网络，
          重试只会更慢）；
@@ -117,7 +119,35 @@
       p: window.location.pathname,   // 站点侧就已去掉查询串（不把参数送进库里）
       r: String(ref || '').slice(0, 200),
       f: String(from || '').slice(0, 64),
-      e: 'pageview'
+      e: 'pageview',
+      // 2026-11-14: 广告点击标识——**只取 gclid 一项**，其余查询参数照旧丢弃。
+      // 后端 migrations/079 起接收；privacy.html「What the site counts」同批披露。
+      g: clickId()
+    });
+  }
+
+  /* 广告点击标识：只从 URL 读（无 cookie/localStorage——维持"无设备存取"承诺，
+     UK/EEA 下广告归因不落 PECR 统计例外，见 TRACKING_ARCHITECTURE_RESEARCH §7）。 */
+  function clickId() {
+    try {
+      return (new URLSearchParams(window.location.search).get('gclid') || '').slice(0, 150);
+    } catch (err) { return ''; }
+  }
+
+  /* 5b. gclid 站内透传：把 gclid 装饰到**站内**链接上——访客点去询价页时，
+     表单才能把它带进 payload（否则 gclid 只存在于落地页 URL，翻页即丢）。
+     只装饰相对链接；mailto:/https:/tel:/# 开头的一概不动。 */
+  function decorateLinks() {
+    var g = clickId();
+    if (!g || !/^[A-Za-z0-9._~-]+$/.test(g)) { return; }
+    document.querySelectorAll('a[href]').forEach(function (a) {
+      var href = a.getAttribute('href') || '';
+      if (!href || href.charAt(0) === '#' || /^(https?:|mailto:|tel:|data:)/i.test(href)) { return; }
+      var hash = '';
+      var h = href.indexOf('#');
+      if (h > -1) { hash = href.slice(h); href = href.slice(0, h); }
+      a.setAttribute('href', href + (href.indexOf('?') > -1 ? '&' : '?') +
+                     'gclid=' + encodeURIComponent(g) + hash);
     });
   }
 
@@ -136,6 +166,9 @@
       postHit(hitPayload(from, hostnameOf(document.referrer)));
     } catch (err) { /* 计数是尽力而为：任何异常都不得冒泡到页面 */ }
   }
+
+  /* gclid 透传：defer 脚本执行时 DOM 已就绪，直接装饰；失败只是丢归因，不冒泡。 */
+  try { decorateLinks(); } catch (err) { /* 不打断页面 */ }
 
   /* 等 load 之后再发：不占首屏资源、不推迟 LCP（本站首屏预算是硬指标）。 */
   if (document.readyState === 'complete') {

@@ -45,6 +45,12 @@
       details: (fd.get('details') || '').trim(),
       source_path: location.pathname,
       source_tag: new URLSearchParams(location.search).get('from') || '',
+      // 2026-11-14: 广告点击标识（后端 079 起接收；extra=forbid，两侧必须同步改）。
+      // 只取 ?gclid= 一项，其余查询参数照旧不带。
+      gclid: new URLSearchParams(location.search).get('gclid') || '',
+      // 测量同意（未捆绑勾选框，默认 false）：gclid-only 归因不需要同意；
+      // 为将来升级 ECFL（哈希 PII 上传）预留。
+      consent_measure: fd.get('consent_measure') === 'on',
       hp: (fd.get('hp') || '').trim()
     };
   }
@@ -71,7 +77,7 @@
       throw new Error('server');
     }).catch(function (e) {
       var msg = e && e.message === 'missing'
-        ? 'Please fill in name, company, email, product type and project details.'
+        ? 'Please fill in your name, email and project details.'
         : e && e.message === 'too-long'
           ? 'That is too long to send \u2014 please shorten the project details.'
           : 'We could not send it just now. Please email scott@dapperpack.com directly.';

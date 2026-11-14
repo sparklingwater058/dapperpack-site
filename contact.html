@@ -8,9 +8,9 @@
 <link rel="canonical" href="https://dapperpack.com/contact.html">
 <meta name="theme-color" content="#8E1B2A">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link rel="preload" href="assets/fonts/source-serif-4-600-latin.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="assets/css/site.css?v=dcc30c4939">
+<link rel="preload" href="assets/fonts/source-serif-4-600-latin.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="assets/css/site.css?v=fdad6ffea3">
 <script src="assets/js/motion.js?v=35ffd58e37" defer></script>
-<script src="assets/js/site.js?v=ac25dddff2" defer></script>
+<script src="assets/js/site.js?v=1f23f75200" defer></script>
 
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Dapper Pack">
@@ -94,7 +94,7 @@
       <div class="section__head">
         <p class="eyebrow">Request a quotation</p>
         <h1>Tell us what the box has to hold</h1>
-        <h2>Seven fields, and the quote comes back with the dieline</h2>
+        <h2>Three required fields, and the quote comes back with the dieline</h2>
         <p>
           Fields marked <span aria-hidden="true">*</span><span class="visually-hidden">required</span>
           are required. We reply within <strong>three working days</strong> &mdash; the quote and
@@ -106,14 +106,9 @@
             novalidate>
         <div class="quote__grid">
           <p class="quote__field">
-            <label for="q-name">Your name <span aria-hidden="true">*</span></label>
+            <label for="q-name">Your name and company <span aria-hidden="true">*</span></label>
             <input id="q-name" name="name" type="text" required maxlength="120"
-                   autocomplete="name" placeholder="Jane Cooper">
-          </p>
-          <p class="quote__field">
-            <label for="q-company">Company <span aria-hidden="true">*</span></label>
-            <input id="q-company" name="company" type="text" required maxlength="160"
-                   autocomplete="organization" placeholder="Cooper &amp; Sons Ltd.">
+                   autocomplete="name" placeholder="Jane Cooper &mdash; Cooper &amp; Sons Ltd.">
           </p>
           <p class="quote__field">
             <label for="q-email">Work email <span aria-hidden="true">*</span></label>
@@ -121,13 +116,8 @@
                    autocomplete="email" placeholder="jane@company.com">
           </p>
           <p class="quote__field">
-            <label for="q-country">Country or region</label>
-            <input id="q-country" name="country" type="text" maxlength="120"
-                   autocomplete="country-name" placeholder="United States">
-          </p>
-          <p class="quote__field">
-            <label for="q-product">Product type <span aria-hidden="true">*</span></label>
-            <select id="q-product" name="product_type" required>
+            <label for="q-product">Product type</label>
+            <select id="q-product" name="product_type">
               <option value="">Select&hellip;</option>
               <option value="folding-carton">Folding cartons</option>
               <option value="corrugated">Corrugated cartons</option>
@@ -166,7 +156,9 @@
           ahead. It is stored on our own server for <strong>24 months</strong>, never sold, and
           never shown to another client. We do not store your IP address &mdash; only a
           shortened fingerprint, so that repeated automated submissions can be recognised.
-          Ask us to delete your enquiry at any time and we will.
+          Ask us to delete your enquiry at any time and we will. If you arrived from an
+          advertisement, the click identifier from that link is recorded so we can measure
+          which advertising works &mdash; see the <a href="privacy.html">privacy page</a>.
         </p>
         <p class="small muted">
           If the form does not send &mdash; for example with JavaScript switched off or if our
